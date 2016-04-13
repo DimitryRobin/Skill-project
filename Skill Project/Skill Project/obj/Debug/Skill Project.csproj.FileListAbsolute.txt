@@ -1,0 +1,26 @@
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\bin\Debug\Skill Project.exe.config
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\bin\Debug\Skill Project.exe
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\bin\Debug\Skill Project.pdb
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.Properties.Resources.resources
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill Project.csproj.GenerateResource.Cache
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill Project.exe
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill Project.pdb
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\bin\Debug\af\Skill Project.resources.dll
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\bin\Debug\en\Skill Project.resources.dll
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\af\Skill Project.resources.dll
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\en\Skill Project.resources.dll
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormIndex.resources
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormIndex.af.resources
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormIndex.en.resources
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormSuggestion.resources
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormAPropos.resources
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormFaireUnDon.resources
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormQuiSuisJe.resources
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormListe.resources
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormArborescence.resources
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormMiniature.resources
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.FormPlanning.resources
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\bin\Debug\System.Windows.Forms.Calendar.pdb
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill Project.csprojResolveAssemblyReference.cache
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.MonthView.resources
+C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormParametre.resources

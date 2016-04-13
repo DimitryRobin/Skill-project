@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEC3AE03-99CC-4DED-BB77-5ED3160B9E31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Skill_Project</RootNamespace>
+    <AssemblyName>Skill Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.Calendar">
+      <HintPath>..\..\..\System.Windows.Forms.Calendar\System.Windows.Forms.Calendar\bin\Debug\System.Windows.Forms.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormsCompetence\Planning\Calendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\Planning\CalendarColorTable.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarDay.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarDayEventArgs.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarDaysMode.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarDayTop.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarHighlightRange.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarItem.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarItemCancelEventArgs.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarItemCollection.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarItemEventArgs.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarItemImageAlign.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarLoadEventArgs.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarProfessionalRenderer.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarRenderer.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarRendererBoxEventArgs.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarRendererDayEventArgs.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarRendererEventArgs.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarRendererItemBoundsEventArgs.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarRendererItemEventArgs.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarRendererTimeUnitEventArgs.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarSelectableElement.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarSystemRenderer.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\Planning\CalendarTimeScale.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarTimeScaleUnit.cs" />
+    <Compile Include="FormsCompetence\Planning\CalendarWeek.cs" />
+    <Compile Include="FormsCompetence\Planning\FormPlanning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\Planning\FormPlanning.Designer.cs">
+      <DependentUpon>FormPlanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\Planning\ItemInfo.cs" />
+    <Compile Include="FormsMenu\FormAPropos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormAPropos.Designer.cs">
+      <DependentUpon>FormAPropos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\FormArborescence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormArborescence.Designer.cs">
+      <DependentUpon>FormArborescence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\FormFaireUnDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormFaireUnDon.Designer.cs">
+      <DependentUpon>FormFaireUnDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\FormIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormIndex.Designer.cs">
+      <DependentUpon>FormIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\FormMiniature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormMiniature.Designer.cs">
+      <DependentUpon>FormMiniature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\FormParametre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormParametre.Designer.cs">
+      <DependentUpon>FormParametre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\FormQuiSuisJe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormQuiSuisJe.Designer.cs">
+      <DependentUpon>FormQuiSuisJe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\FormListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormListe.Designer.cs">
+      <DependentUpon>FormListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\Planning\ICalendarSelectableElement.cs" />
+    <Compile Include="FormsCompetence\Planning\ISelectableElement.cs" />
+    <Compile Include="FormsCompetence\Planning\MonthView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\Planning\MonthViewBoxEventArgs.cs" />
+    <Compile Include="FormsCompetence\Planning\MonthViewDay.cs" />
+    <Compile Include="FormsCompetence\Planning\MonthViewMontEventArgs.cs" />
+    <Compile Include="FormsCompetence\Planning\MonthViewMonth.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormsMenu\FormSuggestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormSuggestion.Designer.cs">
+      <DependentUpon>FormSuggestion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormsCompetence\Planning\FormPlanning.resx">
+      <DependentUpon>FormPlanning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormAPropos.resx">
+      <DependentUpon>FormAPropos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormArborescence.resx">
+      <DependentUpon>FormArborescence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormFaireUnDon.resx">
+      <DependentUpon>FormFaireUnDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormIndex.af.resx">
+      <DependentUpon>FormIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormIndex.en.resx">
+      <DependentUpon>FormIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormIndex.resx">
+      <DependentUpon>FormIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormMiniature.resx">
+      <DependentUpon>FormMiniature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormParametre.resx">
+      <DependentUpon>FormParametre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormQuiSuisJe.resx">
+      <DependentUpon>FormQuiSuisJe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormListe.resx">
+      <DependentUpon>FormListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsCompetence\Planning\MonthView.resx">
+      <DependentUpon>MonthView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormSuggestion.resx">
+      <DependentUpon>FormSuggestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yuyukyuk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Facebook-logo-png-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parametres-outils-icone-9314-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social_facebook_box_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Twitter_Logo_Hd_Png_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YouTube-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_spots_background_abstract_73380_3840x2160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\honeycomb_grey_pattern_wallpapers.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
