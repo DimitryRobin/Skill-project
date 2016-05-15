@@ -117,14 +117,651 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;rbZA.Name" xml:space="preserve">
+    <value>rbZA</value>
+  </data>
+  <data name="&gt;&gt;rbZA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbZA.Parent" xml:space="preserve">
+    <value>gbTri</value>
+  </data>
+  <data name="&gt;&gt;rbZA.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rbAZ.Name" xml:space="preserve">
+    <value>rbAZ</value>
+  </data>
+  <data name="&gt;&gt;rbAZ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbAZ.Parent" xml:space="preserve">
+    <value>gbTri</value>
+  </data>
+  <data name="&gt;&gt;rbAZ.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rbDateAjout.Name" xml:space="preserve">
+    <value>rbDateAjout</value>
+  </data>
+  <data name="&gt;&gt;rbDateAjout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbDateAjout.Parent" xml:space="preserve">
+    <value>gbTri</value>
+  </data>
+  <data name="&gt;&gt;rbDateAjout.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gbTri.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gentium Basic, 12.25pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gbTri.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="gbTri.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="gbTri.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="gbTri.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 70</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gbTri.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="gbTri.Text" xml:space="preserve">
+    <value>Trier par</value>
+  </data>
+  <data name="&gt;&gt;gbTri.Name" xml:space="preserve">
+    <value>gbTri</value>
+  </data>
+  <data name="&gt;&gt;gbTri.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbTri.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbTri.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rbZA.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbZA.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbZA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 29</value>
+  </data>
+  <data name="rbZA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 24</value>
+  </data>
+  <data name="rbZA.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="rbZA.Text" xml:space="preserve">
+    <value>Z-A</value>
+  </data>
+  <data name="&gt;&gt;rbZA.Name" xml:space="preserve">
+    <value>rbZA</value>
+  </data>
+  <data name="&gt;&gt;rbZA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbZA.Parent" xml:space="preserve">
+    <value>gbTri</value>
+  </data>
+  <data name="&gt;&gt;rbZA.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rbAZ.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbAZ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 29</value>
+  </data>
+  <data name="rbAZ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 24</value>
+  </data>
+  <data name="rbAZ.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="rbAZ.Text" xml:space="preserve">
+    <value>A-Z</value>
+  </data>
+  <data name="&gt;&gt;rbAZ.Name" xml:space="preserve">
+    <value>rbAZ</value>
+  </data>
+  <data name="&gt;&gt;rbAZ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbAZ.Parent" xml:space="preserve">
+    <value>gbTri</value>
+  </data>
+  <data name="&gt;&gt;rbAZ.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rbDateAjout.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbDateAjout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 29</value>
+  </data>
+  <data name="rbDateAjout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 24</value>
+  </data>
+  <data name="rbDateAjout.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="rbDateAjout.Text" xml:space="preserve">
+    <value>Date d'ajout</value>
+  </data>
+  <data name="&gt;&gt;rbDateAjout.Name" xml:space="preserve">
+    <value>rbDateAjout</value>
+  </data>
+  <data name="&gt;&gt;rbDateAjout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbDateAjout.Parent" xml:space="preserve">
+    <value>gbTri</value>
+  </data>
+  <data name="&gt;&gt;rbDateAjout.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbRecherche.Name" xml:space="preserve">
+    <value>cbRecherche</value>
+  </data>
+  <data name="&gt;&gt;cbRecherche.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbRecherche.Parent" xml:space="preserve">
+    <value>gbRecherche</value>
+  </data>
+  <data name="&gt;&gt;cbRecherche.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblrecherche.Name" xml:space="preserve">
+    <value>lblrecherche</value>
+  </data>
+  <data name="&gt;&gt;lblrecherche.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblrecherche.Parent" xml:space="preserve">
+    <value>gbRecherche</value>
+  </data>
+  <data name="&gt;&gt;lblrecherche.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbRecherche.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gentium Basic, 12.25pt</value>
+  </data>
+  <data name="gbRecherche.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="gbRecherche.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 12</value>
+  </data>
+  <data name="gbRecherche.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="gbRecherche.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 70</value>
+  </data>
+  <data name="gbRecherche.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="gbRecherche.Text" xml:space="preserve">
+    <value>Recherche</value>
+  </data>
+  <data name="&gt;&gt;gbRecherche.Name" xml:space="preserve">
+    <value>gbRecherche</value>
+  </data>
+  <data name="&gt;&gt;gbRecherche.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbRecherche.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbRecherche.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbRecherche.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 9.5pt, style=Bold</value>
+  </data>
+  <data name="cbRecherche.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 29</value>
+  </data>
+  <data name="cbRecherche.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="cbRecherche.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 26</value>
+  </data>
+  <data name="cbRecherche.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="cbRecherche.Text" xml:space="preserve">
+    <value>Recherchez..</value>
+  </data>
+  <data name="&gt;&gt;cbRecherche.Name" xml:space="preserve">
+    <value>cbRecherche</value>
+  </data>
+  <data name="&gt;&gt;cbRecherche.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbRecherche.Parent" xml:space="preserve">
+    <value>gbRecherche</value>
+  </data>
+  <data name="&gt;&gt;cbRecherche.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblrecherche.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblrecherche.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gentium Basic, 12.25pt</value>
+  </data>
+  <data name="lblrecherche.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 32</value>
+  </data>
+  <data name="lblrecherche.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 20</value>
+  </data>
+  <data name="lblrecherche.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblrecherche.Text" xml:space="preserve">
+    <value>Mot clé :</value>
+  </data>
+  <data name="&gt;&gt;lblrecherche.Name" xml:space="preserve">
+    <value>lblrecherche</value>
+  </data>
+  <data name="&gt;&gt;lblrecherche.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblrecherche.Parent" xml:space="preserve">
+    <value>gbRecherche</value>
+  </data>
+  <data name="&gt;&gt;lblrecherche.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12.25pt</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 88</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>984, 475</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelRecent.Name" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;panelRecent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelRecent.Parent" xml:space="preserve">
+    <value>gbRecent</value>
+  </data>
+  <data name="&gt;&gt;panelRecent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gbRecent.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gentium Basic, 12.25pt</value>
+  </data>
+  <data name="gbRecent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="gbRecent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>549, 12</value>
+  </data>
+  <data name="gbRecent.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="gbRecent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>413, 70</value>
+  </data>
+  <data name="gbRecent.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="gbRecent.Text" xml:space="preserve">
+    <value>Vue récemment</value>
+  </data>
+  <data name="&gt;&gt;gbRecent.Name" xml:space="preserve">
+    <value>gbRecent</value>
+  </data>
+  <data name="&gt;&gt;gbRecent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbRecent.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbRecent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelRecent.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panelRecent.AutoScrollMinSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 50</value>
+  </data>
+  <data name="&gt;&gt;recent3.Name" xml:space="preserve">
+    <value>recent3</value>
+  </data>
+  <data name="&gt;&gt;recent3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;recent3.Parent" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;recent3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblDate3.Name" xml:space="preserve">
+    <value>lblDate3</value>
+  </data>
+  <data name="&gt;&gt;lblDate3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDate3.Parent" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;lblDate3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;recent2.Name" xml:space="preserve">
+    <value>recent2</value>
+  </data>
+  <data name="&gt;&gt;recent2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;recent2.Parent" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;recent2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblDate2.Name" xml:space="preserve">
+    <value>lblDate2</value>
+  </data>
+  <data name="&gt;&gt;lblDate2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDate2.Parent" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;lblDate2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;recent1.Name" xml:space="preserve">
+    <value>recent1</value>
+  </data>
+  <data name="&gt;&gt;recent1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;recent1.Parent" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;recent1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblDate1.Name" xml:space="preserve">
+    <value>lblDate1</value>
+  </data>
+  <data name="&gt;&gt;lblDate1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDate1.Parent" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;lblDate1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelRecent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="panelRecent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>401, 39</value>
+  </data>
+  <data name="panelRecent.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelRecent.Name" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;panelRecent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelRecent.Parent" xml:space="preserve">
+    <value>gbRecent</value>
+  </data>
+  <data name="&gt;&gt;panelRecent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="recent3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="recent3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gentium Basic, 10.25pt</value>
+  </data>
+  <data name="recent3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="recent3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 38</value>
+  </data>
+  <data name="recent3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 16</value>
+  </data>
+  <data name="recent3.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="recent3.Text" xml:space="preserve">
+    <value>Nom du projet</value>
+  </data>
+  <data name="&gt;&gt;recent3.Name" xml:space="preserve">
+    <value>recent3</value>
+  </data>
+  <data name="&gt;&gt;recent3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;recent3.Parent" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;recent3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblDate3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDate3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gentium Basic, 11.25pt, style=Bold, Underline</value>
+  </data>
+  <data name="lblDate3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblDate3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 38</value>
+  </data>
+  <data name="lblDate3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 17</value>
+  </data>
+  <data name="lblDate3.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="lblDate3.Text" xml:space="preserve">
+    <value>jj/mm/aaaa :</value>
+  </data>
+  <data name="&gt;&gt;lblDate3.Name" xml:space="preserve">
+    <value>lblDate3</value>
+  </data>
+  <data name="&gt;&gt;lblDate3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDate3.Parent" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;lblDate3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="recent2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="recent2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gentium Basic, 10.25pt</value>
+  </data>
+  <data name="recent2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="recent2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 20</value>
+  </data>
+  <data name="recent2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 16</value>
+  </data>
+  <data name="recent2.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="recent2.Text" xml:space="preserve">
+    <value>Nom du projet</value>
+  </data>
+  <data name="&gt;&gt;recent2.Name" xml:space="preserve">
+    <value>recent2</value>
+  </data>
+  <data name="&gt;&gt;recent2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;recent2.Parent" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;recent2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblDate2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDate2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gentium Basic, 11.25pt, style=Bold, Underline</value>
+  </data>
+  <data name="lblDate2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblDate2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 20</value>
+  </data>
+  <data name="lblDate2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 17</value>
+  </data>
+  <data name="lblDate2.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="lblDate2.Text" xml:space="preserve">
+    <value>jj/mm/aaaa :</value>
+  </data>
+  <data name="&gt;&gt;lblDate2.Name" xml:space="preserve">
+    <value>lblDate2</value>
+  </data>
+  <data name="&gt;&gt;lblDate2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDate2.Parent" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;lblDate2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="recent1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="recent1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gentium Basic, 10.25pt</value>
+  </data>
+  <data name="recent1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="recent1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 1</value>
+  </data>
+  <data name="recent1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 16</value>
+  </data>
+  <data name="recent1.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="recent1.Text" xml:space="preserve">
+    <value>Nom du projet</value>
+  </data>
+  <data name="&gt;&gt;recent1.Name" xml:space="preserve">
+    <value>recent1</value>
+  </data>
+  <data name="&gt;&gt;recent1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;recent1.Parent" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;recent1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblDate1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDate1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gentium Basic, 11.25pt, style=Bold, Underline</value>
+  </data>
+  <data name="lblDate1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblDate1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 1</value>
+  </data>
+  <data name="lblDate1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 17</value>
+  </data>
+  <data name="lblDate1.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="lblDate1.Text" xml:space="preserve">
+    <value>jj/mm/aaaa :</value>
+  </data>
+  <data name="&gt;&gt;lblDate1.Name" xml:space="preserve">
+    <value>lblDate1</value>
+  </data>
+  <data name="&gt;&gt;lblDate1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDate1.Parent" xml:space="preserve">
+    <value>panelRecent</value>
+  </data>
+  <data name="&gt;&gt;lblDate1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>

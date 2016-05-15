@@ -13,7 +13,7 @@ namespace Skill_Project
 {
     public partial class FormParametre : System.Windows.Forms.Form
     {
-        string test, test1, test2, test3;
+        string test, test1, test2, test3, test4;
         double opa = 1;
         bool BM;
         bool ID;
@@ -22,46 +22,6 @@ namespace Skill_Project
         public FormParametre()
         {
             InitializeComponent();
-        }
-
-        private void creationFichier()
-        {
-            string folderName = @"c:\";
-            string pathString = System.IO.Path.Combine(folderName, "SkillProject");
-            System.IO.Directory.CreateDirectory(pathString);
-            string fileName = "Preferences_SkillProject.txt";
-            pathString = System.IO.Path.Combine(pathString, fileName);
-
-            
-            Console.WriteLine("Path to my file: {0}\n", pathString);
-
-            
-            using (System.IO.FileStream fs = new System.IO.FileStream(pathString, FileMode.Append))
-            {
-                
-                for (byte i = 0; i < 100; i++)
-                {
-                    fs.WriteByte(i);
-                }
-                
-            }
-
-            try
-            {
-                byte[] readBuffer = System.IO.File.ReadAllBytes(pathString);
-                foreach (byte b in readBuffer)
-                {
-                    Console.Write(b + " ");
-                }
-                Console.WriteLine();
-            }
-            catch (System.IO.IOException e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
-            string[] lines = { opa.ToString(), BM.ToString(), ID.ToString(), Tuto.ToString() };
-            System.IO.File.WriteAllLines(@"C:\SkillProject\Preferences_SkillProject.txt", lines);
         }
 
         private void ecrireFichier()
@@ -93,18 +53,7 @@ namespace Skill_Project
                 Tuto = false;
             }
 
-            string[] lines = { opa.ToString(), BM.ToString(), ID.ToString(), Tuto.ToString() };
-            System.IO.File.WriteAllLines(@"C:\SkillProject\Preferences_SkillProject.txt", lines);
-        }
-
-        private void lireFichier()
-        {
-            string[] lines = System.IO.File.ReadAllLines(@"C:\SkillProject\Preferences_SkillProject.txt");
-
-            test = lines[0].ToString();
-            test1 = lines[1].ToString();
-            test2 = lines[2].ToString();
-            test3 = lines[3].ToString();
+            Fonction.ecrireFichier(opa.ToString(), BM.ToString(), lblPolice.Text, ID.ToString(), combobLangue.Text, Tuto.ToString(), "", "");
         }
 
 
@@ -115,50 +64,51 @@ namespace Skill_Project
 
         private void FormParametre_Load(object sender, EventArgs e)
         {
-            string curFile = @"C:\SkillProject\Preferences_SkillProject.txt";
 
-            if (File.Exists(curFile))
+            string[] lines = Fonction.lireFichier();
+
+            test = lines[0].ToString();
+            test1 = lines[1].ToString();
+            lblPolice.Text = lines[2].ToString();
+            test2 = lines[3].ToString();
+            test4 = lines[4].ToString();
+            test3 = lines[5].ToString();
+
+            combobLangue.Text = test4;
+            Opacity = Convert.ToDouble(test);
+            hScrollBar1.Value = Convert.ToInt32(Opacity * 100);
+
+            if (test1.ToString() == "True")
             {
-                lireFichier();
-                Opacity = Convert.ToDouble(test);
-                hScrollBar1.Value = Convert.ToInt32(Opacity * 100);
-
-                if (test1.ToString() == "True")
-                {
-                    cbBoiteMessagesNon.Checked = false;
-                    cbBoiteMessagesOui.Checked = true;
-                }
-                else
-                {
-                    cbBoiteMessagesOui.Checked = false;
-                    cbBoiteMessagesNon.Checked = true;
-                }
-
-                if (test2.ToString() == "True")
-                {
-                    cbInfoDefilantesNon.Checked = false;
-                    cbInfoDefilantesOui.Checked = true;
-                }
-                else
-                {
-                    cbInfoDefilantesOui.Checked = false;
-                    cbInfoDefilantesNon.Checked = true;
-                }
-
-                if (test3.ToString() == "True")
-                {
-                    CbTutorielNon.Checked = false;
-                    CbTutorielOui.Checked = true;
-                }
-                else
-                {
-                    CbTutorielOui.Checked = false;
-                    CbTutorielNon.Checked = true;
-                }
+                cbBoiteMessagesNon.Checked = false;
+                cbBoiteMessagesOui.Checked = true;
             }
             else
             {
-                creationFichier();
+                cbBoiteMessagesOui.Checked = false;
+                cbBoiteMessagesNon.Checked = true;
+            }
+
+            if (test2.ToString() == "True")
+            {
+                cbInfoDefilantesNon.Checked = false;
+                cbInfoDefilantesOui.Checked = true;
+            }
+            else
+            {
+                cbInfoDefilantesOui.Checked = false;
+                cbInfoDefilantesNon.Checked = true;
+            }
+
+            if (test3.ToString() == "True")
+            {
+                CbTutorielNon.Checked = false;
+                CbTutorielOui.Checked = true;
+            }
+            else
+            {
+                CbTutorielOui.Checked = false;
+                CbTutorielNon.Checked = true;
             }
         }
 
@@ -213,6 +163,46 @@ namespace Skill_Project
             cbInfoDefilantesNon.Checked = false;
 
             ID = true;
+        }
+
+        private void pbPolice_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                lblPolice.Text = fontDialog1.Font.Name.ToString();
+
+                if (lblPolice.Text != "Par défaut")
+                {
+                    try
+                    {
+                        // lblTitrePara.Font = new Font(lblPolice.Text, lblTitrePara.Font.SizeInPoints, lblTitrePara.Font.Style);
+                    }
+                    catch
+                    {
+                        // lblTitrePara.Font = new Font(family, lblTitrePara.Font.SizeInPoints, lblTitrePara.Font.Style);
+                    }
+                }
+                else
+                {
+                    // lblTitrePara.Font = new Font(family, lblTitrePara.Font.SizeInPoints, lblTitrePara.Font.Style);
+                }
+
+            }
+        }
+
+        private void btnDefautPolice_Click(object sender, EventArgs e)
+        {
+            if (lblPolice.Text == "Palatino Linotype")
+            {
+                // MessageBox.Show(LangueElement[124], LangueElement[105], MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("La police est déjà " + lblTitreSuggestion.Font.Name, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                // lblTitrePara.Font = new Font(family, lblTitrePara.Font.SizeInPoints, lblTitrePara.Font.Style);
+
+                lblPolice.Text = "Palatino Linotype";
+            }
         }
 
         private void cbInfoDefilantesNon_Click(object sender, EventArgs e)

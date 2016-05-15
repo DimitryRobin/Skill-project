@@ -34,8 +34,7 @@ namespace Skill_Project
         private void btnRetourSuggestion_Click(object sender, EventArgs e)
         {
             FormIndex FI = (FormIndex)this.MdiParent;
-            
-            
+
             FI.AffichageToolStripMenuItem.Enabled = true;
             FI.AfficToolStripMenuItem.Enabled = true;
             FI.CommentÇaMarcheToolStripMenuItem.Enabled = true;
@@ -261,7 +260,7 @@ namespace Skill_Project
 
         private void FormSuggestion_Load(object sender, EventArgs e)
         {
-            tbDate2.Text = DateTime.Now.ToString();
+            timer1.Start();
         }
 
         private void btnEnvoyerSuggestion_Click(object sender, EventArgs e)
@@ -587,6 +586,11 @@ namespace Skill_Project
         private void tbMail_Enter(object sender, EventArgs e)
         {
             tbMail_Click(sender, e);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            tbDate2.Text = DateTime.Now.ToString();
         }
     }
 }

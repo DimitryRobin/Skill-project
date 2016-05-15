@@ -190,5 +190,50 @@ namespace Skill_Project
         {
             toolTip6.Show(toolTip6.GetToolTip(pictureBox4), pictureBox4, durationMilliseconds);
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process p = new System.Diagnostics.Process();
+            p.StartInfo.FileName = "http://dimitryrobin.fr/CV-Developpeur-Application/";
+            p.Start();
+
+            label2.Select();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process p = new System.Diagnostics.Process();
+            p.StartInfo.FileName = "http://dimitryrobin.fr/Portfolio/";
+            p.Start();
+
+            label2.Select();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process p = new System.Diagnostics.Process();
+            p.StartInfo.FileName = "https://www.linkedin.com/in/dimitryrobin";
+            p.Start();
+
+            label2.Select();
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process p = new System.Diagnostics.Process();
+            p.StartInfo.FileName = "http://www.viadeo.com/fr/profile/dimitry.robin";
+            p.Start();
+
+            label2.Select();
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process p = new System.Diagnostics.Process();
+            p.StartInfo.FileName = "https://github.com/Dimy49";
+            p.Start();
+
+            label2.Select();
+        }
     }
 }

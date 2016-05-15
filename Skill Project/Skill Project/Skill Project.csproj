@@ -51,6 +51,73 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fonction.cs" />
+    <Compile Include="FormsCompetence\FormProjetAddFindPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetAddFindPlayer.Designer.cs">
+      <DependentUpon>FormProjetAddFindPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetBarreProgCirculaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetBarreProgCirculaire.Designer.cs">
+      <DependentUpon>FormProjetBarreProgCirculaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetBoutonAnime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetBoutonAnime.Designer.cs">
+      <DependentUpon>FormProjetBoutonAnime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetCalculatrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetCalculatrice.Designer.cs">
+      <DependentUpon>FormProjetCalculatrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetCodeSourceSiteWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetCodeSourceSiteWeb.Designer.cs">
+      <DependentUpon>FormProjetCodeSourceSiteWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetFormulaireContactPersonnalise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetFormulaireContactPersonnalise.Designer.cs">
+      <DependentUpon>FormProjetFormulaireContactPersonnalise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetImageFlottante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetImageFlottante.Designer.cs">
+      <DependentUpon>FormProjetImageFlottante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetInfoBulle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetInfoBulle.Designer.cs">
+      <DependentUpon>FormProjetInfoBulle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetMorpion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetMorpion.Designer.cs">
+      <DependentUpon>FormProjetMorpion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetPendu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetPendu.Designer.cs">
+      <DependentUpon>FormProjetPendu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetSnake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\FormProjetSnake.Designer.cs">
+      <DependentUpon>FormProjetSnake.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsCompetence\Planning\Calendar.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -154,6 +221,15 @@
     <Compile Include="FormsMenu\FormSuggestion.Designer.cs">
       <DependentUpon>FormSuggestion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormsCompetence\FormProjetBarreProgCirculaire.resx">
+      <DependentUpon>FormProjetBarreProgCirculaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsCompetence\FormProjetBoutonAnime.resx">
+      <DependentUpon>FormProjetBoutonAnime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsCompetence\FormProjetCalculatrice.resx">
+      <DependentUpon>FormProjetCalculatrice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsCompetence\Planning\FormPlanning.resx">
       <DependentUpon>FormPlanning.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +321,41 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\honeycomb_grey_pattern_wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viadeo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CV-Developpeur-Logiciel-Application-Mobile-Dimitry-Robin.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viadeo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github3.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Langage\Projet\ProjetAnglais.txt" />
+    <Content Include="Langage\Projet\ProjetFrancais.txt" />
+    <None Include="Resources\calculatrice.png" />
+    <None Include="Resources\abstract_wallpaper_by_justin_maller.jpg" />
+    <None Include="Resources\letter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

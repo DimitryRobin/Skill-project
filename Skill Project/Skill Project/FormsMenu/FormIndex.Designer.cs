@@ -48,6 +48,13 @@ namespace Skill_Project
             this.arborescenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblAccesRapide = new System.Windows.Forms.Label();
+            this.lblACDate1 = new System.Windows.Forms.Label();
+            this.lblACDate3 = new System.Windows.Forms.Label();
+            this.lblACDate2 = new System.Windows.Forms.Label();
+            this.lblACNom1 = new System.Windows.Forms.Label();
+            this.lblACNom3 = new System.Windows.Forms.Label();
+            this.lblACNom2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +62,7 @@ namespace Skill_Project
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox1.BackgroundImage = global::Skill_Project.Properties.Resources.abstract_wallpaper_by_justin_maller;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
@@ -177,11 +185,64 @@ namespace Skill_Project
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lblAccesRapide
+            // 
+            resources.ApplyResources(this.lblAccesRapide, "lblAccesRapide");
+            this.lblAccesRapide.BackColor = System.Drawing.Color.Transparent;
+            this.lblAccesRapide.Name = "lblAccesRapide";
+            // 
+            // lblACDate1
+            // 
+            resources.ApplyResources(this.lblACDate1, "lblACDate1");
+            this.lblACDate1.BackColor = System.Drawing.Color.Transparent;
+            this.lblACDate1.Name = "lblACDate1";
+            // 
+            // lblACDate3
+            // 
+            resources.ApplyResources(this.lblACDate3, "lblACDate3");
+            this.lblACDate3.BackColor = System.Drawing.Color.Transparent;
+            this.lblACDate3.Name = "lblACDate3";
+            this.lblACDate3.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lblACDate2
+            // 
+            resources.ApplyResources(this.lblACDate2, "lblACDate2");
+            this.lblACDate2.BackColor = System.Drawing.Color.Transparent;
+            this.lblACDate2.Name = "lblACDate2";
+            // 
+            // lblACNom1
+            // 
+            resources.ApplyResources(this.lblACNom1, "lblACNom1");
+            this.lblACNom1.BackColor = System.Drawing.Color.Transparent;
+            this.lblACNom1.Name = "lblACNom1";
+            this.lblACNom1.Click += new System.EventHandler(this.lblACNom1_Click);
+            // 
+            // lblACNom3
+            // 
+            resources.ApplyResources(this.lblACNom3, "lblACNom3");
+            this.lblACNom3.BackColor = System.Drawing.Color.Transparent;
+            this.lblACNom3.Name = "lblACNom3";
+            this.lblACNom3.Click += new System.EventHandler(this.lblACNom1_Click);
+            // 
+            // lblACNom2
+            // 
+            resources.ApplyResources(this.lblACNom2, "lblACNom2");
+            this.lblACNom2.BackColor = System.Drawing.Color.Transparent;
+            this.lblACNom2.Name = "lblACNom2";
+            this.lblACNom2.Click += new System.EventHandler(this.lblACNom1_Click);
+            // 
             // FormIndex
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.lblACNom2);
+            this.Controls.Add(this.lblACNom3);
+            this.Controls.Add(this.lblACNom1);
+            this.Controls.Add(this.lblACDate2);
+            this.Controls.Add(this.lblACDate3);
+            this.Controls.Add(this.lblACDate1);
+            this.Controls.Add(this.lblAccesRapide);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.lblCreateur);
             this.Controls.Add(this.pictureBox1);
@@ -218,6 +279,13 @@ namespace Skill_Project
         private System.Windows.Forms.ToolStripMenuItem arborescenceToolStripMenuItem;
         private ToolTip toolTip1;
         private Timer timer1;
+        private Label lblAccesRapide;
+        private Label lblACDate1;
+        private Label lblACDate3;
+        private Label lblACDate2;
+        private Label lblACNom1;
+        private Label lblACNom3;
+        private Label lblACNom2;
 
         public ToolStripMenuItem ArborescenceToolStripMenuItem
         {

@@ -56,6 +56,7 @@
             this.pbSuggestion = new System.Windows.Forms.ProgressBar();
             this.lblDate2 = new System.Windows.Forms.Label();
             this.tbDate2 = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).BeginInit();
             this.SuspendLayout();
             // 
@@ -330,6 +331,11 @@
             this.tbDate2.Size = new System.Drawing.Size(149, 29);
             this.tbDate2.TabIndex = 19;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FormSuggestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,5 +405,6 @@
         private System.Windows.Forms.ProgressBar pbSuggestion;
         private System.Windows.Forms.Label lblDate2;
         private System.Windows.Forms.TextBox tbDate2;
+        private System.Windows.Forms.Timer timer1;
     }
 }

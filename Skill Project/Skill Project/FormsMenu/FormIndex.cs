@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,7 +18,6 @@ namespace Skill_Project
         private string test;
         public int nb = 0;
         public int para = 0; // 0, 1, 2, 3, 4, 5, 6
-        int time = 0;
 
         public MenuStrip MyMenu
         {
@@ -33,6 +33,48 @@ namespace Skill_Project
             lblCreateur.Parent = pictureBox1;
             lblCreateur.Location = pos;
             lblCreateur.BackColor = Color.Transparent;
+
+            var pos2 = this.PointToScreen(lblAccesRapide.Location);
+            pos2 = pictureBox1.PointToClient(pos2);
+            lblAccesRapide.Parent = pictureBox1;
+            lblAccesRapide.Location = pos2;
+            lblAccesRapide.BackColor = Color.Transparent;
+
+            var pos3 = this.PointToScreen(lblACDate1.Location);
+            pos3 = pictureBox1.PointToClient(pos3);
+            lblACDate1.Parent = pictureBox1;
+            lblACDate1.Location = pos3;
+            lblACDate1.BackColor = Color.Transparent;
+
+            var pos4 = this.PointToScreen(lblACDate2.Location);
+            pos4 = pictureBox1.PointToClient(pos4);
+            lblACDate2.Parent = pictureBox1;
+            lblACDate2.Location = pos4;
+            lblACDate2.BackColor = Color.Transparent;
+
+            var pos5 = this.PointToScreen(lblACDate3.Location);
+            pos5 = pictureBox1.PointToClient(pos5);
+            lblACDate3.Parent = pictureBox1;
+            lblACDate3.Location = pos5;
+            lblACDate3.BackColor = Color.Transparent;
+
+            var pos6 = this.PointToScreen(lblACNom1.Location);
+            pos6 = pictureBox1.PointToClient(pos6);
+            lblACNom1.Parent = pictureBox1;
+            lblACNom1.Location = pos6;
+            lblACNom1.BackColor = Color.Transparent;
+
+            var pos7 = this.PointToScreen(lblACNom2.Location);
+            pos7 = pictureBox1.PointToClient(pos7);
+            lblACNom2.Parent = pictureBox1;
+            lblACNom2.Location = pos7;
+            lblACNom2.BackColor = Color.Transparent;
+
+            var pos8 = this.PointToScreen(lblACNom3.Location);
+            pos8 = pictureBox1.PointToClient(pos8);
+            lblACNom3.Parent = pictureBox1;
+            lblACNom3.Location = pos8;
+            lblACNom3.BackColor = Color.Transparent;
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -50,18 +92,8 @@ namespace Skill_Project
 
         }
 
-        private void sfsfToolStripMenuItem_Click(object sender, EventArgs e)
+        public void procedure()
         {
-             
-            MessageBox.Show("Bienvenue ☺", "Connexion", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            /*
-            var request = WebRequest.Create("http://image.noelshack.com/fichiers/2015/47/1447964240-yuyukyuk.jpg");
-            using (var response = request.GetResponse())
-            using (var stream = response.GetResponseStream())
-            menuStrip1.BackgroundImage = Bitmap.FromStream(stream);
-            */
-
             para = 1;
 
             pictureBox1.Visible = false;
@@ -83,8 +115,23 @@ namespace Skill_Project
             suggestionToolStripMenuItem.Enabled = true;
             quitterToolStripMenuItem.Enabled = true;
             pictureBox1.Visible = false;
+        }
 
-            
+        private void sfsfToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            // MessageBox.Show("Bienvenue ☺", "Connexion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            /*
+            var request = WebRequest.Create("http://image.noelshack.com/fichiers/2015/47/1447964240-yuyukyuk.jpg");
+            using (var response = request.GetResponse())
+            using (var stream = response.GetResponseStream())
+            menuStrip1.BackgroundImage = Bitmap.FromStream(stream);
+            */
+
+            procedure();
+
+
             FormListe FL = new FormListe();
             FL.MdiParent = this;
 
@@ -277,6 +324,8 @@ namespace Skill_Project
 
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            accesRapide();
+
             sfsfToolStripMenuItem.BackColor = Color.Transparent;
             affichageToolStripMenuItem.BackColor = Color.Transparent;
             afficToolStripMenuItem.BackColor = Color.Transparent;
@@ -387,23 +436,83 @@ namespace Skill_Project
 
         }
 
-        private void lireFichier()
+        public void accesRapide()
         {
-            string[] lines = System.IO.File.ReadAllLines(@"C:\SkillProject\Preferences_SkillProject.txt");
+            List<string> Preference = new List<string>();
 
-            test = lines[0].ToString();
-            Opacity = Convert.ToDouble(test);
+            string police;
+            string dateRecent1, Recent1, dateRecent2, Recent2, dateRecent3, Recent3;
+
+            Preference = Fonction.Preference();
+            police = Preference[2];
+            dateRecent1 = Preference[7];
+            Recent1 = Preference[6];
+            dateRecent2 = Preference[9];
+            Recent2 = Preference[8];
+            dateRecent3 = Preference[11];
+            Recent3 = Preference[10];
+
+            if (Recent1 != "Aucun")
+            {
+                lblAccesRapide.Visible = true;
+                lblACDate1.Text = dateRecent1;
+                lblACNom1.Text = Recent1;
+                lblACDate1.Visible = true;
+                lblACNom1.Visible = true;
+            }
+            else
+            {
+                lblAccesRapide.Visible = false;
+                lblACDate1.Visible = false;
+                lblACNom1.Visible = false;
+            }
+
+            if (Recent2 != "Aucun")
+            {
+                lblACDate2.Text = dateRecent2;
+                lblACNom2.Text = Recent2;
+                lblACDate2.Visible = true;
+                lblACNom2.Visible = true;
+            }
+            else
+            {
+                lblACDate2.Visible = false;
+                lblACNom2.Visible = false;
+            }
+
+            if (Recent3 != "Aucun")
+            {
+                lblACDate3.Text = dateRecent3;
+                lblACNom3.Text = Recent3;
+                lblACDate3.Visible = true;
+                lblACNom3.Visible = true;
+            }
+            else
+            {
+                lblACDate3.Visible = false;
+                lblACNom3.Visible = false;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             string curFile = @"C:\SkillProject\Preferences_SkillProject.txt";
 
             if (File.Exists(curFile))
             {
-                lireFichier();
+                string[] lines = Fonction.lireFichier();
+
+                test = lines[0].ToString();
+                Opacity = Convert.ToDouble(test);
             }
-                para = 0;
+            else
+            {
+                Fonction.creationFichier();
+            }
+
+            para = 0;
+            accesRapide();
         }
 
         private void FormIndex_FormClosed(object sender, FormClosedEventArgs e)
@@ -459,6 +568,141 @@ namespace Skill_Project
         private void timer1_Tick(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblACNom1_Click(object sender, EventArgs e)
+        {
+            List<String> Item2 = new List<String>();
+            List<String> ListeProjet = new List<String>();
+
+            ListeProjet = Fonction.LectureProjet();
+
+            Label lbl = sender as Label;
+
+            string dt = DateTime.Today.ToShortDateString();
+
+            foreach (var item in ListeProjet)
+            {
+                // string[] nomProjet = item.Split(new[] { " /// " }, StringSplitOptions.None);
+
+                string[] result = Regex.Split(item, @"\-\-\-");
+
+                Item2.Add(result[0]);
+            }
+
+            if (lbl.Text == Item2[0])
+            {
+                procedure();
+                Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
+                
+                FormsCompetence.FormProjetCalculatrice FPC = new FormsCompetence.FormProjetCalculatrice();
+                FPC.MdiParent = this;
+                FPC.Show();
+            }
+
+            if (lbl.Text == Item2[7])
+            {
+                procedure();
+                Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
+                
+                FormsCompetence.FormProjetAddFindPlayer FPC = new FormsCompetence.FormProjetAddFindPlayer();
+                FPC.MdiParent = this;
+                FPC.Show();
+            }
+
+            if (lbl.Text == Item2[1])
+            {
+                procedure();
+                Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
+                
+                FormsCompetence.FormProjetBarreProgCirculaire FPC = new FormsCompetence.FormProjetBarreProgCirculaire();
+                FPC.MdiParent = this;
+                FPC.Show();
+            }
+
+            if (lbl.Text == Item2[2])
+            {
+                procedure();
+                Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
+                
+                FormsCompetence.FormProjetBoutonAnime FPC = new FormsCompetence.FormProjetBoutonAnime();
+                FPC.MdiParent = this;
+                FPC.Show();
+            }
+            if (lbl.Text == Item2[3])
+            {
+                procedure();
+                Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
+                
+                FormsCompetence.FormProjetCodeSourceSiteWeb FPC = new FormsCompetence.FormProjetCodeSourceSiteWeb();
+                FPC.MdiParent = this;
+                FPC.Show();
+            }
+
+            if (lbl.Text == Item2[4])
+            {
+                procedure();
+                Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
+                
+                FormsCompetence.FormProjetFormulaireContactPersonnalise FPC = new FormsCompetence.FormProjetFormulaireContactPersonnalise();
+                FPC.MdiParent = this;
+                FPC.Show();
+            }
+
+            if (lbl.Text == Item2[5])
+            {
+                procedure();
+                Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
+                
+                FormsCompetence.FormProjetImageFlottante FPC = new FormsCompetence.FormProjetImageFlottante();
+                FPC.MdiParent = this;
+                FPC.Show();
+            }
+
+            if (lbl.Text == Item2[6])
+            {
+                procedure();
+                Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
+                
+                FormsCompetence.FormProjetInfoBulle FPC = new FormsCompetence.FormProjetInfoBulle();
+                FPC.MdiParent = this;
+                FPC.Show();
+            }
+
+            if (lbl.Text == Item2[8])
+            {
+                procedure();
+                Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
+                
+                FormsCompetence.FormProjetMorpion FPC = new FormsCompetence.FormProjetMorpion();
+                FPC.MdiParent = this;
+                FPC.Show();
+            }
+
+            if (lbl.Text == Item2[9])
+            {
+                procedure();
+                Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
+                
+                FormsCompetence.FormProjetPendu FPC = new FormsCompetence.FormProjetPendu();
+                FPC.MdiParent = this;
+                FPC.Show();
+            }
+
+            if (lbl.Text == Item2[10])
+            {
+                procedure();
+                Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
+                
+                FormsCompetence.FormProjetSnake FPC = new FormsCompetence.FormProjetSnake();
+                FPC.MdiParent = this;
+                FPC.Show();
+            }
         }
     }
 }

@@ -31,6 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQuiSuisJe));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -64,8 +75,17 @@
             this.toolTip4 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip5 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip6 = new System.Windows.Forms.ToolTip(this.components);
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.toolTip7 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip8 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip9 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip10 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip11 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -78,10 +98,20 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.AutoScrollMinSize = new System.Drawing.Size(0, 2100);
+            this.panel1.AutoScrollMinSize = new System.Drawing.Size(0, 2200);
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.pictureBox11);
+            this.panel1.Controls.Add(this.label23);
+            this.panel1.Controls.Add(this.pictureBox10);
+            this.panel1.Controls.Add(this.label22);
+            this.panel1.Controls.Add(this.pictureBox9);
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.pictureBox8);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.pictureBox7);
+            this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.label18);
@@ -116,6 +146,143 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 561);
             this.panel1.TabIndex = 8;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = global::Skill_Project.Properties.Resources.github3;
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox11.Location = new System.Drawing.Point(112, 965);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(62, 50);
+            this.pictureBox11.TabIndex = 50;
+            this.pictureBox11.TabStop = false;
+            this.toolTip11.SetToolTip(this.pictureBox11, "https://github.com/Dimy49");
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
+            this.label23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label23.Location = new System.Drawing.Point(22, 979);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(75, 26);
+            this.label23.TabIndex = 49;
+            this.label23.Text = "GitHub";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = global::Skill_Project.Properties.Resources.viadeo1;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox10.Location = new System.Drawing.Point(300, 897);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(62, 50);
+            this.pictureBox10.TabIndex = 48;
+            this.pictureBox10.TabStop = false;
+            this.toolTip10.SetToolTip(this.pictureBox10, "http://www.viadeo.com/fr/profile/dimitry.robin");
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
+            this.label22.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label22.Location = new System.Drawing.Point(210, 911);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(70, 26);
+            this.label22.TabIndex = 47;
+            this.label22.Text = "Viadeo";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = global::Skill_Project.Properties.Resources.linkedin;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox9.Location = new System.Drawing.Point(112, 897);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(62, 50);
+            this.pictureBox9.TabIndex = 46;
+            this.pictureBox9.TabStop = false;
+            this.toolTip9.SetToolTip(this.pictureBox9, "https://www.linkedin.com/in/dimitryrobin");
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
+            this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label21.Location = new System.Drawing.Point(16, 911);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(88, 26);
+            this.label21.TabIndex = 45;
+            this.label21.Text = "LinkedIn";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = global::Skill_Project.Properties.Resources.folder;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox8.Location = new System.Drawing.Point(582, 573);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(62, 50);
+            this.pictureBox8.TabIndex = 44;
+            this.pictureBox8.TabStop = false;
+            this.toolTip8.SetToolTip(this.pictureBox8, "http://dimitryrobin.fr/Portfolio/");
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
+            this.label20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label20.Location = new System.Drawing.Point(433, 586);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(127, 26);
+            this.label20.TabIndex = 43;
+            this.label20.Text = "Mon Portfolio";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = global::Skill_Project.Properties.Resources.CV_Developpeur_Logiciel_Application_Mobile_Dimitry_Robin;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Location = new System.Drawing.Point(328, 573);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(62, 50);
+            this.pictureBox7.TabIndex = 42;
+            this.pictureBox7.TabStop = false;
+            this.toolTip7.SetToolTip(this.pictureBox7, "http://dimitryrobin.fr/CV-Developpeur-Application/");
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
+            this.label19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label19.Location = new System.Drawing.Point(216, 586);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(82, 26);
+            this.label19.TabIndex = 41;
+            this.label19.Text = "Mon CV";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(428, -15);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.TabIndex = 40;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Visible = false;
             // 
             // pictureBox6
             // 
@@ -291,7 +458,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(16, 935);
+            this.label12.Location = new System.Drawing.Point(17, 1056);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(233, 28);
             this.label12.TabIndex = 27;
@@ -426,7 +593,7 @@
             this.btnRetourQSJ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRetourQSJ.BackgroundImage")));
             this.btnRetourQSJ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnRetourQSJ.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRetourQSJ.Location = new System.Drawing.Point(411, 2020);
+            this.btnRetourQSJ.Location = new System.Drawing.Point(413, 2130);
             this.btnRetourQSJ.Name = "btnRetourQSJ";
             this.btnRetourQSJ.Size = new System.Drawing.Size(110, 44);
             this.btnRetourQSJ.TabIndex = 17;
@@ -464,7 +631,7 @@
             this.pbCV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbCV.BackgroundImage")));
             this.pbCV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbCV.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.pbCV.Location = new System.Drawing.Point(89, 1000);
+            this.pbCV.Location = new System.Drawing.Point(90, 1121);
             this.pbCV.Name = "pbCV";
             this.pbCV.Size = new System.Drawing.Size(779, 990);
             this.pbCV.TabIndex = 4;
@@ -481,18 +648,6 @@
             this.lblTitreQSJ.TabIndex = 2;
             this.lblTitreQSJ.Text = "Qui suis-je ?";
             this.lblTitreQSJ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(428, -15);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 40;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.Visible = false;
             // 
             // FormQuiSuisJe
             // 
@@ -511,6 +666,11 @@
             this.Load += new System.EventHandler(this.FormQuiSuisJe_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -558,5 +718,20 @@
         private System.Windows.Forms.ToolTip toolTip5;
         private System.Windows.Forms.ToolTip toolTip6;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.ToolTip toolTip7;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.ToolTip toolTip8;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.ToolTip toolTip11;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.ToolTip toolTip10;
+        private System.Windows.Forms.ToolTip toolTip9;
     }
 }
