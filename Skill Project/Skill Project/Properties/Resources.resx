@@ -118,23 +118,83 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="honeycomb_grey_pattern_wallpapers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\honeycomb_grey_pattern_wallpapers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="abstract_wallpaper_by_justin_maller" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abstract_wallpaper_by_justin_maller.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CV-Developpeur-Logiciel-Application-Mobile-Dimitry-Robin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CV-Developpeur-Logiciel-Application-Mobile-Dimitry-Robin.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="addfindplayer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addfindplayer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="yuyukyuk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yuyukyuk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="infobulle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\infobulle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pendu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pendu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="formulaire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\formulaire.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="code_source1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\code_source.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="YouTube-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\YouTube-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yuyukyuk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yuyukyuk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Twitter_Logo_Hd_Png_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Twitter_Logo_Hd_Png_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="code_source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\code_source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="letter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\letter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_spots_background_abstract_73380_3840x2160" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dark_spots_background_abstract_73380_3840x2160.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="social_facebook_box_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\social_facebook_box_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unnamed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="github" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\github.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linkedin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linkedin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="viadeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\viadeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calculatrice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calculatrice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YouTube-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YouTube-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="honeycomb_grey_pattern_wallpapers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\honeycomb_grey_pattern_wallpapers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="progressbarcircular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\progressbarcircular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="github3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\github3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image_flottante" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_flottante.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Facebook-logo-png-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Facebook-logo-png-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="github2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\github2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,46 +202,31 @@
   <data name="V4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\V4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="viadeo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\viadeo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="abstract_wallpaper_by_justin_maller" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abstract_wallpaper_by_justin_maller.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Twitter_Logo_Hd_Png_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Twitter_Logo_Hd_Png_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="github3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\github3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="github" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\github.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="social_facebook_box_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\social_facebook_box_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="parametres-outils-icone-9314-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parametres-outils-icone-9314-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="github1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\github1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="parametres-outils-icone-9314-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\parametres-outils-icone-9314-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CV-Developpeur-Logiciel-Application-Mobile-Dimitry-Robin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CV-Developpeur-Logiciel-Application-Mobile-Dimitry-Robin.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="viadeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\viadeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bouton_anime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bouton_anime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="letter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\letter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="viadeo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\viadeo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dark_spots_background_abstract_73380_3840x2160" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dark_spots_background_abstract_73380_3840x2160.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bouton_anime1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bouton_anime1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="linkedin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\linkedin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="code_source2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\code_source1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Facebook-logo-png-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Facebook-logo-png-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="progressbarcircular1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\progressbarcircular1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calculatrice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calculatrice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="snake1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snake1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

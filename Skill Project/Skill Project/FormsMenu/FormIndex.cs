@@ -110,7 +110,8 @@ namespace Skill_Project
             paramètreToolStripMenuItem.BackColor = Color.Transparent;
 
             affichageToolStripMenuItem.Enabled = true;
-            listeToolStripMenuItem.Enabled = false;
+            listeToolStripMenuItem.Enabled = true;
+            miniaturesToolStripMenuItem.Enabled = false;
             sfsfToolStripMenuItem.Enabled = false;
             suggestionToolStripMenuItem.Enabled = true;
             quitterToolStripMenuItem.Enabled = true;
@@ -132,10 +133,10 @@ namespace Skill_Project
             procedure();
 
 
-            FormListe FL = new FormListe();
-            FL.MdiParent = this;
+            FormMiniature FM = new FormMiniature();
+            FM.MdiParent = this;
 
-            FL.Show();
+            FM.Show();
             
            
         }

@@ -33,12 +33,15 @@ namespace Skill_Project
             // Gestion recents
             if(provenance != "")
             {
-                listeElement[11] = listeElement[9];
-                listeElement[10] = listeElement[8];
-                listeElement[9] = listeElement[7];
-                listeElement[8] = listeElement[6];
-                listeElement[7] = dateprovenance;
-                listeElement[6] = provenance;
+                if(provenance != listeElement[6])
+                {
+                    listeElement[11] = listeElement[9];
+                    listeElement[10] = listeElement[8];
+                    listeElement[9] = listeElement[7];
+                    listeElement[8] = listeElement[6];
+                    listeElement[7] = dateprovenance;
+                    listeElement[6] = provenance;
+                }
             }
 
             // Gestion transparence
@@ -91,8 +94,7 @@ namespace Skill_Project
             writer.Close();
 
         }
-
-
+        
         public static List<string> Preference()
         {            
             StreamReader reader = File.OpenText(fileName2);

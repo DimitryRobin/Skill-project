@@ -146,6 +146,7 @@ namespace Skill_Project
             this.recent3.BackColor = System.Drawing.Color.Transparent;
             this.recent3.Name = "recent3";
             this.recent3.Click += new System.EventHandler(this.LB_Click);
+            this.recent3.MouseHover += new System.EventHandler(this.recent1_MouseHover);
             // 
             // lblDate3
             // 
@@ -159,6 +160,7 @@ namespace Skill_Project
             this.recent2.BackColor = System.Drawing.Color.Transparent;
             this.recent2.Name = "recent2";
             this.recent2.Click += new System.EventHandler(this.LB_Click);
+            this.recent2.MouseHover += new System.EventHandler(this.recent1_MouseHover);
             // 
             // lblDate2
             // 
@@ -172,6 +174,7 @@ namespace Skill_Project
             this.recent1.BackColor = System.Drawing.Color.Transparent;
             this.recent1.Name = "recent1";
             this.recent1.Click += new System.EventHandler(this.LB_Click);
+            this.recent1.MouseHover += new System.EventHandler(this.recent1_MouseHover);
             // 
             // lblDate1
             // 

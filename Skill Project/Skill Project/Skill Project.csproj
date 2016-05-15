@@ -353,6 +353,21 @@
   <ItemGroup>
     <Content Include="Langage\Projet\ProjetAnglais.txt" />
     <Content Include="Langage\Projet\ProjetFrancais.txt" />
+    <None Include="Resources\snake1.png" />
+    <None Include="Resources\progressbarcircular1.png" />
+    <None Include="Resources\code_source1.png" />
+    <None Include="Resources\bouton_anime1.png" />
+    <None Include="Resources\code_source.jpg" />
+    <None Include="Resources\snake.png" />
+    <None Include="Resources\progressbarcircular.png" />
+    <None Include="Resources\pendu.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\infobulle.png" />
+    <None Include="Resources\image_flottante.png" />
+    <None Include="Resources\formulaire.png" />
+    <None Include="Resources\code_source.png" />
+    <None Include="Resources\bouton_anime.png" />
+    <None Include="Resources\addfindplayer.png" />
     <None Include="Resources\calculatrice.png" />
     <None Include="Resources\abstract_wallpaper_by_justin_maller.jpg" />
     <None Include="Resources\letter.png" />

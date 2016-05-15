@@ -76,6 +76,11 @@
             this.cbRecherche.Size = new System.Drawing.Size(178, 26);
             this.cbRecherche.TabIndex = 56;
             this.cbRecherche.Text = "Recherchez..";
+            this.cbRecherche.SelectedIndexChanged += new System.EventHandler(this.cbRecherche_SelectedIndexChanged);
+            this.cbRecherche.TextChanged += new System.EventHandler(this.cbRecherche_TextChanged);
+            this.cbRecherche.Click += new System.EventHandler(this.cbRecherche_SelectedIndexChanged);
+            this.cbRecherche.Enter += new System.EventHandler(this.cbRecherche_Click);
+            this.cbRecherche.Leave += new System.EventHandler(this.cbRecherche_Leave);
             // 
             // lblrecherche
             // 
@@ -115,6 +120,8 @@
             this.rbZA.TabIndex = 5;
             this.rbZA.Text = "Z-A";
             this.rbZA.UseVisualStyleBackColor = true;
+            this.rbZA.CheckedChanged += new System.EventHandler(this.rbZA_CheckedChanged);
+            this.rbZA.Click += new System.EventHandler(this.rbZA_Click);
             // 
             // rbAZ
             // 
@@ -126,6 +133,8 @@
             this.rbAZ.TabIndex = 4;
             this.rbAZ.Text = "A-Z";
             this.rbAZ.UseVisualStyleBackColor = true;
+            this.rbAZ.CheckedChanged += new System.EventHandler(this.rbAZ_CheckedChanged);
+            this.rbAZ.Click += new System.EventHandler(this.rbAZ_Click);
             // 
             // rbDateAjout
             // 
@@ -134,11 +143,12 @@
             this.rbDateAjout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.rbDateAjout.Location = new System.Drawing.Point(6, 29);
             this.rbDateAjout.Name = "rbDateAjout";
-            this.rbDateAjout.Size = new System.Drawing.Size(112, 24);
+            this.rbDateAjout.Size = new System.Drawing.Size(116, 24);
             this.rbDateAjout.TabIndex = 3;
             this.rbDateAjout.TabStop = true;
-            this.rbDateAjout.Text = "Date d\'ajout";
+            this.rbDateAjout.Text = "Date / Réini.";
             this.rbDateAjout.UseVisualStyleBackColor = true;
+            this.rbDateAjout.Click += new System.EventHandler(this.rbDateAjout_Click);
             // 
             // gbRecent
             // 
@@ -180,6 +190,8 @@
             this.recent3.Size = new System.Drawing.Size(90, 16);
             this.recent3.TabIndex = 62;
             this.recent3.Text = "Nom du projet";
+            this.recent3.Click += new System.EventHandler(this.LB_Click);
+            this.recent3.MouseHover += new System.EventHandler(this.recent1_MouseHover);
             // 
             // lblDate3
             // 
@@ -204,6 +216,8 @@
             this.recent2.Size = new System.Drawing.Size(90, 16);
             this.recent2.TabIndex = 60;
             this.recent2.Text = "Nom du projet";
+            this.recent2.Click += new System.EventHandler(this.LB_Click);
+            this.recent2.MouseHover += new System.EventHandler(this.recent1_MouseHover);
             // 
             // lblDate2
             // 
@@ -228,6 +242,8 @@
             this.recent1.Size = new System.Drawing.Size(90, 16);
             this.recent1.TabIndex = 58;
             this.recent1.Text = "Nom du projet";
+            this.recent1.Click += new System.EventHandler(this.LB_Click);
+            this.recent1.MouseHover += new System.EventHandler(this.recent1_MouseHover);
             // 
             // lblDate1
             // 
@@ -266,7 +282,8 @@
             this.Name = "FormMiniature";
             this.Text = "Affichage Miniature";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Leave += new System.EventHandler(this.FormMiniature_Leave);
+            this.Load += new System.EventHandler(this.FormSkillProject_Load);
+            this.Leave += new System.EventHandler(this.FormSkillProject_Leave);
             this.gbRecherche.ResumeLayout(false);
             this.gbRecherche.PerformLayout();
             this.gbTri.ResumeLayout(false);

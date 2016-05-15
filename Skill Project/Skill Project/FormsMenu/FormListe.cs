@@ -69,13 +69,14 @@ namespace Skill_Project
                         article.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Bold);
                         date.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Italic);
                         article.Click += new EventHandler(LB_Click);
+                        article.MouseHover += new EventHandler(recent1_MouseHover);
                         // .Size = new Size(50, 50);
                         article.BackColor = Color.Transparent;
                         article.AutoSize = true;
-                        article.SetBounds(20, y, 200, 10);
+                        article.SetBounds(30, y, 200, 10);
                         date.BackColor = Color.Transparent;
                         date.AutoSize = true;
-                        date.SetBounds(20, y + 20, 200, 10);
+                        date.SetBounds(30, y + 20, 200, 10);
                         // .SetBounds(10, y, 200, 10);
                         panel1.Controls.AddRange(new Control[] { article, date });
 
@@ -90,12 +91,13 @@ namespace Skill_Project
                         article.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Bold);
                         date.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Italic);
                         article.Click += new EventHandler(LB_Click);
+                        article.MouseHover += new EventHandler(recent1_MouseHover);
                         article.BackColor = Color.Transparent;
                         article.AutoSize = true;
-                        article.SetBounds(320, yy, 200, 10);
+                        article.SetBounds(330, yy, 200, 10);
                         date.BackColor = Color.Transparent;
                         date.AutoSize = true;
-                        date.SetBounds(320, yy + 20, 200, 10);
+                        date.SetBounds(330, yy + 20, 200, 10);
                         panel1.Controls.AddRange(new Control[] { article, date });
 
                         yy = yy + 50;
@@ -109,12 +111,13 @@ namespace Skill_Project
                         article.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Bold);
                         date.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Italic);
                         article.Click += new EventHandler(LB_Click);
+                        article.MouseHover += new EventHandler(recent1_MouseHover);
                         article.BackColor = Color.Transparent;
                         article.AutoSize = true;
-                        article.SetBounds(660, yyy, 200, 10);
+                        article.SetBounds(670, yyy, 200, 10);
                         date.BackColor = Color.Transparent;
                         date.AutoSize = true;
-                        date.SetBounds(660, yyy + 20, 200, 10);
+                        date.SetBounds(670, yyy + 20, 200, 10);
                         panel1.Controls.AddRange(new Control[] { article, date });
 
                         yyy = yyy + 50;
@@ -178,13 +181,14 @@ namespace Skill_Project
                             article.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Bold);
                             date.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Italic);
                             article.Click += new EventHandler(LB_Click);
+                            article.MouseHover += new EventHandler(recent1_MouseHover);
                             // .Size = new Size(50, 50);
                             article.BackColor = Color.Transparent;
                             article.AutoSize = true;
-                            article.SetBounds(20, y, 200, 10);
+                            article.SetBounds(30, y, 200, 10);
                             date.BackColor = Color.Transparent;
                             date.AutoSize = true;
-                            date.SetBounds(20, y + 20, 200, 10);
+                            date.SetBounds(30, y + 20, 200, 10);
                             // .SetBounds(10, y, 200, 10);
                             panel1.Controls.AddRange(new Control[] { article, date });
 
@@ -204,12 +208,13 @@ namespace Skill_Project
                             article.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Bold);
                             date.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Italic);
                             article.Click += new EventHandler(LB_Click);
+                            article.MouseHover += new EventHandler(recent1_MouseHover);
                             article.BackColor = Color.Transparent;
                             article.AutoSize = true;
-                            article.SetBounds(320, yy, 200, 10);
+                            article.SetBounds(330, yy, 200, 10);
                             date.BackColor = Color.Transparent;
                             date.AutoSize = true;
-                            date.SetBounds(320, yy + 20, 200, 10);
+                            date.SetBounds(330, yy + 20, 200, 10);
                             panel1.Controls.AddRange(new Control[] { article, date });
 
                             yy = yy + 50;
@@ -227,12 +232,13 @@ namespace Skill_Project
                             article.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Bold);
                             date.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Italic);
                             article.Click += new EventHandler(LB_Click);
+                            article.MouseHover += new EventHandler(recent1_MouseHover);
                             article.BackColor = Color.Transparent;
                             article.AutoSize = true;
-                            article.SetBounds(660, yyy, 200, 10);
+                            article.SetBounds(670, yyy, 200, 10);
                             date.BackColor = Color.Transparent;
                             date.AutoSize = true;
-                            date.SetBounds(660, yyy + 20, 200, 10);
+                            date.SetBounds(670, yyy + 20, 200, 10);
                             panel1.Controls.AddRange(new Control[] { article, date });
 
                             yyy = yyy + 50;
@@ -257,6 +263,45 @@ namespace Skill_Project
             recent2.Text = Recent2;
             recent3.Text = Recent3;
 
+            if (Recent1 != "Aucun")
+            {
+                lblDate1.Text = dateRecent1;
+                recent1.Text = Recent1;
+                lblDate1.Visible = true;
+                recent1.Visible = true;
+            }
+            else
+            {
+                lblDate1.Visible = false;
+                recent1.Visible = false;
+            }
+
+            if (Recent2 != "Aucun")
+            {
+                lblDate2.Text = dateRecent2;
+                recent2.Text = Recent2;
+                lblDate2.Visible = true;
+                recent2.Visible = true;
+            }
+            else
+            {
+                lblDate2.Visible = false;
+                recent2.Visible = false;
+            }
+
+            if (Recent3 != "Aucun")
+            {
+                lblDate3.Text = dateRecent3;
+                recent3.Text = Recent3;
+                lblDate3.Visible = true;
+                recent3.Visible = true;
+            }
+            else
+            {
+                lblDate3.Visible = false;
+                recent3.Visible = false;
+            }
+
             foreach (var item in ListeProjet)
             {
                 // string[] nomProjet = item.Split(new[] { " /// " }, StringSplitOptions.None);
@@ -274,16 +319,9 @@ namespace Skill_Project
                     cbRecherche.Items.Add(result[0]);
                 }
             }
-
-            Chargement();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void treeView1_BackColorChanged(object sender, EventArgs e)
         {
 
         }
@@ -338,9 +376,9 @@ namespace Skill_Project
             }
         }
 
-        private void recent1_Click(object sender, EventArgs e)
+        private void recent1_MouseHover(object sender, EventArgs e)
         {
-
+            Cursor.Current = Cursors.Hand;
         }
 
         private void rbAZ_Click(object sender, EventArgs e)
@@ -377,7 +415,7 @@ namespace Skill_Project
                 }
             }
 
-            TriDatee = TriDatee.OrderBy(o => o).ToList();
+            TriDatee = TriDatee.OrderByDescending(o => o).ToList();
 
             int count2 = 0;
             int y = 20;
@@ -413,10 +451,10 @@ namespace Skill_Project
                         // .Size = new Size(50, 50);
                         article.BackColor = Color.Transparent;
                         article.AutoSize = true;
-                        article.SetBounds(20, y, 200, 10);
+                        article.SetBounds(30, y, 200, 10);
                         date.BackColor = Color.Transparent;
                         date.AutoSize = true;
-                        date.SetBounds(20, y + 20, 200, 10);
+                        date.SetBounds(30, y + 20, 200, 10);
                         // .SetBounds(10, y, 200, 10);
                         panel1.Controls.AddRange(new Control[] { article, date });
 
@@ -433,12 +471,13 @@ namespace Skill_Project
                         article.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Bold);
                         date.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Italic);
                         article.Click += new EventHandler(LB_Click);
+                        article.MouseHover += new EventHandler(recent1_MouseHover);
                         article.BackColor = Color.Transparent;
                         article.AutoSize = true;
-                        article.SetBounds(320, yy, 200, 10);
+                        article.SetBounds(330, yy, 200, 10);
                         date.BackColor = Color.Transparent;
                         date.AutoSize = true;
-                        date.SetBounds(320, yy + 20, 200, 10);
+                        date.SetBounds(330, yy + 20, 200, 10);
                         panel1.Controls.AddRange(new Control[] { article, date });
 
                         yy = yy + 50;
@@ -454,12 +493,13 @@ namespace Skill_Project
                         article.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Bold);
                         date.Font = new Font(police, lblrecherche.Font.SizeInPoints, FontStyle.Italic);
                         article.Click += new EventHandler(LB_Click);
+                        article.MouseHover += new EventHandler(recent1_MouseHover);
                         article.BackColor = Color.Transparent;
                         article.AutoSize = true;
-                        article.SetBounds(660, yyy, 200, 10);
+                        article.SetBounds(670, yyy, 200, 10);
                         date.BackColor = Color.Transparent;
                         date.AutoSize = true;
-                        date.SetBounds(660, yyy + 20, 200, 10);
+                        date.SetBounds(670, yyy + 20, 200, 10);
                         panel1.Controls.AddRange(new Control[] { article, date });
 
                         yyy = yyy + 50;
