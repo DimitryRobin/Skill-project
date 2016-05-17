@@ -216,6 +216,7 @@ namespace Skill_Project
             this.lblACNom1.BackColor = System.Drawing.Color.Transparent;
             this.lblACNom1.Name = "lblACNom1";
             this.lblACNom1.Click += new System.EventHandler(this.lblACNom1_Click);
+            this.lblACNom1.MouseHover += new System.EventHandler(this.lblACNom1_MouseHover);
             // 
             // lblACNom3
             // 
@@ -223,6 +224,7 @@ namespace Skill_Project
             this.lblACNom3.BackColor = System.Drawing.Color.Transparent;
             this.lblACNom3.Name = "lblACNom3";
             this.lblACNom3.Click += new System.EventHandler(this.lblACNom1_Click);
+            this.lblACNom3.MouseHover += new System.EventHandler(this.lblACNom1_MouseHover);
             // 
             // lblACNom2
             // 
@@ -230,6 +232,7 @@ namespace Skill_Project
             this.lblACNom2.BackColor = System.Drawing.Color.Transparent;
             this.lblACNom2.Name = "lblACNom2";
             this.lblACNom2.Click += new System.EventHandler(this.lblACNom1_Click);
+            this.lblACNom2.MouseHover += new System.EventHandler(this.lblACNom1_MouseHover);
             // 
             // FormIndex
             // 

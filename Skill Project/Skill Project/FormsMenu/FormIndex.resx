@@ -10050,6 +10050,33 @@
   <data name="menuStrip1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>984, 30</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
   <data name="quitterToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -10132,6 +10159,18 @@ Blabla
 Blabla
 v</value>
   </data>
+  <data name="affichageToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="affichageToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="affichageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 26</value>
+  </data>
+  <data name="affichageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Affichage ≣</value>
+  </data>
   <data name="listeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>199, 26</value>
   </data>
@@ -10149,45 +10188,6 @@ v</value>
   </data>
   <data name="arborescenceToolStripMenuItem.Text" xml:space="preserve">
     <value>Arborescence ⊶</value>
-  </data>
-  <data name="affichageToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="affichageToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Palatino Linotype, 12pt, style=Bold</value>
-  </data>
-  <data name="affichageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 26</value>
-  </data>
-  <data name="affichageToolStripMenuItem.Text" xml:space="preserve">
-    <value>Affichage ≣</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>984, 30</value>
-  </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>7</value>
   </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
