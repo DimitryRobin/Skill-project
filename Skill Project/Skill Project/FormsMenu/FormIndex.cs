@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -18,6 +19,8 @@ namespace Skill_Project
         private string test;
         public int nb = 0;
         public int para = 0; // 0, 1, 2, 3, 4, 5, 6
+
+        List<string> LangueElement = new List<string>();
 
         public MenuStrip MyMenu
         {
@@ -337,7 +340,7 @@ namespace Skill_Project
             suggestionToolStripMenuItem.BackColor = Color.Transparent;
             paramètreToolStripMenuItem.BackColor = Color.Transparent;
 
-            MessageBox.Show("Merci d'avoir utilisé Skill Project ☺\nÀ bientôt !", "Déconnexion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(LangueElement[16] + "\n" + LangueElement[17], LangueElement[18], MessageBoxButtons.OK, MessageBoxIcon.Information);
             
             affichageToolStripMenuItem.Enabled = false;
             sfsfToolStripMenuItem.Enabled = true;
@@ -497,7 +500,6 @@ namespace Skill_Project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
             string curFile = @"C:\SkillProject\Preferences_SkillProject.txt";
 
             if (File.Exists(curFile))
@@ -514,6 +516,31 @@ namespace Skill_Project
 
             para = 0;
             accesRapide();
+
+            Fonction.policeTexte(this); // Gestion police
+
+            LangueElement = Fonction.LangageAppli();
+            affichageToolStripMenuItem.Text = LangueElement[2];
+            listeToolStripMenuItem.Text = LangueElement[3];
+            miniaturesToolStripMenuItem.Text = LangueElement[4];
+            ArborescenceToolStripMenuItem.Text = LangueElement[5];
+            suggestionToolStripMenuItem.Text = LangueElement[6];
+            QuiSommesNousToolStripMenuItem.Text = LangueElement[7];
+            commentÇaMarcheToolStripMenuItem.Text = LangueElement[8];
+            AfficToolStripMenuItem.Text = LangueElement[9];
+            paramètreToolStripMenuItem.Text = LangueElement[10];
+            QuitterToolStripMenuItem.Text = LangueElement[11];
+            lblAccesRapide.Text = LangueElement[15];
+
+            if (quitterToolStripMenuItem.Text == "Exit ➬")
+            {
+                quitterToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 2, 0);
+                paramètreToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 2, 0);
+                AfficToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 2, 0);
+                commentÇaMarcheToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 2, 0);
+                QuiSommesNousToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 2, 0);
+                suggestionToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 2, 0);
+            }
         }
 
         private void FormIndex_FormClosed(object sender, FormClosedEventArgs e)

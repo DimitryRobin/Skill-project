@@ -1,0 +1,47 @@
+﻿// Menu : 2-11
+
+Viewing ≣
+List ⊷
+Thumbnails ⊶
+Tree view ⊶
+Suggestion ✎
+Who am I ? ☝
+About ✍
+Donate ＄
+Settings ⛮
+Exit ➬
+
+// Form Index : 15-18
+
+Quick access
+Thank you for having used Skill Project ☺
+See you soon !
+Logout
+
+// Form Suggestion : 22-42
+
+Suggestion
+Make a Suggestion
+Here you can suggest me to realize out anything which is not yet in this software.
+This can be a competency, an accessory, game or something else.
+I will reply to your message, by email, about the possibility to realize of your project or not.
+Name
+First name
+Mail address
+Age :
+Sex :
+Write your suggestion ..
+Back
+Date && Hour
+Message sent successfully
+Send
+Required fields
+Age required
+Sex required
+Error in the shipment : 
+Error
+You must enter a string !
+
+
+
+

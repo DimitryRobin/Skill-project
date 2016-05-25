@@ -21,6 +21,8 @@ namespace Skill_Project
 
         private void FormFaireUnDon_Load(object sender, EventArgs e)
         {
+            Fonction.policeTexte(this); // Gestion police
+
             label1.Text = "Derrière cette application, beaucoup de ressources ont été épuisées et des centaines\nd'heures se sont déroulées afin de vous rendre un travail de qualité.\nAppréciez le boulot fournis et Soutenez Skill project en effectuant un don.";
             radioButton1.Select();
 
@@ -29,13 +31,13 @@ namespace Skill_Project
             btnRetourFUD.Location = new Point(430, 470);
             webBrowser1.Visible = false;
 
-            webBrowser1.Navigate("https://www.paypal.com/fr/cgi-bin/webscr?cmd=_flow&SESSION=pC7KUR60wFW2hrWorWOreFZUtSdZa-AYcNMt7FlfJtHnSo4wl48-B3W00h8&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2");
+            webBrowser1.Navigate("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XW7DWPCENB2C8");
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "https://www.paypal.com/fr/cgi-bin/webscr?cmd=_flow&SESSION=pC7KUR60wFW2hrWorWOreFZUtSdZa-AYcNMt7FlfJtHnSo4wl48-B3W00h8&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2";
+            p.StartInfo.FileName = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XW7DWPCENB2C8";
             p.Start();
 
             radioButton1.Select();

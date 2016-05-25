@@ -1,15 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
+using System.Net;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
-
 
 namespace Skill_Project
 {
@@ -25,6 +21,8 @@ namespace Skill_Project
         public int click3 = 0;
         public int click4 = 0;
         public string sexe;
+
+        List<string> LangueElement = new List<string>();
 
         public FormSuggestion()
         {
@@ -90,7 +88,7 @@ namespace Skill_Project
 
                 tbPrénom.ForeColor = Color.DarkGray;
                 tbPrénom.Cursor = Default;
-                tbPrénom.Text = "Prénom";
+                tbPrénom.Text = LangueElement[28];
                 click3 = 0;
             }
 
@@ -101,7 +99,7 @@ namespace Skill_Project
                 rtbSuggestion.ForeColor = Color.DarkGray;
 
                 rtbSuggestion.Cursor = Default;
-                rtbSuggestion.Text = "Rédigez votre suggestion..";
+                rtbSuggestion.Text = LangueElement[32];
                 click2 = 0;
             }
 
@@ -112,7 +110,7 @@ namespace Skill_Project
                 tbMail.ForeColor = Color.DarkGray;
 
                 tbMail.Cursor = Default;
-                tbMail.Text = "Adresse Mail";
+                tbMail.Text = LangueElement[29];
                 click4 = 0;
             }
         }
@@ -155,7 +153,7 @@ namespace Skill_Project
                 tbNom.ForeColor = Color.DarkGray;
 
                 tbNom.Cursor = Default;
-                tbNom.Text = "Nom";
+                tbNom.Text = LangueElement[27];
                 click = 0;
             }
 
@@ -166,7 +164,7 @@ namespace Skill_Project
                 rtbSuggestion.ForeColor = Color.DarkGray;
 
                 rtbSuggestion.Cursor = Default;
-                rtbSuggestion.Text = "Rédigez votre suggestion..";
+                rtbSuggestion.Text = LangueElement[32];
                 click2 = 0;
             }
 
@@ -177,7 +175,7 @@ namespace Skill_Project
                 tbMail.ForeColor = Color.DarkGray;
 
                 tbMail.Cursor = Default;
-                tbMail.Text = "Adresse Mail";
+                tbMail.Text = LangueElement[29];
                 click4 = 0;
             }
         }
@@ -192,7 +190,7 @@ namespace Skill_Project
                     rtbSuggestion.ForeColor = Color.DarkGray;
 
                     rtbSuggestion.Cursor = Default;
-                    rtbSuggestion.Text = "Rédigez votre suggestion..";
+                    rtbSuggestion.Text = LangueElement[32];
                     click2 = 0;
                 }
             }
@@ -206,7 +204,7 @@ namespace Skill_Project
 
         private void rtbSuggestion_Click(object sender, EventArgs e)
         {
-            if(rtbSuggestion.Text == "Rédigez votre suggestion..")
+            if(rtbSuggestion.Text == LangueElement[32])
             {
                 rtbSuggestion.Clear();
             }
@@ -232,7 +230,7 @@ namespace Skill_Project
                 tbNom.ForeColor = Color.DarkGray;
 
                 tbNom.Cursor = Default;
-                tbNom.Text = "Nom";
+                tbNom.Text = LangueElement[27];
                 click = 0;
             }
 
@@ -242,7 +240,7 @@ namespace Skill_Project
                 tbPrénom.Clear();
                 tbPrénom.ForeColor = Color.DarkGray;
                 tbPrénom.Cursor = Default;
-                tbPrénom.Text = "Prénom";
+                tbPrénom.Text = LangueElement[28];
                 click3 = 0;
             }
 
@@ -253,13 +251,36 @@ namespace Skill_Project
                 tbMail.ForeColor = Color.DarkGray;
 
                 tbMail.Cursor = Default;
-                tbMail.Text = "Adresse Mail";
+                tbMail.Text = LangueElement[29];
                 click4 = 0;
             }
         }
 
         private void FormSuggestion_Load(object sender, EventArgs e)
         {
+            LangueElement = Fonction.LangageAppli();
+            this.Text = LangueElement[22];
+            lblTitreSuggestion.Text = LangueElement[23];
+            lblInfoSuggesstion.Text = LangueElement[24];
+            lblInfo2Suggestion.Text = LangueElement[25];
+            lblInfo3Suggestion.Text = LangueElement[26];
+            tbNom.Text = LangueElement[27];
+            tbPrénom.Text = LangueElement[28];
+            tbMail.Text = LangueElement[29];
+            lblAge.Text = LangueElement[30];
+            lblSexe.Text = LangueElement[31];
+            rtbSuggestion.Text = LangueElement[32];
+            btnRetourSuggestion.Text = LangueElement[33];
+            lblDate2.Text = LangueElement[34];
+            lblDate.Text = LangueElement[35];
+            btnEnvoyerSuggestion.Text = LangueElement[36];
+
+            toolTip1.ToolTipTitle = LangueElement[37];
+            toolTip3.ToolTipTitle = LangueElement[38];
+            toolTip4.ToolTipTitle = LangueElement[39];
+
+
+            Fonction.policeTexte(this); // Gestion police
             timer1.Start();
         }
 
@@ -270,15 +291,15 @@ namespace Skill_Project
             tbDate2.Clear();
             tbDate2.Text = DateTime.Now.ToString();
 
-            if (tbNom.Text == "" || tbNom.Text == "Nom")
+            if (tbNom.Text == "" || tbNom.Text == LangueElement[27])
             {
                 toolTip1.Show(toolTip1.GetToolTip(tbNom), tbNom, durationMilliseconds);
             }
-            if(tbPrénom.Text == "" || tbPrénom.Text == "Prénom")
+            if(tbPrénom.Text == "" || tbPrénom.Text == LangueElement[28])
             {
                 toolTip2.Show(toolTip2.GetToolTip(tbPrénom), tbPrénom, durationMilliseconds);
             }
-            if (tbMail.Text == "" || tbMail.Text == "Adresse Mail")
+            if (tbMail.Text == "" || tbMail.Text == LangueElement[29])
             {
                 toolTip6.Show(toolTip6.GetToolTip(tbMail), tbMail, durationMilliseconds);
             }
@@ -290,14 +311,14 @@ namespace Skill_Project
             {
                 toolTip4.Show(toolTip4.GetToolTip(rbF), rbF, durationMilliseconds);
             }
-            if (rtbSuggestion.Text == "" || rtbSuggestion.Text == "Rédigez votre suggestion..")
+            if (rtbSuggestion.Text == "" || rtbSuggestion.Text == LangueElement[32])
             {
                 toolTip5.Show(toolTip5.GetToolTip(rtbSuggestion), rtbSuggestion, durationMilliseconds);
             }
 
             // envoie
 
-            if (tbMail.Text != "" && tbMail.Text != "Adresse Mail" && tbNom.Text != "" && tbNom.Text != "Nom" && tbPrénom.Text != "" && tbPrénom.Text != "Prénom" && nudAge.Value != 0 && rbF.Checked == true && rtbSuggestion.Text != "" && rtbSuggestion.Text != "Rédigez votre suggestion..")
+            if (tbMail.Text != "" && tbMail.Text != LangueElement[29] && tbNom.Text != "" && tbNom.Text != LangueElement[27] && tbPrénom.Text != "" && tbPrénom.Text != LangueElement[28] && nudAge.Value != 0 && rbF.Checked == true && rtbSuggestion.Text != "" && rtbSuggestion.Text != LangueElement[32])
             {
                 tbDate2.Visible = false;
                 lblDate2.Visible = false;
@@ -320,22 +341,35 @@ namespace Skill_Project
                 {
                     sexe = "Homme";
                 }
+                
 
+                // MailAddress from = new MailAddress("tirdimpact@yahoo.com");
                 MailAddress from = new MailAddress("skillproject@hotmail.com");
-                MailAddress to = new MailAddress("dimy@hotmail.fr");
+                MailAddress to = new MailAddress("tirdimpact@yahoo.com");
+                // MailAddress to = new MailAddress("dimy@hotmail.fr");
+
                 MailMessage email = new MailMessage(from, to);
                 email.Subject = "Suggestion Skill Project";
                 email.Body = "Date & Heure : " + tbDate2.Text + "\n\nNom : " + tbNom.Text + ".\nPrénom : " + tbPrénom.Text + ".\n\nEmail : " + tbMail.Text + ".\n\nAge : " + nudAge.Value + ".\nSexe : " + sexe + ".\n\n\nSuggestion :\n\n " + rtbSuggestion.Text;
+                // SmtpClient client = new SmtpClient("smtp.mail.yahoo.com");
                 SmtpClient client = new SmtpClient("smtp.live.com");
+                // SmtpClient client = new SmtpClient("smtp.gmail.com");
                 client.Port = 587;
+                // client.Port = 465;
                 #region Confidentiel
+                // client.Credentials = new System.Net.NetworkCredential("tirdimpact@yahoo.com", "Dimtchek12");
                 client.Credentials = new System.Net.NetworkCredential("skillproject@hotmail.com", "Dimtchek12");
                 #endregion
                 client.EnableSsl = true;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                // client.UseDefaultCredentials = true;
+
 
                 try
                 {
                     client.Send(email);
+                    //smtp.Send(message);
+
                     pbSuggestion.Visible = false;
 
                     tbNom.Clear();
@@ -357,11 +391,12 @@ namespace Skill_Project
 
                 catch (SmtpException ex)
                 {
-                    MessageBox.Show("Erreur dans l'envoi : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(LangueElement[40] + ex.Message, LangueElement[41], MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    pbSuggestion.Visible = false;
                 }
             }
 
-            if (tbMail.Text != "" && tbMail.Text != "Adresse Mail" && tbNom.Text != "" && tbNom.Text != "Nom" && tbPrénom.Text != "" && tbPrénom.Text != "Prénom" && nudAge.Value != 0 && rbM.Checked == true && rtbSuggestion.Text != "" && rtbSuggestion.Text != "Rédigez votre suggestion..")
+            if (tbMail.Text != "" && tbMail.Text != LangueElement[29] && tbNom.Text != "" && tbNom.Text != LangueElement[27] && tbPrénom.Text != "" && tbPrénom.Text != LangueElement[28] && nudAge.Value != 0 && rbM.Checked == true && rtbSuggestion.Text != "" && rtbSuggestion.Text != LangueElement[32])
             {
                 tbDate2.Visible = false;
                 lblDate2.Visible = false;
@@ -385,18 +420,27 @@ namespace Skill_Project
                 {
                     sexe = "Homme";
                 }
-
+                
+                // MailAddress from = new MailAddress("tirdimpact@yahoo.com");
                 MailAddress from = new MailAddress("skillproject@hotmail.com");
-                MailAddress to = new MailAddress("dimy@hotmail.fr");
+                MailAddress to = new MailAddress("tirdimpact@yahoo.com");
+                // MailAddress to = new MailAddress("dimy@hotmail.fr");
+
                 MailMessage email = new MailMessage(from, to);
                 email.Subject = "Suggestion Skill Project";
                 email.Body = "Date & Heure : " + tbDate2.Text + "\n\nNom : " + tbNom.Text + ".\nPrénom : " + tbPrénom.Text + ".\n\nEmail : " + tbMail.Text + ".\n\nAge : " + nudAge.Value + ".\nSexe : " + sexe + ".\n\n\nSuggestion :\n\n " + rtbSuggestion.Text;
+                // SmtpClient client = new SmtpClient("smtp.mail.yahoo.com");
                 SmtpClient client = new SmtpClient("smtp.live.com");
+                // SmtpClient client = new SmtpClient("smtp.gmail.com");
                 client.Port = 587;
+                // client.Port = 465;
                 #region Confidentiel
+                // client.Credentials = new System.Net.NetworkCredential("tirdimpact@yahoo.com", "Dimtchek12");
                 client.Credentials = new System.Net.NetworkCredential("skillproject@hotmail.com", "Dimtchek12");
                 #endregion
                 client.EnableSsl = true;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                // client.UseDefaultCredentials = true;
 
                 try
                 {
@@ -422,7 +466,8 @@ namespace Skill_Project
 
                 catch (SmtpException ex)
                 {
-                    MessageBox.Show("Erreur dans l'envoi : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(LangueElement[40] + ex.Message, LangueElement[41], MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    pbSuggestion.Visible = false;
                 }
             }
         }
@@ -479,7 +524,7 @@ namespace Skill_Project
                 tbNom.ForeColor = Color.DarkGray;
 
                 tbNom.Cursor = Default;
-                tbNom.Text = "Nom";
+                tbNom.Text = LangueElement[27];
                 click = 0;
             }
 
@@ -490,7 +535,7 @@ namespace Skill_Project
                 rtbSuggestion.ForeColor = Color.DarkGray;
 
                 rtbSuggestion.Cursor = Default;
-                rtbSuggestion.Text = "Rédigez votre suggestion..";
+                rtbSuggestion.Text = LangueElement[32];
                 click2 = 0;
             }
 
@@ -500,7 +545,7 @@ namespace Skill_Project
                 tbPrénom.Clear();
                 tbPrénom.ForeColor = Color.DarkGray;
                 tbPrénom.Cursor = Default;
-                tbPrénom.Text = "Prénom";
+                tbPrénom.Text = LangueElement[28];
                 click3 = 0;
             }
         }
@@ -514,7 +559,7 @@ namespace Skill_Project
         {
             if (e.KeyCode == Keys.NumPad0 || e.KeyCode == Keys.NumPad1 || e.KeyCode == Keys.NumPad2 || e.KeyCode == Keys.NumPad3 || e.KeyCode == Keys.NumPad4 || e.KeyCode == Keys.NumPad5 || e.KeyCode == Keys.NumPad6 || e.KeyCode == Keys.NumPad7 || e.KeyCode == Keys.NumPad8 || e.KeyCode == Keys.NumPad9)
             {
-                MessageBox.Show("Vous devez entrer une chaîne de caractère !", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show(LangueElement[42], LangueElement[41], MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 tbNom.Clear();
             }
         }
@@ -523,53 +568,53 @@ namespace Skill_Project
         {
             if (e.KeyCode == Keys.NumPad0 || e.KeyCode == Keys.NumPad1 || e.KeyCode == Keys.NumPad2 || e.KeyCode == Keys.NumPad3 || e.KeyCode == Keys.NumPad4 || e.KeyCode == Keys.NumPad5 || e.KeyCode == Keys.NumPad6 || e.KeyCode == Keys.NumPad7 || e.KeyCode == Keys.NumPad8 || e.KeyCode == Keys.NumPad9)
             {
-                MessageBox.Show("Vous devez entrer une chaîne de caractère !", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show(LangueElement[42], LangueElement[41], MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 tbPrénom.Clear();
             }
         }
 
         private void tbNom_Leave(object sender, EventArgs e)
         {
-            if(tbNom.Text == "Nom" || tbNom.Text == "" || tbNom.Text == " ")
+            if(tbNom.Text == LangueElement[27] || tbNom.Text == "" || tbNom.Text == " ")
             {
                 tbNom.ForeColor = Color.DarkGray;
 
                 tbNom.Cursor = Default;
-                tbNom.Text = "Nom";
+                tbNom.Text = LangueElement[27];
             }
         }
 
         private void tbPrénom_Leave(object sender, EventArgs e)
         {
-            if (tbPrénom.Text == "Prénom" || tbPrénom.Text == "" || tbPrénom.Text == " ")
+            if (tbPrénom.Text == LangueElement[28] || tbPrénom.Text == "" || tbPrénom.Text == " ")
             {
                 tbPrénom.ForeColor = Color.DarkGray;
 
                 tbPrénom.Cursor = Default;
-                tbPrénom.Text = "Prénom";
+                tbPrénom.Text = LangueElement[28];
             }
         }
 
         private void tbMail_Leave(object sender, EventArgs e)
         {
 
-            if (tbMail.Text == "Adresse Mail" || tbMail.Text == "" || tbMail.Text == " ")
+            if (tbMail.Text == LangueElement[29] || tbMail.Text == "" || tbMail.Text == " ")
             {
                 tbMail.ForeColor = Color.DarkGray;
 
                 tbMail.Cursor = Default;
-                tbMail.Text = "Adresse Mail";
+                tbMail.Text = LangueElement[29];
             }
         }
 
         private void rtbSuggestion_Leave(object sender, EventArgs e)
         {
-            if (rtbSuggestion.Text == "Rédigez votre suggestion.." || rtbSuggestion.Text == "" || rtbSuggestion.Text == " ")
+            if (rtbSuggestion.Text == LangueElement[32] || rtbSuggestion.Text == "" || rtbSuggestion.Text == " ")
             {
                 rtbSuggestion.ForeColor = Color.DarkGray;
 
                 rtbSuggestion.Cursor = Default;
-                rtbSuggestion.Text = "Rédigez votre suggestion..";
+                rtbSuggestion.Text = LangueElement[32];
             }
         }
 
@@ -591,6 +636,26 @@ namespace Skill_Project
         private void timer1_Tick(object sender, EventArgs e)
         {
             tbDate2.Text = DateTime.Now.ToString();
+        }
+
+        private void FormSuggestion_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormSuggestion_Activated(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void FormSuggestion_DragEnter(object sender, DragEventArgs e)
+        {
+
+        }
+
+        private void FormSuggestion_MouseHover(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,6 +14,8 @@ namespace Skill_Project
     class Fonction
     {
         public static string fileName2 = @"C:\SkillProject\Preferences_SkillProject.txt";
+        public static string family = "Palatino Linotype";
+        public static string FichierLangue = "";
 
         public static void ecrireFichier(string transparence, string BoiteMessage, string Police, string InformationsDefilantes, string Langue, string Tutoriel, string provenance, string dateprovenance)
         {
@@ -28,10 +31,10 @@ namespace Skill_Project
             }
             reader.Close();
 
-            // Debut MAJ
+            //// Debut MAJ \\\\
 
             // Gestion recents
-            if(provenance != "")
+            if (provenance != "")
             {
                 if(provenance != listeElement[6])
                 {
@@ -81,7 +84,7 @@ namespace Skill_Project
             }
 
 
-            // Fin MAJ
+            //// Fin MAJ \\\\
 
             // on renvoie tout
 
@@ -95,7 +98,7 @@ namespace Skill_Project
 
         }
         
-        public static List<string> Preference()
+        public static List<string> Preference() // Retourne toutes les préférences sous form List
         {            
             StreamReader reader = File.OpenText(fileName2);
             string ligne;
@@ -121,7 +124,7 @@ namespace Skill_Project
             return listeElement;
         }
 
-        public static List<string> LectureProjet()
+        public static List<string> LectureProjet() // Retourne les lignes du fichier de langue choisit pour les projets 
         {
             List<string> ListeProjet = new List<string>();
             List<string> Langue = new List<string>();
@@ -145,7 +148,7 @@ namespace Skill_Project
             return ListeProjet;
         }
 
-        public static void creationFichier()
+        public static void creationFichier() // Créé fichier si existe pas
         {
             string folderName = @"c:\";
             string pathString = System.IO.Path.Combine(folderName, "SkillProject");
@@ -185,14 +188,14 @@ namespace Skill_Project
             System.IO.File.WriteAllLines(@"C:\SkillProject\Preferences_SkillProject.txt", lines);
         }
 
-        public static string[] lireFichier()
+        public static string[] lireFichier() // Lit les préférences et retourne sous form string
         {
             string[] lines = System.IO.File.ReadAllLines(@"C:\SkillProject\Preferences_SkillProject.txt");
 
             return lines;
         }
 
-        public static int InputBox(string title, string promptText)
+        public static int InputBox(string title, string promptText) // Affichage de boîte information qui se ferme toute seule
         {
             Form form = new Form();
             LinkLabel texte = new LinkLabel();
@@ -234,6 +237,145 @@ namespace Skill_Project
                 form.Close();
 
             return Res;
+        }
+
+        public static void policeTexte(System.Windows.Forms.Form Frm) // Gestion de la police de l'appli
+        {
+            List<string> Policetext = new List<string>();
+            Policetext = Preference();
+
+            if (Policetext[2] != family)
+            {
+                try
+                {
+                    foreach (Control x in Frm.Controls)
+                    {
+                        // MessageBox.Show(x.ToString());
+
+                        if (x is TextBox || x is RichTextBox || x is Label || x is Button || x is GroupBox || x is ListBox || x is DataGridView || x is ComboBox || x is CheckBox
+                            || x is RadioButton || x is TreeView || x is NumericUpDown)
+                        {
+                            x.Font = new Font(Policetext[2], x.Font.SizeInPoints, x.Font.Style);
+                        }
+
+                        // Panel
+                        if (x is Panel)
+                        {
+                            foreach (Control c in x.Controls)
+                            {
+                                c.Font = new Font(Policetext[2], c.Font.SizeInPoints, c.Font.Style);
+                            }
+                        }
+
+                        // GroupBox
+                        if (x is GroupBox)
+                        {
+                            foreach (Control c in x.Controls)
+                            {
+                                c.Font = new Font(Policetext[2], c.Font.SizeInPoints, c.Font.Style);
+                            }
+                        }
+
+                    }
+                }
+                catch
+                {
+                    foreach (Control x in Frm.Controls)
+                    {
+                        if (x is TextBox || x is RichTextBox || x is Label || x is Button || x is GroupBox || x is ListBox || x is DataGridView || x is ComboBox || x is CheckBox
+                            || x is RadioButton || x is TreeView || x is NumericUpDown)
+                        {
+                            x.Font = new Font(family, x.Font.SizeInPoints, x.Font.Style);
+                        }
+
+                        // Panel
+                        if (x is Panel)
+                        {
+                            foreach (Control c in x.Controls)
+                            {
+                                c.Font = new Font(family, c.Font.SizeInPoints, c.Font.Style);
+                            }
+                        }
+
+                        // GroupBox
+                        if (x is GroupBox)
+                        {
+                            foreach (Control c in x.Controls)
+                            {
+                                c.Font = new Font(family, c.Font.SizeInPoints, c.Font.Style);
+                            }
+                        }
+                    }
+                }
+            }
+            else
+            {
+                foreach (Control x in Frm.Controls)
+                {
+                    if (x is TextBox || x is RichTextBox || x is Label || x is Button || x is GroupBox || x is ListBox || x is DataGridView || x is ComboBox || x is CheckBox
+                            || x is RadioButton || x is TreeView || x is NumericUpDown)
+                    {
+                        x.Font = new Font(family, x.Font.SizeInPoints, x.Font.Style);
+                    }
+
+                    // Panel
+                    if (x is Panel)
+                    {
+                        foreach (Control c in x.Controls)
+                        {
+                            c.Font = new Font(family, c.Font.SizeInPoints, c.Font.Style);
+                        }
+                    }
+
+                    // GroupBox
+                    if (x is GroupBox)
+                    {
+                        foreach (Control c in x.Controls)
+                        {
+                            c.Font = new Font(family, c.Font.SizeInPoints, c.Font.Style);
+                        }
+                    }
+                }
+            }
+
+            /*
+            // Récupération de toutes les "forms" de l'application
+            Assembly asm = Assembly.GetExecutingAssembly();
+            
+            // Parcours de tous les types de l'assembly
+            foreach (Type t in asm.GetTypes())
+            {
+                // Il s'agit d'une form
+                if (t.BaseType == typeof(Form))
+                {
+                    
+                }
+            }
+            */
+        }
+
+        public static List<string> LangageAppli() // Retourne une liste contenant toutes les lignes du fichier de langue approprié
+        {
+            List<string> listeElement = new List<string>();
+            listeElement = Preference();
+
+            List<string> LangueElement = new List<string>();
+
+            // string fileName = @"Langage\"+ listeElement[4]; // Une fois publié
+            string fileName3 = @"..\..\Langage\"+ listeElement[4];
+
+
+            StreamReader reader = File.OpenText(fileName3);
+            string ligne;
+
+            while (!reader.EndOfStream)
+            {
+                ligne = reader.ReadLine();
+                LangueElement.Add(ligne);
+            }
+            reader.Close();
+
+            return (LangueElement);
         }
     }
 }

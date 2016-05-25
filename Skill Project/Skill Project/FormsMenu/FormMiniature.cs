@@ -15,6 +15,7 @@ namespace Skill_Project
     {
         List<string> ListeProjet = new List<string>();
         List<string> Preference = new List<string>();
+        List<string> Destination = new List<string>();
 
         string police;
         string dateRecent1, Recent1, dateRecent2, Recent2, dateRecent3, Recent3;
@@ -224,6 +225,8 @@ namespace Skill_Project
 
         private void FormSkillProject_Load(object sender, EventArgs e)
         {
+            Fonction.policeTexte(this); // Gestion police
+
             cbRecherche.Items.Clear();
 
             lblDate1.Text = dateRecent1;
@@ -277,7 +280,7 @@ namespace Skill_Project
                 // string[] nomProjet = item.Split(new[] { " /// " }, StringSplitOptions.None);
 
                 string[] result = Regex.Split(item, @"\-\-\-");
-
+                
                 if (result[0].Length > 25)
                 {
                     string res = result[0].Substring(0, 25);
@@ -288,6 +291,8 @@ namespace Skill_Project
                 {
                     cbRecherche.Items.Add(result[0]);
                 }
+
+                Destination.Add(result[0]);
             }
         }
 
@@ -340,6 +345,7 @@ namespace Skill_Project
 
         private void cbRecherche_TextChanged(object sender, EventArgs e)
         {
+            /*
             if (cbRecherche.Text != "" || cbRecherche.Text != "Recherchez..")
             {
                 Chargement();
@@ -349,6 +355,9 @@ namespace Skill_Project
             {
                 Chargement();
             }
+            */
+
+            Chargement();
         }
 
         private void recent1_Click(object sender, EventArgs e)
@@ -496,16 +505,10 @@ namespace Skill_Project
 
             string dt = DateTime.Today.ToShortDateString();
 
-            foreach (var item in ListeProjet)
-            {
-                // string[] nomProjet = item.Split(new[] { " /// " }, StringSplitOptions.None);
+            // MessageBox.Show(lbl.Text);
+            // MessageBox.Show(Destination[0].ToString());
 
-                string[] result = Regex.Split(item, @"\-\-\-");
-
-                Item2.Add(result[0]);
-            }
-
-            if (lbl.Text == Item2[0])
+            if (lbl.Text == Destination[0].ToString())
             {
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
@@ -515,17 +518,7 @@ namespace Skill_Project
                 FPC.Show();
             }
 
-            if (lbl.Text == Item2[7])
-            {
-                Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
-
-                FormIndex form = (FormIndex)this.MdiParent;
-                FormsCompetence.FormProjetAddFindPlayer FPC = new FormsCompetence.FormProjetAddFindPlayer();
-                FPC.MdiParent = form;
-                FPC.Show();
-            }
-
-            if (lbl.Text == Item2[1])
+            if (lbl.Text == Destination[1].ToString())
             {
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
@@ -535,7 +528,7 @@ namespace Skill_Project
                 FPC.Show();
             }
 
-            if (lbl.Text == Item2[2])
+            if (lbl.Text == Destination[2].ToString())
             {
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
@@ -544,7 +537,8 @@ namespace Skill_Project
                 FPC.MdiParent = form;
                 FPC.Show();
             }
-            if (lbl.Text == Item2[3])
+
+            if (lbl.Text == Destination[3].ToString())
             {
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
@@ -553,8 +547,7 @@ namespace Skill_Project
                 FPC.MdiParent = form;
                 FPC.Show();
             }
-
-            if (lbl.Text == Item2[4])
+            if (lbl.Text == Destination[4].ToString())
             {
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
@@ -564,7 +557,7 @@ namespace Skill_Project
                 FPC.Show();
             }
 
-            if (lbl.Text == Item2[5])
+            if (lbl.Text == Destination[5].ToString())
             {
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
@@ -574,7 +567,7 @@ namespace Skill_Project
                 FPC.Show();
             }
 
-            if (lbl.Text == Item2[6])
+            if (lbl.Text == Destination[6].ToString())
             {
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
@@ -584,7 +577,17 @@ namespace Skill_Project
                 FPC.Show();
             }
 
-            if (lbl.Text == Item2[8])
+            if (lbl.Text == Destination[7].ToString())
+            {
+                Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
+
+                FormIndex form = (FormIndex)this.MdiParent;
+                FormsCompetence.FormProjetAddFindPlayer FPC = new FormsCompetence.FormProjetAddFindPlayer();
+                FPC.MdiParent = form;
+                FPC.Show();
+            }
+
+            if (lbl.Text == Destination[8].ToString())
             {
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
@@ -594,7 +597,7 @@ namespace Skill_Project
                 FPC.Show();
             }
 
-            if (lbl.Text == Item2[9])
+            if (lbl.Text == Destination[9].ToString())
             {
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
@@ -604,7 +607,7 @@ namespace Skill_Project
                 FPC.Show();
             }
 
-            if (lbl.Text == Item2[10])
+            if (lbl.Text == Destination[10].ToString())
             {
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 

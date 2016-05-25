@@ -369,8 +369,12 @@
             this.Name = "FormSuggestion";
             this.Text = "Suggestion";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Activated += new System.EventHandler(this.FormSuggestion_Activated);
             this.Load += new System.EventHandler(this.FormSuggestion_Load);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.FormSuggestion_DragEnter);
+            this.Enter += new System.EventHandler(this.FormSuggestion_Enter);
             this.Leave += new System.EventHandler(this.FormSuggestion_Leave);
+            this.MouseHover += new System.EventHandler(this.FormSuggestion_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

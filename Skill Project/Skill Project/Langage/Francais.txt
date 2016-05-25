@@ -1,0 +1,48 @@
+﻿// Menu : 2-11
+
+Affichage ≣
+Liste ⊷
+Miniatures ⊶
+Arborescence ⊶
+Suggestion ✎
+Qui suis-je ? ☝
+À propos ✍
+Faire un don ＄
+Paramètre ⛮
+Quitter ➬
+
+// Form Index : 15-18
+
+Accès rapide
+Merci d'avoir utilisé Skill Project ☺
+À bientôt !
+Déconnexion
+
+// Form Suggestion : 22-42
+
+Suggestion
+Faire une Suggestion
+Ici, vous pouvez me proposer de réaliser quoique ce soit qui ne fait pas encore partit de ce logiciel.
+Cela peut-être une compétence, un accessoire, un jeu ou bien autre chose.
+Je répondrai à votre message, par mail, quant à la possibilité de réaliser votre projet ou non.
+Nom
+Prénom
+Adresse Mail
+Âge :
+Sexe :
+Rédigez votre suggestion..
+Retour
+Date && Heure
+Message envoyé avec succès le
+Envoyer
+Champs requis
+Age requis
+Sexe requis
+Erreur dans l'envoi : 
+Erreur
+Vous devez entrer une chaîne de caractère !
+
+
+
+
+

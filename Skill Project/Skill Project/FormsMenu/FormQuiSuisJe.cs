@@ -102,9 +102,13 @@ namespace Skill_Project
 
         private void FormQuiSuisJe_Load(object sender, EventArgs e)
         {
+            
+
             label1.Text = "Je m'appelle Dimitry, j'ai " + GetAge() + " ans. Je réside à Angers dans le Maine-et-loire (49).\nJ'adore le ski && le football mais avant tout ma passion est l'informatique.\nSans cesse, il faut que je développe, que j'apprenne.\nJ'adore aider mon prochain et c'est d'ailleurs pour cette raison que j'ai créée un site de dépannage informatique.\nJ'aime pratiquer n'importe quel sport.\nAprès 12 ans de football, je me suis inscrit à la musculation.\n";
             
             radioButton1.Select();
+
+            Fonction.policeTexte(this); // Gestion police
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

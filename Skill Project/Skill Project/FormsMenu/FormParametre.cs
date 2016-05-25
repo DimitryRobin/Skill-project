@@ -18,6 +18,7 @@ namespace Skill_Project
         bool BM;
         bool ID;
         bool Tuto;
+        string family = "Palatino Linotype";
 
         public FormParametre()
         {
@@ -110,6 +111,8 @@ namespace Skill_Project
                 CbTutorielOui.Checked = false;
                 CbTutorielNon.Checked = true;
             }
+
+            Fonction.policeTexte(this); // Gestion police
         }
 
         private void FormParametre_Leave(object sender, EventArgs e)
@@ -171,20 +174,104 @@ namespace Skill_Project
             {
                 lblPolice.Text = fontDialog1.Font.Name.ToString();
 
-                if (lblPolice.Text != "Par défaut")
+                if (lblPolice.Text != family)
                 {
                     try
                     {
-                        // lblTitrePara.Font = new Font(lblPolice.Text, lblTitrePara.Font.SizeInPoints, lblTitrePara.Font.Style);
+                        foreach (Control x in this.Controls)
+                        {
+                            // MessageBox.Show(x.ToString());
+
+                            if (x is TextBox || x is RichTextBox || x is Label || x is Button || x is GroupBox || x is ListBox || x is DataGridView || x is ComboBox || x is CheckBox
+                                || x is RadioButton || x is TreeView || x is NumericUpDown)
+                            {
+                                x.Font = new Font(lblPolice.Text, x.Font.SizeInPoints, x.Font.Style);
+                            }
+
+                            // Panel
+                            if (x is Panel)
+                            {
+                                foreach (Control c in x.Controls)
+                                {
+                                    c.Font = new Font(lblPolice.Text, c.Font.SizeInPoints, c.Font.Style);
+                                }
+                            }
+
+                            // GroupBox
+                            if (x is GroupBox)
+                            {
+                                foreach (Control c in x.Controls)
+                                {
+                                    c.Font = new Font(lblPolice.Text, c.Font.SizeInPoints, c.Font.Style);
+                                }
+                            }
+
+                        }
                     }
                     catch
                     {
-                        // lblTitrePara.Font = new Font(family, lblTitrePara.Font.SizeInPoints, lblTitrePara.Font.Style);
+                        foreach (Control x in this.Controls)
+                        {
+                            // MessageBox.Show(x.ToString());
+
+                            if (x is TextBox || x is RichTextBox || x is Label || x is Button || x is GroupBox || x is ListBox || x is DataGridView || x is ComboBox || x is CheckBox
+                                || x is RadioButton || x is TreeView || x is NumericUpDown)
+                            {
+                                x.Font = new Font(family, x.Font.SizeInPoints, x.Font.Style);
+                            }
+
+                            // Panel
+                            if (x is Panel)
+                            {
+                                foreach (Control c in x.Controls)
+                                {
+                                    c.Font = new Font(family, c.Font.SizeInPoints, c.Font.Style);
+                                }
+                            }
+
+                            // GroupBox
+                            if (x is GroupBox)
+                            {
+                                foreach (Control c in x.Controls)
+                                {
+                                    c.Font = new Font(family, c.Font.SizeInPoints, c.Font.Style);
+                                }
+                            }
+
+                        }
                     }
                 }
                 else
                 {
-                    // lblTitrePara.Font = new Font(family, lblTitrePara.Font.SizeInPoints, lblTitrePara.Font.Style);
+                    foreach (Control x in this.Controls)
+                    {
+                        // MessageBox.Show(x.ToString());
+
+                        if (x is TextBox || x is RichTextBox || x is Label || x is Button || x is GroupBox || x is ListBox || x is DataGridView || x is ComboBox || x is CheckBox
+                            || x is RadioButton || x is TreeView || x is NumericUpDown)
+                        {
+                            x.Font = new Font(family, x.Font.SizeInPoints, x.Font.Style);
+                        }
+
+                        // Panel
+                        if (x is Panel)
+                        {
+                            foreach (Control c in x.Controls)
+                            {
+                                c.Font = new Font(family, c.Font.SizeInPoints, c.Font.Style);
+                            }
+                        }
+
+                        // GroupBox
+                        if (x is GroupBox)
+                        {
+                            foreach (Control c in x.Controls)
+                            {
+                                c.Font = new Font(family, c.Font.SizeInPoints, c.Font.Style);
+                            }
+                        }
+
+                    }
                 }
 
             }
@@ -201,8 +288,43 @@ namespace Skill_Project
             {
                 // lblTitrePara.Font = new Font(family, lblTitrePara.Font.SizeInPoints, lblTitrePara.Font.Style);
 
+                foreach (Control x in this.Controls)
+                {
+                    // MessageBox.Show(x.ToString());
+
+                    if (x is TextBox || x is RichTextBox || x is Label || x is Button || x is GroupBox || x is ListBox || x is DataGridView || x is ComboBox || x is CheckBox
+                        || x is RadioButton || x is TreeView || x is NumericUpDown)
+                    {
+                        x.Font = new Font(family, x.Font.SizeInPoints, x.Font.Style);
+                    }
+
+                    // Panel
+                    if (x is Panel)
+                    {
+                        foreach (Control c in x.Controls)
+                        {
+                            c.Font = new Font(family, c.Font.SizeInPoints, c.Font.Style);
+                        }
+                    }
+
+                    // GroupBox
+                    if (x is GroupBox)
+                    {
+                        foreach (Control c in x.Controls)
+                        {
+                            c.Font = new Font(family, c.Font.SizeInPoints, c.Font.Style);
+                        }
+                    }
+
+                }
+
                 lblPolice.Text = "Palatino Linotype";
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void cbInfoDefilantesNon_Click(object sender, EventArgs e)

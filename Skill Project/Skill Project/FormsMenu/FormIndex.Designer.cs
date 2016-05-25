@@ -46,7 +46,6 @@ namespace Skill_Project
             this.listeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miniaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arborescenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblAccesRapide = new System.Windows.Forms.Label();
             this.lblACDate1 = new System.Windows.Forms.Label();
@@ -280,7 +279,6 @@ namespace Skill_Project
         private System.Windows.Forms.ToolStripMenuItem miniaturesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paramètreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem arborescenceToolStripMenuItem;
-        private ToolTip toolTip1;
         private Timer timer1;
         private Label lblAccesRapide;
         private Label lblACDate1;

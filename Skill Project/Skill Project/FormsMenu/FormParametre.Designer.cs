@@ -55,6 +55,7 @@ namespace Skill_Project
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbPolice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -89,6 +90,7 @@ namespace Skill_Project
             // 
             this.lblMessageBox.AutoSize = true;
             this.lblMessageBox.BackColor = System.Drawing.Color.Transparent;
+            this.lblMessageBox.Enabled = false;
             this.lblMessageBox.Font = new System.Drawing.Font("Palatino Linotype", 12.25F);
             this.lblMessageBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblMessageBox.Location = new System.Drawing.Point(30, 155);
@@ -102,33 +104,38 @@ namespace Skill_Project
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Enabled = false;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12.25F);
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(30, 260);
+            this.label1.Location = new System.Drawing.Point(30, 375);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(285, 23);
             this.label1.TabIndex = 23;
             this.label1.Text = "Afficher les informations défilantes :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Visible = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Enabled = false;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 12.25F);
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(30, 336);
+            this.label2.Location = new System.Drawing.Point(30, 321);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(143, 23);
             this.label2.TabIndex = 24;
             this.label2.Text = "Afficher Tutoriel :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // cbBoiteMessagesOui
             // 
             this.cbBoiteMessagesOui.AutoSize = true;
             this.cbBoiteMessagesOui.Checked = true;
             this.cbBoiteMessagesOui.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbBoiteMessagesOui.Enabled = false;
             this.cbBoiteMessagesOui.Font = new System.Drawing.Font("Palatino Linotype", 12.25F);
             this.cbBoiteMessagesOui.Location = new System.Drawing.Point(312, 155);
             this.cbBoiteMessagesOui.Name = "cbBoiteMessagesOui";
@@ -141,6 +148,7 @@ namespace Skill_Project
             // cbBoiteMessagesNon
             // 
             this.cbBoiteMessagesNon.AutoSize = true;
+            this.cbBoiteMessagesNon.Enabled = false;
             this.cbBoiteMessagesNon.Font = new System.Drawing.Font("Palatino Linotype", 12.25F);
             this.cbBoiteMessagesNon.Location = new System.Drawing.Point(375, 155);
             this.cbBoiteMessagesNon.Name = "cbBoiteMessagesNon";
@@ -178,32 +186,37 @@ namespace Skill_Project
             this.cbInfoDefilantesOui.AutoSize = true;
             this.cbInfoDefilantesOui.Checked = true;
             this.cbInfoDefilantesOui.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbInfoDefilantesOui.Enabled = false;
             this.cbInfoDefilantesOui.Font = new System.Drawing.Font("Palatino Linotype", 12.25F);
-            this.cbInfoDefilantesOui.Location = new System.Drawing.Point(351, 260);
+            this.cbInfoDefilantesOui.Location = new System.Drawing.Point(321, 375);
             this.cbInfoDefilantesOui.Name = "cbInfoDefilantesOui";
             this.cbInfoDefilantesOui.Size = new System.Drawing.Size(57, 27);
             this.cbInfoDefilantesOui.TabIndex = 30;
             this.cbInfoDefilantesOui.Text = "Oui";
             this.cbInfoDefilantesOui.UseVisualStyleBackColor = true;
+            this.cbInfoDefilantesOui.Visible = false;
             this.cbInfoDefilantesOui.Click += new System.EventHandler(this.cbInfoDefilantesOui_Click);
             // 
             // cbInfoDefilantesNon
             // 
             this.cbInfoDefilantesNon.AutoSize = true;
+            this.cbInfoDefilantesNon.Enabled = false;
             this.cbInfoDefilantesNon.Font = new System.Drawing.Font("Palatino Linotype", 12.25F);
-            this.cbInfoDefilantesNon.Location = new System.Drawing.Point(414, 260);
+            this.cbInfoDefilantesNon.Location = new System.Drawing.Point(377, 375);
             this.cbInfoDefilantesNon.Name = "cbInfoDefilantesNon";
             this.cbInfoDefilantesNon.Size = new System.Drawing.Size(62, 27);
             this.cbInfoDefilantesNon.TabIndex = 31;
             this.cbInfoDefilantesNon.Text = "Non";
             this.cbInfoDefilantesNon.UseVisualStyleBackColor = true;
+            this.cbInfoDefilantesNon.Visible = false;
             this.cbInfoDefilantesNon.Click += new System.EventHandler(this.cbInfoDefilantesNon_Click);
             // 
             // cbTutorielNon
             // 
             this.cbTutorielNon.AutoSize = true;
+            this.cbTutorielNon.Enabled = false;
             this.cbTutorielNon.Font = new System.Drawing.Font("Palatino Linotype", 12.25F);
-            this.cbTutorielNon.Location = new System.Drawing.Point(267, 336);
+            this.cbTutorielNon.Location = new System.Drawing.Point(267, 321);
             this.cbTutorielNon.Name = "cbTutorielNon";
             this.cbTutorielNon.Size = new System.Drawing.Size(62, 27);
             this.cbTutorielNon.TabIndex = 33;
@@ -217,8 +230,9 @@ namespace Skill_Project
             this.cbTutorielOui.AutoSize = true;
             this.cbTutorielOui.Checked = true;
             this.cbTutorielOui.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbTutorielOui.Enabled = false;
             this.cbTutorielOui.Font = new System.Drawing.Font("Palatino Linotype", 12.25F);
-            this.cbTutorielOui.Location = new System.Drawing.Point(204, 336);
+            this.cbTutorielOui.Location = new System.Drawing.Point(204, 321);
             this.cbTutorielOui.Name = "cbTutorielOui";
             this.cbTutorielOui.Size = new System.Drawing.Size(57, 27);
             this.cbTutorielOui.TabIndex = 32;
@@ -260,7 +274,7 @@ namespace Skill_Project
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 12.25F);
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(30, 297);
+            this.label4.Location = new System.Drawing.Point(30, 256);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 23);
             this.label4.TabIndex = 37;
@@ -275,7 +289,7 @@ namespace Skill_Project
             this.combobLangue.Items.AddRange(new object[] {
             "Francais",
             "Anglais"});
-            this.combobLangue.Location = new System.Drawing.Point(126, 297);
+            this.combobLangue.Location = new System.Drawing.Point(126, 256);
             this.combobLangue.Name = "combobLangue";
             this.combobLangue.Size = new System.Drawing.Size(135, 26);
             this.combobLangue.TabIndex = 56;
@@ -288,10 +302,9 @@ namespace Skill_Project
             this.lblRedemRequis3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblRedemRequis3.Location = new System.Drawing.Point(46, 224);
             this.lblRedemRequis3.Name = "lblRedemRequis3";
-            this.lblRedemRequis3.Size = new System.Drawing.Size(470, 20);
+            this.lblRedemRequis3.Size = new System.Drawing.Size(371, 20);
             this.lblRedemRequis3.TabIndex = 70;
-            this.lblRedemRequis3.Text = "Redémarrage requis pour que la police soit effective sur la globalité de l\'applic" +
-    "ation.";
+            this.lblRedemRequis3.Text = "Attention : toutes les polices ne sont pas gérées par l\'application !";
             this.lblRedemRequis3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblPolice
@@ -361,11 +374,26 @@ namespace Skill_Project
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 10.25F, System.Drawing.FontStyle.Italic);
+            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label5.Location = new System.Drawing.Point(46, 287);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(563, 20);
+            this.label5.TabIndex = 71;
+            this.label5.Text = "Redémarrage de Skill project requis pour que la langue soit effective sur la glob" +
+    "alité de l\'application.";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // FormParametre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(646, 404);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.lblRedemRequis3);
             this.Controls.Add(this.lblPolice);
             this.Controls.Add(this.pbPolice);
@@ -434,6 +462,7 @@ namespace Skill_Project
         private Button btnDefautPolice;
         private Label lblInfoPolice;
         private FontDialog fontDialog1;
+        private Label label5;
 
         public CheckBox CbTutorielOui
         {
