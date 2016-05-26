@@ -15,6 +15,8 @@ namespace Skill_Project
         List<string> Preference = new List<string>();
         List<string> Destination = new List<string>();
 
+        List<string> LangueElement = new List<string>();
+
         string police;
         string dateRecent1, Recent1, dateRecent2, Recent2, dateRecent3, Recent3;
 
@@ -35,7 +37,7 @@ namespace Skill_Project
 
         private void Chargement()
         {
-            if (cbRecherche.Text == "" || cbRecherche.Text == "Recherchez..")
+            if (cbRecherche.Text == "" || cbRecherche.Text == LangueElement[134])
             {
                 int count = 0;
 
@@ -126,6 +128,24 @@ namespace Skill_Project
 
                     count2++;
                 }
+
+                if (y > yy && y > yyy)
+                {
+                    panel1.AutoScrollMinSize = new Size(0, y + 100);
+                    panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
+                }
+                else if (y > yyy && y < yy)
+                {
+                    panel1.AutoScrollMinSize = new Size(0, yy + 100);
+                    panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
+                }
+                else
+                {
+                    panel1.AutoScrollMinSize = new Size(0, yyy + 100);
+                    panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
+                }
+
+
             }
             else
             {
@@ -168,7 +188,8 @@ namespace Skill_Project
 
                     string[] result = Regex.Split(item, @"\-\-\-");
 
-                    if (count2 == 0 || count2 == 3 || count2 == 6 || count2 == 9 || count2 == 12 || count2 == 15 || count2 == 18 || count2 == 21 || count2 == 24 || count2 == 27 || count2 == 30)
+                    if (count2 == 0 || count2 == 3 || count2 == 6 || count2 == 9 || count2 == 12 || count2 == 15 || count2 == 18 || count2 == 21 || count2 == 24 || count2 == 27
+                        || count2 == 30)
                     {
                         if (result[0].Contains(res))
                         {
@@ -198,7 +219,8 @@ namespace Skill_Project
                         }
 
                     }
-                    else if (count2 == 1 || count2 == 4 || count2 == 7 || count2 == 10 || count2 == 13 || count2 == 16 || count2 == 19 || count2 == 22 || count2 == 25 || count2 == 28 || count2 == 31)
+                    else if (count2 == 1 || count2 == 4 || count2 == 7 || count2 == 10 || count2 == 13 || count2 == 16 || count2 == 19 || count2 == 22 || count2 == 25 || count2 == 28
+                        || count2 == 31)
                     {
                         if (result[0].Contains(res))
                         {
@@ -246,15 +268,39 @@ namespace Skill_Project
                             count2++;
                         }
                     }
-
-
                 }
+
+                if (y > yy && y > yyy)
+                {
+                    panel1.AutoScrollMinSize = new Size(0, y + 100);
+                    panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
+                }
+                else if (y > yyy && y < yy)
+                {
+                    panel1.AutoScrollMinSize = new Size(0, yy + 100);
+                    panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
+                }
+                else
+                {
+                    panel1.AutoScrollMinSize = new Size(0, yyy + 100);
+                    panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
+                }
+
             }
 
         }
 
         private void FormSkillProject_Load(object sender, EventArgs e)
         {
+            LangueElement = Fonction.LangageAppli();
+            this.Text = LangueElement[129];
+            gbTri.Text = LangueElement[130];
+            rbDateAjout.Text = LangueElement[131];
+            gbRecherche.Text = LangueElement[132];
+            lblrecherche.Text = LangueElement[133];
+            cbRecherche.Text = LangueElement[134];
+            gbRecent.Text = LangueElement[135];
+
             Fonction.policeTexte(this); // Gestion police
 
             cbRecherche.Items.Clear();
@@ -305,6 +351,15 @@ namespace Skill_Project
                 recent3.Visible = false;
             }
 
+            if(Recent1 == "Aucun" && Recent2 == "Aucun" && Recent3 == "Aucun")
+            {
+                gbRecent.Visible = false;
+            }
+            else
+            {
+                gbRecent.Visible = true;
+            }
+
             foreach (var item in ListeProjet)
             {
                 // string[] nomProjet = item.Split(new[] { " /// " }, StringSplitOptions.None);
@@ -350,10 +405,10 @@ namespace Skill_Project
 
         private void cbRecherche_Leave(object sender, EventArgs e)
         {
-            if (cbRecherche.Text == "Recherchez.." || cbRecherche.Text == "" || cbRecherche.Text == " ")
+            if (cbRecherche.Text == LangueElement[134] || cbRecherche.Text == "" || cbRecherche.Text == " ")
             {
                 cbRecherche.ForeColor = Color.DarkGray;
-                cbRecherche.Text = "Recherchez..";
+                cbRecherche.Text = LangueElement[134];
             }
         }
 
@@ -370,15 +425,9 @@ namespace Skill_Project
 
         private void cbRecherche_TextChanged(object sender, EventArgs e)
         {
-            if (cbRecherche.Text != "" || cbRecherche.Text != "Recherchez..")
-            {
-                Chargement();
-            }
+            panel1.AutoScrollMinSize = new Size(0, 0);
 
-            if (cbRecherche.Text == "" || cbRecherche.Text == "Recherchez..")
-            {
-                Chargement();
-            }
+            Chargement();
         }
 
         private void recent1_MouseHover(object sender, EventArgs e)
@@ -388,12 +437,16 @@ namespace Skill_Project
 
         private void rbAZ_Click(object sender, EventArgs e)
         {
+            panel1.AutoScrollMinSize = new Size(0, 0);
+
             ListeProjet.Sort();
             Chargement();
         }
 
         private void rbZA_Click(object sender, EventArgs e)
         {
+            panel1.AutoScrollMinSize = new Size(0, 0);
+
             ListeProjet.Reverse();
             Chargement();
         }
@@ -519,12 +572,30 @@ namespace Skill_Project
                     }                    
                 }
             }
+
+            if (y > yy && y > yyy)
+            {
+                panel1.AutoScrollMinSize = new Size(0, y + 100);
+                panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
+            }
+            else if (y > yyy && y < yy)
+            {
+                panel1.AutoScrollMinSize = new Size(0, yy + 100);
+                panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
+            }
+            else
+            {
+                panel1.AutoScrollMinSize = new Size(0, yyy + 100);
+                panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
+            }
         }
 
         private void rbDateAjout_Click(object sender, EventArgs e)
         {
+            panel1.AutoScrollMinSize = new Size(0, 0);
+
             cbRecherche.ForeColor = Color.DarkGray;
-            cbRecherche.Text = "Recherchez..";
+            cbRecherche.Text = LangueElement[134];
             TriDate();
         }
 

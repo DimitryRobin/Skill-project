@@ -19,6 +19,9 @@ namespace Skill_Project
         bool ID;
         bool Tuto;
         string family = "Palatino Linotype";
+        string langueApres = "";
+
+        List<string> LangueElement = new List<string>();
 
         public FormParametre()
         {
@@ -54,7 +57,30 @@ namespace Skill_Project
                 Tuto = false;
             }
 
-            Fonction.ecrireFichier(opa.ToString(), BM.ToString(), lblPolice.Text, ID.ToString(), combobLangue.Text, Tuto.ToString(), "", "");
+            if (combobLangue.Text == "Francais" || combobLangue.Text == "French")
+            {
+                langueApres = "Francais";
+            }
+            else if (combobLangue.Text == "Anglais" || combobLangue.Text == "English")
+            {
+                langueApres = "Anglais";
+            }
+
+            string[] lines = Fonction.lireFichier();
+
+
+            Fonction.ecrireFichier(opa.ToString(), BM.ToString(), lblPolice.Text, ID.ToString(), langueApres, Tuto.ToString(), "", "");
+            
+            if (lines[0].ToString() != opa.ToString() || lines[1].ToString() != BM.ToString() || lines[2].ToString() != lblPolice.Text || lines[3].ToString() != ID.ToString()
+                 || lines[4].ToString() != langueApres || lines[5].ToString() != Tuto.ToString())
+            {
+                DialogResult DR = MessageBox.Show(LangueElement[124], LangueElement[125], MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (DR == DialogResult.Yes)
+                {
+                    Application.Restart();
+                }
+            }            
         }
 
 
@@ -65,6 +91,25 @@ namespace Skill_Project
 
         private void FormParametre_Load(object sender, EventArgs e)
         {
+            LangueElement = Fonction.LangageAppli();
+            this.Text = LangueElement[108];
+            lblTitreSuggestion.Text = LangueElement[108];
+            lblTransparence.Text = LangueElement[109];
+            label3.Text = LangueElement[110];
+            lblMessageBox.Text = LangueElement[111];
+            cbBoiteMessagesOui.Text = LangueElement[112];
+            cbBoiteMessagesNon.Text = LangueElement[113];
+            lblInfoPolice.Text = LangueElement[114];
+            lblRedemRequis3.Text = LangueElement[115];
+            label4.Text = LangueElement[116];
+            label5.Text = LangueElement[117];
+            label2.Text = LangueElement[118];
+            label1.Text = LangueElement[119];
+            cbTutorielOui.Text = LangueElement[112];
+            cbTutorielNon.Text = LangueElement[113];
+            cbInfoDefilantesOui.Text = LangueElement[112];
+            cbInfoDefilantesNon.Text = LangueElement[113];
+
 
             string[] lines = Fonction.lireFichier();
 
@@ -75,7 +120,24 @@ namespace Skill_Project
             test4 = lines[4].ToString();
             test3 = lines[5].ToString();
 
-            combobLangue.Text = test4;
+            combobLangue.Items.Clear();
+
+            if (test4 == "Francais")
+            {
+                combobLangue.Items.Add("Francais");
+                combobLangue.Items.Add("Anglais");
+
+                combobLangue.Text = test4;
+            }
+            else
+            {
+                combobLangue.Items.Add("French");
+                combobLangue.Items.Add("English");
+
+                combobLangue.Text = "English";
+
+            }
+
             Opacity = Convert.ToDouble(test);
             hScrollBar1.Value = Convert.ToInt32(Opacity * 100);
 
@@ -282,7 +344,7 @@ namespace Skill_Project
             if (lblPolice.Text == "Palatino Linotype")
             {
                 // MessageBox.Show(LangueElement[124], LangueElement[105], MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MessageBox.Show("La police est déjà " + lblTitreSuggestion.Font.Name, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(LangueElement[122] + lblTitreSuggestion.Font.Name, LangueElement[123], MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -323,6 +385,11 @@ namespace Skill_Project
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void combobLangue_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

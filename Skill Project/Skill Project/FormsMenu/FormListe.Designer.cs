@@ -118,6 +118,7 @@ namespace Skill_Project
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::Skill_Project.Properties.Resources.yuyukyuk;
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 

@@ -16,6 +16,8 @@ namespace Skill_Project
         DateTime DateDeNaissance = Convert.ToDateTime("03/11/1996");
         int durationMilliseconds = 3000;
 
+        List<string> LangueElement = new List<string>();
+
         public int GetAge()
         {
 
@@ -102,9 +104,27 @@ namespace Skill_Project
 
         private void FormQuiSuisJe_Load(object sender, EventArgs e)
         {
-            
+            LangueElement = Fonction.LangageAppli();
+            this.Text = LangueElement[46];
+            lblTitreQSJ.Text = LangueElement[46];
+            label3.Text = LangueElement[47];
+            label4.Text = LangueElement[48];
+            label6.Text = LangueElement[49];
+            label5.Text = LangueElement[50];
+            label7.Text = LangueElement[51];
+            label8.Text = LangueElement[52];
+            label9.Text = LangueElement[53];
+            label10.Text = LangueElement[54];
+            label11.Text = LangueElement[55];
+            label2.Text = LangueElement[56];
+            label18.Text = LangueElement[57];
+            label19.Text = LangueElement[58];
+            label20.Text = LangueElement[59];
+            label17.Text = LangueElement[60];
+            label12.Text = LangueElement[61];
+            btnRetourQSJ.Text = LangueElement[62];
 
-            label1.Text = "Je m'appelle Dimitry, j'ai " + GetAge() + " ans. Je réside à Angers dans le Maine-et-loire (49).\nJ'adore le ski && le football mais avant tout ma passion est l'informatique.\nSans cesse, il faut que je développe, que j'apprenne.\nJ'adore aider mon prochain et c'est d'ailleurs pour cette raison que j'ai créée un site de dépannage informatique.\nJ'aime pratiquer n'importe quel sport.\nAprès 12 ans de football, je me suis inscrit à la musculation.\n";
+            label1.Text = LangueElement[63] + GetAge() + LangueElement[64] + "\n" + LangueElement[65] + "\n" + LangueElement[66] + "\n" + LangueElement[67] + "\n" + LangueElement[68] + "\n" + LangueElement[69] + "\n";
             
             radioButton1.Select();
 

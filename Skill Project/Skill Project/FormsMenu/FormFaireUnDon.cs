@@ -14,6 +14,8 @@ namespace Skill_Project
     {
         int durationMilliseconds = 3000;
 
+        List<string> LangueElement = new List<string>();
+
         public FormFaireUnDon()
         {
             InitializeComponent();
@@ -21,9 +23,17 @@ namespace Skill_Project
 
         private void FormFaireUnDon_Load(object sender, EventArgs e)
         {
+            LangueElement = Fonction.LangageAppli();
+            this.Text = LangueElement[97];
+            lblTitreFUD.Text = LangueElement[97];
+            label3.Text = LangueElement[98];
+            label2.Text = LangueElement[99];
+            btnRetourFUD.Text = LangueElement[100];
+            toolTip2.ToolTipTitle = LangueElement[101];
+
             Fonction.policeTexte(this); // Gestion police
 
-            label1.Text = "Derrière cette application, beaucoup de ressources ont été épuisées et des centaines\nd'heures se sont déroulées afin de vous rendre un travail de qualité.\nAppréciez le boulot fournis et Soutenez Skill project en effectuant un don.";
+            label1.Text = LangueElement[102] + "\n" + LangueElement[103] + "\n" + LangueElement[104];
             radioButton1.Select();
 
             panel1.AutoScroll = false;

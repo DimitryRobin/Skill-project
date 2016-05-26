@@ -12,6 +12,9 @@ namespace Skill_Project
 {
     public partial class FormAPropos : System.Windows.Forms.Form
     {
+
+        List<string> LangueElement = new List<string>();
+
         public FormAPropos()
         {
             InitializeComponent();
@@ -80,10 +83,19 @@ namespace Skill_Project
 
         private void FormAPropos_Load(object sender, EventArgs e)
         {
+            LangueElement = Fonction.LangageAppli();
+            this.Text = LangueElement[73];
+            lblTitreAP.Text = LangueElement[73];
+            btnRetourAP.Text = LangueElement[74];
+
             Fonction.policeTexte(this); // Gestion police
 
             radioButton1.Select();
-            label1.Text = "Skill project est une application créée, entièrement par moi-même, afin de répertorier toutes les compétences\nque j'ai acquises jusqu'ici. L'idée de créer ce petit logiciel m'est venu lorsque j'ai appris qu'il fallait garder\ntoutes traces de réalisation pratique, lors de mon enseignement en BTS, pour passer l'épreuve E6.\n\nDès lors, je me suis dis : pourquoi pas créer un portefeuille de compétences sous forme logiciel ?\n\nAprès approbration de mes enseignants quant à la possibilité d'utiliser cette méthode pour l'examen, je me\nsuis mis à la tâche. Puis, je me suis rendu compte, au fur et à mesure que je développais, que Skill project\npourrait servir à autrui.\n\nJe me suis alors posé la question : pourquoi pas faire évoluer l'application afin d'aider mon prochain ?\n\nDe part ces raisonnements, Skill project a vu le jour puis évolue petit à petit dans le but d'offrir les réponses aux\nquestions de tous développeurs, mais aussi dans le but d'offrir du contenu différent de celui trouvé sur internet.\nDe part sa simplicité d'utilisation et son interface conviviale, Skill project permet :\n\n- d'apprendre, en copiant d'un simple clic, le code d'une compétence\n- de faire des suggestions (amélioration du logiciel, ajout de nouvelles compétences etc..)\n- de partager mes compétences et mon savoir-faire avec vous\n\nEnfin, Skill project ne nécessite aucune connexion à une base de donnée, premièrement car il n'existe aucun\nhébergeur, à ma connaisance, d'application C# (mis à part db4free.net, environnnement de test) et dans un\nsecond temps parce que la connexion à une base de donnée, via des requêtes, pourrait ralentir le logiciel.\nAfin de gérer les préférences de chaque utilisateurs, il est possible qu'un fichier .txt soit créée sur votre\nordinateur dans le seul et unique objectif de sauvegarder vos paramètres.";
+            label1.Text = LangueElement[75] + "\n" + LangueElement[76] + "\n" + LangueElement[77] + "\n\n" +
+                LangueElement[78] + "\n\n" + LangueElement[79] + "\n" + LangueElement[80] + "\n" + LangueElement[81] + "\n\n" +
+                LangueElement[82] + "\n\n" + LangueElement[83] + "\n" + LangueElement[84] + "\n" + LangueElement[85] + "\n\n" +
+                LangueElement[86] + "\n" + LangueElement[87] + "\n" + LangueElement[88] + "\n\n" + LangueElement[89] + "\n" +
+                LangueElement[90] + "\n" + LangueElement[91] + "\n" + LangueElement[92] + "\n" + LangueElement[93];
 
         }
     }

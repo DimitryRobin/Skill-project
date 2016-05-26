@@ -70,10 +70,10 @@
             this.cbRecherche.Font = new System.Drawing.Font("Palatino Linotype", 9.5F, System.Drawing.FontStyle.Bold);
             this.cbRecherche.ForeColor = System.Drawing.Color.DarkGray;
             this.cbRecherche.FormattingEnabled = true;
-            this.cbRecherche.Location = new System.Drawing.Point(82, 29);
+            this.cbRecherche.Location = new System.Drawing.Point(88, 31);
             this.cbRecherche.Name = "cbRecherche";
             this.cbRecherche.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cbRecherche.Size = new System.Drawing.Size(178, 26);
+            this.cbRecherche.Size = new System.Drawing.Size(174, 26);
             this.cbRecherche.TabIndex = 56;
             this.cbRecherche.Text = "Recherchez..";
             this.cbRecherche.SelectedIndexChanged += new System.EventHandler(this.cbRecherche_SelectedIndexChanged);
@@ -260,9 +260,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::Skill_Project.Properties.Resources.yuyukyuk;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(1, 88);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(984, 475);
+            this.panel1.Size = new System.Drawing.Size(998, 475);
             this.panel1.TabIndex = 60;
             // 
             // FormMiniature

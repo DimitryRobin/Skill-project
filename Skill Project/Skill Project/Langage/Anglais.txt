@@ -42,6 +42,103 @@ Error in the shipment :
 Error
 You must enter a string !
 
+// Form Qui Suis-Je : 46-69
 
+Who am I ?
+Education
+I made a bac STI2D specialty Information System and Digital, to guide me in the
+computer field.
+I am currently under obtaining BTS SIO SLAM option (software solutions and business applications)
+to specialize myself as an IT developer.
+Thereafter, I intend to undertake a formation CDPN alternately in pure software development.
+At this point, I find it important to mix the theoretical and practice while receiving remuneration.
+I envisage, as part of my studies, to get a Master in order to obtain a BAC +5
+and more improved skills as a developer.
+Follow me
+Website
+My CV
+My Portfolio
+My page
+My Curriculum vitae
+Back
+My name is Dimitry, I'm 
+ years old. I live in Angers in the Maine-et-Loire (49).
+I love the Ski && football but above all my passion is computing.
+Constantly, I have to develop, learn.
+I love helping my next and it is for this reason that I created a computer help desk site.
+I like to practice any sport.
+After 12 years of football, I registered in bodybuilding.
+
+// Form A propos: 73-93
+            
+About
+Back
+Skill project is an application created entirely by myself, in order to list all the skills
+that I have gained so far. The idea for this little program came to me when I learned that we must to keep
+all traces of practical embodiment, during my teaching BTS, to pass the test E6.
+That is why I told myself: why not create a portfolio of skills in software form ?
+After approbration of my teachers about the possibility to use this method for the examination, I
+was put to the task. Then I realized, as and as I was developing that project Skill
+could serve others.
+I then asked the question: why not to change the application to help my neighbor ?
+Continued on this reasoning, Skill project was born and evolves gradually in order to provide answers to
+questions of all developers, but also to offer different content than that found on the internet.
+Due to its ease of use and friendly interface, allows Skill project :
+- learn by copying a simple click, the code of a skill
+- to make suggestions (improve software, adding new skills etc ..)
+- to share my skills and knowledge with you
+Finally, Skill project requires no connection to a database, firstly because there is no 
+web host to my knowledge, of application C # (except db4free.net, test environnnement) and in
+second time because the connection to a database, via requests, could slow down the software.
+To manage the preferences of each user, it is possible that .txt file be set up on your
+computer in the only goal to save your settings.
+
+// Form Faire un don : 97-104
+
+Donate
+Via the application
+Via your browser
+Back
+Open a web browser data
+Behind this application, many resources have been exhausted and hundreds
+hours are spent to provide you quality work.
+Enjoy the work supplied and Support Skill Project by making a donation.
+
+// Form Paramètres : 108-125
+
+Settings
+Transparency:
+Skill project must to reboot to that transparency to be effective on the totality of the application.
+Display message boxes:
+Yes
+No
+Font :
+Warning: all fonts are not supported by the application!
+Language :
+Skill project must to reboot to that language to be effective on the totality of the application.
+Display Tutorial:
+Show scrolling information:
+French
+English
+The police are already 
+Information
+Do you want to restart now order to take into consideration these changes?
+Restart required
+
+// Forms Affichage : 129-135
+
+Display list
+Sort by
+Date / Reset
+Research
+Keyword :
+Search..
+View recently
+
+// TreeView
+
+Accessories
+Skills
+Games
 
 

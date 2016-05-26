@@ -42,7 +42,103 @@ Erreur dans l'envoi :
 Erreur
 Vous devez entrer une chaîne de caractère !
 
+// Form Qui Suis-Je : 46-69
 
+Qui suis-je ?
+Mon parcours scolaire
+J’ai réalisé un bac STI2D spécialité SIN (Système d’Information et Numérique), pour m'orienter dans le
+domaine informatique.
+Je suis actuellement en cours d'obtention du BTS SIO option SLAM (Solutions logicielles et applications métiers)
+afin de me spécialiser en tant que développeur informatique.
+Par la suite, je compte entreprendre une formation CDPN en alternance dans le développement logiciel pur.
+À ce stade, je trouve important de mêler pratique à théorique tout en perçevant une rémunération.
+J'envisage, dans le cadre de mes études, d'obtenir un Master afin d'obtenir un BAC +5 et des compétences
+plus accrues en tant que développeur.
+Me suivre
+Mon site
+Mon CV
+Mon Portfolio
+Ma page
+Mon Curriculum vitae
+Retour
+Je m'appelle Dimitry, j'ai 
+ ans. Je réside à Angers dans le Maine-et-loire (49).
+J'adore le ski && le football mais avant tout ma passion est l'informatique.
+Sans cesse, il faut que je développe, que j'apprenne.
+J'adore aider mon prochain et c'est d'ailleurs pour cette raison que j'ai créée un site de dépannage informatique.
+J'aime pratiquer n'importe quel sport.
+Après 12 ans de football, je me suis inscrit à la musculation.
 
+// Form A propos : 73-93
+            
+À propos
+Retour
+Skill project est une application créée, entièrement par moi-même, afin de répertorier toutes les compétences
+que j'ai acquises jusqu'ici. L'idée de créer ce petit logiciel m'est venu lorsque j'ai appris qu'il fallait garder
+toutes traces de réalisation pratique, lors de mon enseignement en BTS, pour passer l'épreuve E6.
+Dès lors, je me suis dit : pourquoi pas créer un portefeuille de compétences sous forme logiciel ?
+Après approbration de mes enseignants quant à la possibilité d'utiliser cette méthode pour l'examen, je me
+suis mis à la tâche. Puis, je me suis rendu compte, au fur et à mesure que je développais, que Skill project
+pourrait servir à autrui.
+Je me suis alors posé la question : pourquoi pas faire évoluer l'application afin d'aider mon prochain ?
+De part ces raisonnements, Skill project a vu le jour puis évolue petit à petit dans le but d'offrir les réponses aux
+questions de tous développeurs, mais aussi dans le but d'offrir du contenu différent de celui trouvé sur internet.
+De part sa simplicité d'utilisation et son interface conviviale, Skill project permet :
+- d'apprendre, en copiant d'un simple clic, le code d'une compétence
+- de faire des suggestions (amélioration du logiciel, ajout de nouvelles compétences etc..)
+- de partager mes compétences et mon savoir-faire avec vous
+Enfin, Skill project ne nécessite aucune connexion à une base de donnée, premièrement car il n'existe aucun
+hébergeur, à ma connaisance, d'application C# (mis à part db4free.net, environnnement de test) et dans un
+second temps parce que la connexion à une base de donnée, via des requêtes, pourrait ralentir le logiciel.
+Afin de gérer les préférences de chaque utilisateurs, il est possible qu'un fichier .txt soit créée sur votre
+ordinateur dans le seul et unique objectif de sauvegarder vos paramètres.
+
+// Form Faire un don : 97-104
+
+Faire un don
+Via l'application
+Via votre navigateur
+Retour
+Ouvre un navigateur web de données
+Derrière cette application, beaucoup de ressources ont été épuisées et des centaines
+d'heures se sont déroulées afin de vous rendre un travail de qualité.
+Appréciez le boulot fourni et Soutenez Skill project en effectuant un don.
+
+// Form Paramètres : 108-125
+
+Paramètres
+Transparence :
+Redémarrage de Skill project requis pour que la transparence soit effective sur la globalité de l'application.
+Afficher les boîtes de message :
+Oui
+Non
+Police :
+Attention : toutes les polices ne sont pas gérées par l'application !
+Langue :
+Redémarrage de Skill project requis pour que la langue soit effective sur la globalité de l'application.
+Afficher Tutoriel :
+Afficher les informations défilantes :
+Francais
+Anglais
+La police est déjà
+Information
+Voulez-vous redémarrer maintenant afin de prendre en compte ces changements ?
+Redémarrage requis
+
+// Forms Affichage : 129-135
+
+Affichage liste
+Trier par
+Date / Réini.
+Recherche
+Mot clé :
+Recherchez..
+Vue récemment
+
+// TreeView : 139-141
+
+Accessoires
+Compétences
+Jeux
 
 

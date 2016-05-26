@@ -18,6 +18,8 @@ namespace Skill_Project
         List<string> Tempo = new List<string>();
         List<string> Destination = new List<string>();
 
+        List<string> LangueElement = new List<string>();
+
         string police;
         string dateRecent1, Recent1, dateRecent2, Recent2, dateRecent3, Recent3;
 
@@ -37,6 +39,12 @@ namespace Skill_Project
 
         private void FormArborescence_Load(object sender, EventArgs e)
         {
+            LangueElement = Fonction.LangageAppli();
+            this.Text = LangueElement[129];
+            gbTri.Text = LangueElement[130];
+            rbDateAjout.Text = LangueElement[131];
+            gbRecent.Text = LangueElement[135];
+
             Fonction.policeTexte(this); // Gestion police
 
             lblDate1.Text = dateRecent1;
@@ -85,21 +93,64 @@ namespace Skill_Project
                 recent3.Visible = false;
             }
 
+            if (Recent1 == "Aucun" && Recent2 == "Aucun" && Recent3 == "Aucun")
+            {
+                gbRecent.Visible = false;
+            }
+            else
+            {
+                gbRecent.Visible = true;
+            }
 
-            treeView1.Nodes.Add("Accessoires");
-                 treeView1.Nodes[0].Nodes.Add("Calculatrice");
-            treeView1.Nodes.Add("Compétences");
-                 treeView1.Nodes[1].Nodes.Add("Barre de progression circulaire");
-                 treeView1.Nodes[1].Nodes.Add("Bouton animé");
-                 treeView1.Nodes[1].Nodes.Add("Code source site web");
-                 treeView1.Nodes[1].Nodes.Add("Formulaire de contact");
-                 treeView1.Nodes[1].Nodes.Add("Image flottante");
-                 treeView1.Nodes[1].Nodes.Add("InfoBulle");
-            treeView1.Nodes.Add("Jeux");
-                 treeView1.Nodes[2].Nodes.Add("AddFindPlayer");
-                 treeView1.Nodes[2].Nodes.Add("Morpion");
-                 treeView1.Nodes[2].Nodes.Add("Pendu");
-                 treeView1.Nodes[2].Nodes.Add("Snake");
+
+            treeView1.Nodes.Add(LangueElement[139]);
+
+            if (LangueElement[139] == "Accessoires")
+            {
+                treeView1.Nodes[0].Nodes.Add("Calculatrice");
+            }
+            else
+            {
+                treeView1.Nodes[0].Nodes.Add("Calculator");
+            }
+                 
+            treeView1.Nodes.Add(LangueElement[140]);
+
+            if (LangueElement[140] == "Compétences")
+            {
+                treeView1.Nodes[1].Nodes.Add("Barre de progression circulaire");
+                treeView1.Nodes[1].Nodes.Add("Bouton animé");
+                treeView1.Nodes[1].Nodes.Add("Code source site web");
+                treeView1.Nodes[1].Nodes.Add("Formulaire de contact");
+                treeView1.Nodes[1].Nodes.Add("Image flottante");
+                treeView1.Nodes[1].Nodes.Add("InfoBulle");
+            }
+            else
+            {
+                treeView1.Nodes[1].Nodes.Add("Circular progress bar");
+                treeView1.Nodes[1].Nodes.Add("Animated button");
+                treeView1.Nodes[1].Nodes.Add("Source code website");
+                treeView1.Nodes[1].Nodes.Add("Contact form");
+                treeView1.Nodes[1].Nodes.Add("Floating image");
+                treeView1.Nodes[1].Nodes.Add("Tooltip");
+            }
+
+            treeView1.Nodes.Add(LangueElement[141]);
+
+            if (LangueElement[141] == "Jeux")
+            {
+                treeView1.Nodes[2].Nodes.Add("AddFindPlayer");
+                treeView1.Nodes[2].Nodes.Add("Morpion");
+                treeView1.Nodes[2].Nodes.Add("Pendu");
+                treeView1.Nodes[2].Nodes.Add("Snake");
+            }
+            else
+            {
+                treeView1.Nodes[2].Nodes.Add("AddFindPlayer");
+                treeView1.Nodes[2].Nodes.Add("Morpion");
+                treeView1.Nodes[2].Nodes.Add("Pendu");
+                treeView1.Nodes[2].Nodes.Add("Snake");
+            }
 
             Chargement();
 
@@ -141,7 +192,7 @@ namespace Skill_Project
 
             try
             {
-                if (treeView1.SelectedNode.Text == "Jeux" || treeView1.SelectedNode.Text == "Compétences" || treeView1.SelectedNode.Text == "Accessoires")
+                if (treeView1.SelectedNode.Text == LangueElement[141] || treeView1.SelectedNode.Text == LangueElement[140] || treeView1.SelectedNode.Text == LangueElement[139])
                 {
 
                     foreach (var item in Tempo)
@@ -236,6 +287,9 @@ namespace Skill_Project
                     y = y + 60;
                 }
             }
+            
+            panel1.AutoScrollMinSize = new Size(0, y+40);
+            panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -245,6 +299,8 @@ namespace Skill_Project
 
         private void rbDateAjout_Click(object sender, EventArgs e)
         {
+            panel1.AutoScrollMinSize = new Size(0, 0);
+
             int count = 0;
             List<String> TriDatee = new List<String>();
 
@@ -312,10 +368,15 @@ namespace Skill_Project
                     }
                 }
             }
+
+            panel1.AutoScrollMinSize = new Size(0, y + 40);
+            panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
         }
 
         private void rbAZ_Click(object sender, EventArgs e)
         {
+            panel1.AutoScrollMinSize = new Size(0, 0);
+
             ListeProjet.Sort();
             Tempo.Sort();
             Chargement();
@@ -323,9 +384,16 @@ namespace Skill_Project
 
         private void rbZA_Click(object sender, EventArgs e)
         {
+            panel1.AutoScrollMinSize = new Size(0, 0);
+
             ListeProjet.Reverse();
             Tempo.Reverse();
             Chargement();
+        }
+
+        private void rbDateAjout_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void FormArborescence_Leave(object sender, EventArgs e)
@@ -335,6 +403,8 @@ namespace Skill_Project
 
         private void treeView1_AfterExpand(object sender, TreeViewEventArgs e)
         {
+            panel1.AutoScrollMinSize = new Size(0, 0);
+
             rbAZ.Enabled = true;
             rbZA.Enabled = true;
 
@@ -397,10 +467,15 @@ namespace Skill_Project
                     }
                 }
             }
+
+            panel1.AutoScrollMinSize = new Size(0, y + 40);
+            panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
         }
 
         private void treeView1_AfterCollapse(object sender, TreeViewEventArgs e)
         {
+            panel1.AutoScrollMinSize = new Size(0, 0);
+
             rbAZ.Enabled = true;
             rbZA.Enabled = true;
 
@@ -409,7 +484,9 @@ namespace Skill_Project
 
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
-            if (e.Node.Text != "Jeux" && e.Node.Text != "Compétences" && e.Node.Text != "Accessoires")
+            panel1.AutoScrollMinSize = new Size(0, 0);
+
+            if (e.Node.Text != LangueElement[141] && e.Node.Text != LangueElement[140] && e.Node.Text != LangueElement[139])
             {
                 rbAZ.Enabled = false;
                 rbZA.Enabled = false;
@@ -457,6 +534,9 @@ namespace Skill_Project
                         y = y + 60;
                     }
                 }
+
+                panel1.AutoScrollMinSize = new Size(0, y + 40);
+                panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
             }
             else
             {
@@ -513,6 +593,9 @@ namespace Skill_Project
                         }
                     }
                 }
+
+                panel1.AutoScrollMinSize = new Size(0, y + 40);
+                panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
             }
         }
 
