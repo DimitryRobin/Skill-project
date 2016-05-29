@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Skill_Project.FormsCompetence.Pendu;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,9 @@ namespace Skill_Project
         private string test;
         public int nb = 0;
         public int para = 0; // 0, 1, 2, 3, 4, 5, 6
+
+        private Joueur nouvJoueur;
+        private List<Joueur> lesJoueurs = new List<Joueur>();
 
         List<string> LangueElement = new List<string>();
 
@@ -379,6 +383,8 @@ namespace Skill_Project
             FormListe FL = new FormListe();
             FL.Close();
 
+            Application.Exit();
+
         }
 
         private void listeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -625,7 +631,7 @@ namespace Skill_Project
 
             if (lbl.Text == Item2[0])
             {
-                procedure();
+                pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
                 
                 FormsCompetence.FormProjetCalculatrice FPC = new FormsCompetence.FormProjetCalculatrice();
@@ -635,7 +641,7 @@ namespace Skill_Project
 
             if (lbl.Text == Item2[7])
             {
-                procedure();
+                pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
                 
                 FormsCompetence.FormProjetAddFindPlayer FPC = new FormsCompetence.FormProjetAddFindPlayer();
@@ -645,7 +651,7 @@ namespace Skill_Project
 
             if (lbl.Text == Item2[1])
             {
-                procedure();
+                pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
                 
                 FormsCompetence.FormProjetBarreProgCirculaire FPC = new FormsCompetence.FormProjetBarreProgCirculaire();
@@ -655,7 +661,7 @@ namespace Skill_Project
 
             if (lbl.Text == Item2[2])
             {
-                procedure();
+                pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
                 
                 FormsCompetence.FormProjetBoutonAnime FPC = new FormsCompetence.FormProjetBoutonAnime();
@@ -664,7 +670,7 @@ namespace Skill_Project
             }
             if (lbl.Text == Item2[3])
             {
-                procedure();
+                pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
                 
                 FormsCompetence.FormProjetCodeSourceSiteWeb FPC = new FormsCompetence.FormProjetCodeSourceSiteWeb();
@@ -674,7 +680,7 @@ namespace Skill_Project
 
             if (lbl.Text == Item2[4])
             {
-                procedure();
+                pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
                 
                 FormsCompetence.FormProjetFormulaireContactPersonnalise FPC = new FormsCompetence.FormProjetFormulaireContactPersonnalise();
@@ -684,7 +690,7 @@ namespace Skill_Project
 
             if (lbl.Text == Item2[5])
             {
-                procedure();
+                pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
                 
                 FormsCompetence.FormProjetImageFlottante FPC = new FormsCompetence.FormProjetImageFlottante();
@@ -694,7 +700,7 @@ namespace Skill_Project
 
             if (lbl.Text == Item2[6])
             {
-                procedure();
+                pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
                 
                 FormsCompetence.FormProjetInfoBulle FPC = new FormsCompetence.FormProjetInfoBulle();
@@ -704,7 +710,7 @@ namespace Skill_Project
 
             if (lbl.Text == Item2[8])
             {
-                procedure();
+                pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
                 
                 FormsCompetence.FormProjetMorpion FPC = new FormsCompetence.FormProjetMorpion();
@@ -714,17 +720,59 @@ namespace Skill_Project
 
             if (lbl.Text == Item2[9])
             {
-                procedure();
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
-                
-                FormsCompetence.FormProjetPendu FPC = new FormsCompetence.FormProjetPendu();
-                FPC.MdiParent = this;
-                FPC.Show();
+
+            recommence:
+
+                string value = "Pseudonyme";
+                bool check = false;
+
+                if (Fonction.InputBoxLogin("Pendu", "Entrez un nom de joueur :", ref value, ref check) == DialogResult.OK)
+                {
+                    if(check == false)
+                    {
+                        if (value != "Pseudonyme" && value != "" && value != " " && value != "  " && value != "   " && value != "    " && value != "     ")
+                        {
+                            pictureBox1.Visible = false;
+
+                            nouvJoueur = new Joueur(value);
+                            lesJoueurs.Add(nouvJoueur);
+                            nouvJoueur.ModifNbPartie();
+
+                            nouvJoueur.AfficherJoueur();
+
+                            FormsCompetence.FormProjetPendu FPC = new FormsCompetence.FormProjetPendu(value, nouvJoueur, lesJoueurs, "index");
+                            FPC.MdiParent = this;
+                            FPC.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Entrez un pseudonyme svp.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                            goto recommence;
+                        }
+                    }
+                    else
+                    {
+                        pictureBox1.Visible = false;
+
+                        nouvJoueur = new Joueur("Guest");
+                        lesJoueurs.Add(nouvJoueur);
+                        nouvJoueur.ModifNbPartie();
+
+                        nouvJoueur.AfficherJoueur();
+
+                        FormsCompetence.FormProjetPendu FPC = new FormsCompetence.FormProjetPendu("Guest", nouvJoueur, lesJoueurs, "index");
+                        FPC.MdiParent = this;
+                        FPC.Show();
+                    }
+                    
+                }                
             }
 
             if (lbl.Text == Item2[10])
             {
-                procedure();
+                pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
                 
                 FormsCompetence.FormProjetSnake FPC = new FormsCompetence.FormProjetSnake();

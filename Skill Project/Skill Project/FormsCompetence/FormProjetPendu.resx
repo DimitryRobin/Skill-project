@@ -1,0 +1,1911 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pendu8.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pendu8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>746, 168</value>
+  </data>
+  <data name="pendu8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 247</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pendu8.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="pendu8.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pendu8.Name" xml:space="preserve">
+    <value>pendu8</value>
+  </data>
+  <data name="&gt;&gt;pendu8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pendu8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pendu8.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnP.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 68</value>
+  </data>
+  <data name="btnP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnP.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btnP.Text" xml:space="preserve">
+    <value>P</value>
+  </data>
+  <data name="&gt;&gt;btnP.Name" xml:space="preserve">
+    <value>btnP</value>
+  </data>
+  <data name="&gt;&gt;btnP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnP.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnP.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnZ.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnZ.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnZ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 109</value>
+  </data>
+  <data name="btnZ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnZ.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="btnZ.Text" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="&gt;&gt;btnZ.Name" xml:space="preserve">
+    <value>btnZ</value>
+  </data>
+  <data name="&gt;&gt;btnZ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnZ.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnZ.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnE.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnE.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnE.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
+  </data>
+  <data name="btnE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 28</value>
+  </data>
+  <data name="btnE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnE.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnE.Text" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="&gt;&gt;btnE.Name" xml:space="preserve">
+    <value>btnE</value>
+  </data>
+  <data name="&gt;&gt;btnE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnE.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnE.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnO.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnO.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnO.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 67</value>
+  </data>
+  <data name="btnO.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnO.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnO.Text" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="&gt;&gt;btnO.Name" xml:space="preserve">
+    <value>btnO</value>
+  </data>
+  <data name="&gt;&gt;btnO.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnO.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnO.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnY.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnY.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnY.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 109</value>
+  </data>
+  <data name="btnY.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnY.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="btnY.Text" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="&gt;&gt;btnY.Name" xml:space="preserve">
+    <value>btnY</value>
+  </data>
+  <data name="&gt;&gt;btnY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnY.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnY.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnX.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnX.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 108</value>
+  </data>
+  <data name="btnX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnX.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="btnX.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="&gt;&gt;btnX.Name" xml:space="preserve">
+    <value>btnX</value>
+  </data>
+  <data name="&gt;&gt;btnX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnX.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnX.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnD.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnD.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 28</value>
+  </data>
+  <data name="btnD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnD.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnD.Text" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="&gt;&gt;btnD.Name" xml:space="preserve">
+    <value>btnD</value>
+  </data>
+  <data name="&gt;&gt;btnD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnD.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnD.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnN.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 68</value>
+  </data>
+  <data name="btnN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnN.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btnN.Text" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="&gt;&gt;btnN.Name" xml:space="preserve">
+    <value>btnN</value>
+  </data>
+  <data name="&gt;&gt;btnN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnN.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnN.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="pendu6.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pendu6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>746, 169</value>
+  </data>
+  <data name="pendu6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 246</value>
+  </data>
+  <data name="pendu6.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="pendu6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pendu6.Name" xml:space="preserve">
+    <value>pendu6</value>
+  </data>
+  <data name="&gt;&gt;pendu6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pendu6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pendu6.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pendu5.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pendu5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>746, 168</value>
+  </data>
+  <data name="pendu5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 247</value>
+  </data>
+  <data name="pendu5.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="pendu5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pendu5.Name" xml:space="preserve">
+    <value>pendu5</value>
+  </data>
+  <data name="&gt;&gt;pendu5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pendu5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pendu5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pendu4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pendu4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>746, 168</value>
+  </data>
+  <data name="pendu4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 247</value>
+  </data>
+  <data name="pendu4.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="pendu4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pendu4.Name" xml:space="preserve">
+    <value>pendu4</value>
+  </data>
+  <data name="&gt;&gt;pendu4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pendu4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pendu4.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="pendu3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pendu3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>746, 168</value>
+  </data>
+  <data name="pendu3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 247</value>
+  </data>
+  <data name="pendu3.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="pendu3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pendu3.Name" xml:space="preserve">
+    <value>pendu3</value>
+  </data>
+  <data name="&gt;&gt;pendu3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pendu3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pendu3.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btnC.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnC.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 28</value>
+  </data>
+  <data name="btnC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnC.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnC.Text" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="&gt;&gt;btnC.Name" xml:space="preserve">
+    <value>btnC</value>
+  </data>
+  <data name="&gt;&gt;btnC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnC.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnC.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btnM.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnM.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 69</value>
+  </data>
+  <data name="btnM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnM.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="btnM.Text" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="&gt;&gt;btnM.Name" xml:space="preserve">
+    <value>btnM</value>
+  </data>
+  <data name="&gt;&gt;btnM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnM.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnM.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnW.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnW.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnW.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 108</value>
+  </data>
+  <data name="btnW.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnW.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="btnW.Text" xml:space="preserve">
+    <value>W</value>
+  </data>
+  <data name="&gt;&gt;btnW.Name" xml:space="preserve">
+    <value>btnW</value>
+  </data>
+  <data name="&gt;&gt;btnW.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnW.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnW.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="pendu7.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pendu7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>746, 168</value>
+  </data>
+  <data name="pendu7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 247</value>
+  </data>
+  <data name="pendu7.TabIndex" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="pendu7.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pendu7.Name" xml:space="preserve">
+    <value>pendu7</value>
+  </data>
+  <data name="&gt;&gt;pendu7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pendu7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pendu7.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnB.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnB.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 28</value>
+  </data>
+  <data name="btnB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnB.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnB.Text" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="&gt;&gt;btnB.Name" xml:space="preserve">
+    <value>btnB</value>
+  </data>
+  <data name="&gt;&gt;btnB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnB.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnB.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="pendu1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pendu1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>746, 168</value>
+  </data>
+  <data name="pendu1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 247</value>
+  </data>
+  <data name="pendu1.TabIndex" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="pendu1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pendu1.Name" xml:space="preserve">
+    <value>pendu1</value>
+  </data>
+  <data name="&gt;&gt;pendu1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pendu1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pendu1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btnL.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnL.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 67</value>
+  </data>
+  <data name="btnL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnL.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btnL.Text" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="&gt;&gt;btnL.Name" xml:space="preserve">
+    <value>btnL</value>
+  </data>
+  <data name="&gt;&gt;btnL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnL.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnL.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btnV.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnV.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnV.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 108</value>
+  </data>
+  <data name="btnV.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnV.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="btnV.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="&gt;&gt;btnV.Name" xml:space="preserve">
+    <value>btnV</value>
+  </data>
+  <data name="&gt;&gt;btnV.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnV.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnV.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="btnA.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnA.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 28</value>
+  </data>
+  <data name="btnA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnA.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnA.Text" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="&gt;&gt;btnA.Name" xml:space="preserve">
+    <value>btnA</value>
+  </data>
+  <data name="&gt;&gt;btnA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnA.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnA.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="btnK.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnK.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 68</value>
+  </data>
+  <data name="btnK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnK.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnK.Text" xml:space="preserve">
+    <value>K</value>
+  </data>
+  <data name="&gt;&gt;btnK.Name" xml:space="preserve">
+    <value>btnK</value>
+  </data>
+  <data name="&gt;&gt;btnK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnK.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnK.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="btnI.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnI.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnI.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 28</value>
+  </data>
+  <data name="btnI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnI.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnI.Text" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="&gt;&gt;btnI.Name" xml:space="preserve">
+    <value>btnI</value>
+  </data>
+  <data name="&gt;&gt;btnI.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnI.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnI.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="btnR.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnR.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 68</value>
+  </data>
+  <data name="btnR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnR.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="btnR.Text" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="&gt;&gt;btnR.Name" xml:space="preserve">
+    <value>btnR</value>
+  </data>
+  <data name="&gt;&gt;btnR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnR.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnR.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="pendu9.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pendu9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>746, 168</value>
+  </data>
+  <data name="pendu9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 247</value>
+  </data>
+  <data name="pendu9.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="pendu9.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pendu9.Name" xml:space="preserve">
+    <value>pendu9</value>
+  </data>
+  <data name="&gt;&gt;pendu9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pendu9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pendu9.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="pendu2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pendu2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pendu2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>746, 168</value>
+  </data>
+  <data name="pendu2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 247</value>
+  </data>
+  <data name="pendu2.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="pendu2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pendu2.Name" xml:space="preserve">
+    <value>pendu2</value>
+  </data>
+  <data name="&gt;&gt;pendu2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pendu2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pendu2.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btnJ.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnJ.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnJ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 28</value>
+  </data>
+  <data name="btnJ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnJ.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnJ.Text" xml:space="preserve">
+    <value>J</value>
+  </data>
+  <data name="&gt;&gt;btnJ.Name" xml:space="preserve">
+    <value>btnJ</value>
+  </data>
+  <data name="&gt;&gt;btnJ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnJ.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnJ.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="aide.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="aide.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 14.25pt</value>
+  </data>
+  <data name="aide.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 76</value>
+  </data>
+  <data name="aide.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 35</value>
+  </data>
+  <data name="aide.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="aide.Text" xml:space="preserve">
+    <value>Indice</value>
+  </data>
+  <data name="&gt;&gt;aide.Name" xml:space="preserve">
+    <value>aide</value>
+  </data>
+  <data name="&gt;&gt;aide.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aide.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;aide.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="btnH.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnH.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnH.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 28</value>
+  </data>
+  <data name="btnH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnH.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnH.Text" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="&gt;&gt;btnH.Name" xml:space="preserve">
+    <value>btnH</value>
+  </data>
+  <data name="&gt;&gt;btnH.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnH.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnH.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="btnT.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 68</value>
+  </data>
+  <data name="btnT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnT.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="btnT.Text" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="&gt;&gt;btnT.Name" xml:space="preserve">
+    <value>btnT</value>
+  </data>
+  <data name="&gt;&gt;btnT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnT.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnT.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="btnS.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnS.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 68</value>
+  </data>
+  <data name="btnS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnS.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="btnS.Text" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="&gt;&gt;btnS.Name" xml:space="preserve">
+    <value>btnS</value>
+  </data>
+  <data name="&gt;&gt;btnS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnS.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnS.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="btnQ.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnQ.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnQ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 67</value>
+  </data>
+  <data name="btnQ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnQ.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btnQ.Text" xml:space="preserve">
+    <value>Q</value>
+  </data>
+  <data name="&gt;&gt;btnQ.Name" xml:space="preserve">
+    <value>btnQ</value>
+  </data>
+  <data name="&gt;&gt;btnQ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnQ.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnQ.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="btnG.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnG.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 28</value>
+  </data>
+  <data name="btnG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnG.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnG.Text" xml:space="preserve">
+    <value>G</value>
+  </data>
+  <data name="&gt;&gt;btnG.Name" xml:space="preserve">
+    <value>btnG</value>
+  </data>
+  <data name="&gt;&gt;btnG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnG.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnG.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="btnF.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnF.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 28</value>
+  </data>
+  <data name="btnF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnF.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnF.Text" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="&gt;&gt;btnF.Name" xml:space="preserve">
+    <value>btnF</value>
+  </data>
+  <data name="&gt;&gt;btnF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnF.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnF.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="pendu10.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pendu10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>746, 168</value>
+  </data>
+  <data name="pendu10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 247</value>
+  </data>
+  <data name="pendu10.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="pendu10.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pendu10.Name" xml:space="preserve">
+    <value>pendu10</value>
+  </data>
+  <data name="&gt;&gt;pendu10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pendu10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pendu10.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="imagegagne.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="imagegagne.Location" type="System.Drawing.Point, System.Drawing">
+    <value>746, 168</value>
+  </data>
+  <data name="imagegagne.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 247</value>
+  </data>
+  <data name="imagegagne.TabIndex" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="imagegagne.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;imagegagne.Name" xml:space="preserve">
+    <value>imagegagne</value>
+  </data>
+  <data name="&gt;&gt;imagegagne.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imagegagne.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imagegagne.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="btnU.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnU.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="btnU.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 108</value>
+  </data>
+  <data name="btnU.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 35</value>
+  </data>
+  <data name="btnU.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="btnU.Text" xml:space="preserve">
+    <value>U</value>
+  </data>
+  <data name="&gt;&gt;btnU.Name" xml:space="preserve">
+    <value>btnU</value>
+  </data>
+  <data name="&gt;&gt;btnU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnU.Parent" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;btnU.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 14.25pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 26</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Joueur :</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lblprenom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblprenom.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 14.25pt, style=Bold</value>
+  </data>
+  <data name="lblprenom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 9</value>
+  </data>
+  <data name="lblprenom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 26</value>
+  </data>
+  <data name="lblprenom.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="lblprenom.Text" xml:space="preserve">
+    <value>Joueur</value>
+  </data>
+  <data name="&gt;&gt;lblprenom.Name" xml:space="preserve">
+    <value>lblprenom</value>
+  </data>
+  <data name="&gt;&gt;lblprenom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblprenom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblprenom.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="reponse.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="reponse.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 20.25pt, style=Bold</value>
+  </data>
+  <data name="reponse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 337</value>
+  </data>
+  <data name="reponse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 37</value>
+  </data>
+  <data name="reponse.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="reponse.Text" xml:space="preserve">
+    <value>Réponse</value>
+  </data>
+  <data name="reponse.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;reponse.Name" xml:space="preserve">
+    <value>reponse</value>
+  </data>
+  <data name="&gt;&gt;reponse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;reponse.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;reponse.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="texteresultat.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="texteresultat.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 20.25pt, style=Underline</value>
+  </data>
+  <data name="texteresultat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 265</value>
+  </data>
+  <data name="texteresultat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 36</value>
+  </data>
+  <data name="texteresultat.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="texteresultat.Text" xml:space="preserve">
+    <value>Le mot était</value>
+  </data>
+  <data name="texteresultat.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;texteresultat.Name" xml:space="preserve">
+    <value>texteresultat</value>
+  </data>
+  <data name="&gt;&gt;texteresultat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;texteresultat.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;texteresultat.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lblinfo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblinfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblinfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>728, 129</value>
+  </data>
+  <data name="lblinfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 37</value>
+  </data>
+  <data name="lblinfo.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="lblinfo.Text" xml:space="preserve">
+    <value>Perdu / Gagné</value>
+  </data>
+  <data name="lblinfo.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblinfo.Name" xml:space="preserve">
+    <value>lblinfo</value>
+  </data>
+  <data name="&gt;&gt;lblinfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblinfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblinfo.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="btnRejouer.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnRejouer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 16.25pt</value>
+  </data>
+  <data name="btnRejouer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>429, 447</value>
+  </data>
+  <data name="btnRejouer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 39</value>
+  </data>
+  <data name="btnRejouer.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="btnRejouer.Text" xml:space="preserve">
+    <value>Rejouer</value>
+  </data>
+  <data name="&gt;&gt;btnRejouer.Name" xml:space="preserve">
+    <value>btnRejouer</value>
+  </data>
+  <data name="&gt;&gt;btnRejouer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRejouer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnRejouer.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="lblPendu.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblPendu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblPendu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>739, 72</value>
+  </data>
+  <data name="lblPendu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 37</value>
+  </data>
+  <data name="lblPendu.TabIndex" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="lblPendu.Text" xml:space="preserve">
+    <value>Compteur</value>
+  </data>
+  <data name="&gt;&gt;lblPendu.Name" xml:space="preserve">
+    <value>lblPendu</value>
+  </data>
+  <data name="&gt;&gt;lblPendu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPendu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblPendu.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="lblInfoUtilisateur.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblInfoUtilisateur.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12pt, style=Bold</value>
+  </data>
+  <data name="lblInfoUtilisateur.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 169</value>
+  </data>
+  <data name="lblInfoUtilisateur.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="lblInfoUtilisateur.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="lblInfoUtilisateur.Text" xml:space="preserve">
+    <value>Information sur le mot</value>
+  </data>
+  <data name="lblInfoUtilisateur.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblInfoUtilisateur.Name" xml:space="preserve">
+    <value>lblInfoUtilisateur</value>
+  </data>
+  <data name="&gt;&gt;lblInfoUtilisateur.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblInfoUtilisateur.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblInfoUtilisateur.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="lblettre2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblettre2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblettre2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 87</value>
+  </data>
+  <data name="lblettre2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 37</value>
+  </data>
+  <data name="lblettre2.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="lblettre2.Text" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="lblettre2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblettre2.Name" xml:space="preserve">
+    <value>lblettre2</value>
+  </data>
+  <data name="&gt;&gt;lblettre2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblettre2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblettre2.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="lblettre3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblettre3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblettre3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>452, 87</value>
+  </data>
+  <data name="lblettre3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 37</value>
+  </data>
+  <data name="lblettre3.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="lblettre3.Text" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="lblettre3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblettre3.Name" xml:space="preserve">
+    <value>lblettre3</value>
+  </data>
+  <data name="&gt;&gt;lblettre3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblettre3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblettre3.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="lblettre4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblettre4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblettre4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 87</value>
+  </data>
+  <data name="lblettre4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 37</value>
+  </data>
+  <data name="lblettre4.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="lblettre4.Text" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="lblettre4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblettre4.Name" xml:space="preserve">
+    <value>lblettre4</value>
+  </data>
+  <data name="&gt;&gt;lblettre4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblettre4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblettre4.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="lblettre5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblettre5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblettre5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>544, 87</value>
+  </data>
+  <data name="lblettre5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 37</value>
+  </data>
+  <data name="lblettre5.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="lblettre5.Text" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="lblettre5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblettre5.Name" xml:space="preserve">
+    <value>lblettre5</value>
+  </data>
+  <data name="&gt;&gt;lblettre5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblettre5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblettre5.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="lblettre1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblettre1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblettre1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 87</value>
+  </data>
+  <data name="lblettre1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 37</value>
+  </data>
+  <data name="lblettre1.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="lblettre1.Text" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="lblettre1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblettre1.Name" xml:space="preserve">
+    <value>lblettre1</value>
+  </data>
+  <data name="&gt;&gt;lblettre1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblettre1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblettre1.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="gbAlphabet.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="gbAlphabet.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 11.25pt</value>
+  </data>
+  <data name="gbAlphabet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 242</value>
+  </data>
+  <data name="gbAlphabet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>452, 165</value>
+  </data>
+  <data name="gbAlphabet.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="gbAlphabet.Text" xml:space="preserve">
+    <value>Sélectionner une lettre parmi l'alphabet</value>
+  </data>
+  <data name="&gt;&gt;gbAlphabet.Name" xml:space="preserve">
+    <value>gbAlphabet</value>
+  </data>
+  <data name="&gt;&gt;gbAlphabet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbAlphabet.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbAlphabet.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="lblCreateur.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCreateur.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 9.75pt, style=Bold, Italic</value>
+  </data>
+  <data name="lblCreateur.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCreateur.Location" type="System.Drawing.Point, System.Drawing">
+    <value>859, 504</value>
+  </data>
+  <data name="lblCreateur.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 18</value>
+  </data>
+  <data name="lblCreateur.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="lblCreateur.Text" xml:space="preserve">
+    <value>© Dimitry ROBIN</value>
+  </data>
+  <data name="&gt;&gt;lblCreateur.Name" xml:space="preserve">
+    <value>lblCreateur</value>
+  </data>
+  <data name="&gt;&gt;lblCreateur.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCreateur.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCreateur.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pbCode.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>814, -2</value>
+  </data>
+  <data name="pbCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 150</value>
+  </data>
+  <data name="pbCode.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;pbCode.Name" xml:space="preserve">
+    <value>pbCode</value>
+  </data>
+  <data name="&gt;&gt;pbCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbCode.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbCode.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="pbClassement.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbClassement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 157</value>
+  </data>
+  <data name="pbClassement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 50</value>
+  </data>
+  <data name="pbClassement.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="&gt;&gt;pbClassement.Name" xml:space="preserve">
+    <value>pbClassement</value>
+  </data>
+  <data name="&gt;&gt;pbClassement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbClassement.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbClassement.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 14.25pt</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 194</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 26</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Classement</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pbRetourForm.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbRetourForm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbRetourForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>814, -2</value>
+  </data>
+  <data name="pbRetourForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 150</value>
+  </data>
+  <data name="pbRetourForm.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="pbRetourForm.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pbRetourForm.Name" xml:space="preserve">
+    <value>pbRetourForm</value>
+  </data>
+  <data name="&gt;&gt;pbRetourForm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbRetourForm.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbRetourForm.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="tbCode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tbCode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.25pt</value>
+  </data>
+  <data name="tbCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tbCode.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbCode.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="tbCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>984, 561</value>
+  </data>
+  <data name="tbCode.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="tbCode.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;tbCode.Name" xml:space="preserve">
+    <value>tbCode</value>
+  </data>
+  <data name="&gt;&gt;tbCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbCode.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbCode.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="pbRetour.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbRetour.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbRetour.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 447</value>
+  </data>
+  <data name="pbRetour.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 80</value>
+  </data>
+  <data name="pbRetour.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="&gt;&gt;pbRetour.Name" xml:space="preserve">
+    <value>pbRetour</value>
+  </data>
+  <data name="&gt;&gt;pbRetour.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbRetour.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbRetour.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>984, 561</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Pendu</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormProjetPendu</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

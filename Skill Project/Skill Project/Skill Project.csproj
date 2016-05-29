@@ -118,6 +118,9 @@
     <Compile Include="FormsCompetence\FormProjetSnake.Designer.cs">
       <DependentUpon>FormProjetSnake.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsCompetence\Pendu\Joueur.cs" />
+    <Compile Include="FormsCompetence\Pendu\LesMots5Lettres.cs" />
+    <Compile Include="FormsCompetence\Pendu\Mot.cs" />
     <Compile Include="FormsCompetence\Planning\Calendar.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -229,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsCompetence\FormProjetCalculatrice.resx">
       <DependentUpon>FormProjetCalculatrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsCompetence\FormProjetPendu.resx">
+      <DependentUpon>FormProjetPendu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsCompetence\Planning\FormPlanning.resx">
       <DependentUpon>FormPlanning.cs</DependentUpon>
@@ -351,10 +357,42 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="FormsCompetence\Pendu\CodePendu.txt" />
+    <Content Include="FormsCompetence\Pendu\ListeMots5LettresSansAccents.txt" />
+    <Content Include="FormsCompetence\Pendu\StatsPendu.txt" />
     <Content Include="Langage\Anglais.txt" />
     <Content Include="Langage\Francais.txt" />
     <Content Include="Langage\Projet\ProjetAnglais.txt" />
     <Content Include="Langage\Projet\ProjetFrancais.txt" />
+    <None Include="Resources\retour.png" />
+    <None Include="Resources\coin_replie_retour.png" />
+    <None Include="Resources\classement.png" />
+    <None Include="Resources\gagne1.png" />
+    <None Include="Resources\10.png" />
+    <None Include="Resources\9.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\coin_replie1.png" />
+    <None Include="Resources\coin_replie.png" />
+    <None Include="Resources\coin_replie.jpg" />
+    <None Include="Resources\images %282%29.jpg" />
+    <None Include="Resources\gagne.png" />
+    <None Include="Resources\10.jpg" />
+    <None Include="Resources\9.gif" />
+    <None Include="Resources\8.gif" />
+    <None Include="Resources\7.gif" />
+    <None Include="Resources\6.gif" />
+    <None Include="Resources\5.gif" />
+    <None Include="Resources\4.gif" />
+    <None Include="Resources\3.gif" />
+    <None Include="Resources\2.gif" />
+    <None Include="Resources\1.gif" />
     <None Include="Resources\snake1.png" />
     <None Include="Resources\progressbarcircular1.png" />
     <None Include="Resources\code_source1.png" />

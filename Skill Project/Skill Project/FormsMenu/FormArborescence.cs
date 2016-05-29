@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Skill_Project.FormsCompetence.Pendu;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,9 @@ namespace Skill_Project
         List<string> Preference = new List<string>();
         List<string> Tempo = new List<string>();
         List<string> Destination = new List<string>();
+
+        private Joueur nouvJoueur;
+        private List<Joueur> lesJoueurs = new List<Joueur>();
 
         List<string> LangueElement = new List<string>();
 
@@ -699,10 +703,49 @@ namespace Skill_Project
             {
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
-                FormIndex form = (FormIndex)this.MdiParent;
-                FormsCompetence.FormProjetPendu FPC = new FormsCompetence.FormProjetPendu();
-                FPC.MdiParent = form;
-                FPC.Show();
+            recommence:
+
+                string value = "Pseudonyme";
+                bool check = false;
+
+                if (Fonction.InputBoxLogin("Pendu", "Entrez un nom de joueur :", ref value, ref check) == DialogResult.OK)
+                {
+                    if (check == false)
+                    {
+                        if (value != "Pseudonyme" && value != "" && value != " " && value != "  " && value != "   " && value != "    " && value != "     ")
+                        {
+                            nouvJoueur = new Joueur(value);
+                            lesJoueurs.Add(nouvJoueur);
+                            nouvJoueur.ModifNbPartie();
+
+                            nouvJoueur.AfficherJoueur();
+
+                            FormIndex form = (FormIndex)this.MdiParent;
+                            FormsCompetence.FormProjetPendu FPC = new FormsCompetence.FormProjetPendu(value, nouvJoueur, lesJoueurs, "arborescence");
+                            FPC.MdiParent = form;
+                            FPC.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Entrez un pseudonyme svp.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                            goto recommence;
+                        }
+                    }
+                    else
+                    {
+                        nouvJoueur = new Joueur("Guest");
+                        lesJoueurs.Add(nouvJoueur);
+                        nouvJoueur.ModifNbPartie();
+
+                        nouvJoueur.AfficherJoueur();
+
+                        FormIndex form = (FormIndex)this.MdiParent;
+                        FormsCompetence.FormProjetPendu FPC = new FormsCompetence.FormProjetPendu("Guest", nouvJoueur, lesJoueurs, "arborescence");
+                        FPC.MdiParent = form;
+                        FPC.Show();
+                    }
+                }
             }
 
             if (lbl.Text == Destination[10].ToString())

@@ -81,7 +81,7 @@
             this.rtbSuggestion.Location = new System.Drawing.Point(1, 199);
             this.rtbSuggestion.Name = "rtbSuggestion";
             this.rtbSuggestion.Size = new System.Drawing.Size(983, 274);
-            this.rtbSuggestion.TabIndex = 1;
+            this.rtbSuggestion.TabIndex = 7;
             this.rtbSuggestion.Text = "Rédigez votre suggestion..";
             this.toolTip5.SetToolTip(this.rtbSuggestion, "Champs requis");
             this.rtbSuggestion.Click += new System.EventHandler(this.rtbSuggestion_Click);
@@ -97,7 +97,7 @@
             this.btnRetourSuggestion.Location = new System.Drawing.Point(12, 479);
             this.btnRetourSuggestion.Name = "btnRetourSuggestion";
             this.btnRetourSuggestion.Size = new System.Drawing.Size(110, 44);
-            this.btnRetourSuggestion.TabIndex = 2;
+            this.btnRetourSuggestion.TabIndex = 9;
             this.btnRetourSuggestion.Text = "Retour";
             this.btnRetourSuggestion.UseVisualStyleBackColor = false;
             this.btnRetourSuggestion.Click += new System.EventHandler(this.btnRetourSuggestion_Click);
@@ -112,7 +112,7 @@
             this.btnEnvoyerSuggestion.Location = new System.Drawing.Point(848, 479);
             this.btnEnvoyerSuggestion.Name = "btnEnvoyerSuggestion";
             this.btnEnvoyerSuggestion.Size = new System.Drawing.Size(124, 44);
-            this.btnEnvoyerSuggestion.TabIndex = 3;
+            this.btnEnvoyerSuggestion.TabIndex = 8;
             this.btnEnvoyerSuggestion.Text = "Envoyer";
             this.btnEnvoyerSuggestion.UseVisualStyleBackColor = false;
             this.btnEnvoyerSuggestion.Click += new System.EventHandler(this.btnEnvoyerSuggestion_Click);
@@ -125,7 +125,7 @@
             this.tbNom.Location = new System.Drawing.Point(42, 154);
             this.tbNom.Name = "tbNom";
             this.tbNom.Size = new System.Drawing.Size(126, 29);
-            this.tbNom.TabIndex = 4;
+            this.tbNom.TabIndex = 1;
             this.tbNom.Text = "Nom";
             this.toolTip1.SetToolTip(this.tbNom, "Champs requis");
             this.tbNom.Click += new System.EventHandler(this.tbNom_Click);
@@ -144,7 +144,7 @@
             this.tbPrénom.Location = new System.Drawing.Point(199, 155);
             this.tbPrénom.Name = "tbPrénom";
             this.tbPrénom.Size = new System.Drawing.Size(131, 29);
-            this.tbPrénom.TabIndex = 5;
+            this.tbPrénom.TabIndex = 2;
             this.tbPrénom.Text = "Prénom";
             this.toolTip2.SetToolTip(this.tbPrénom, "Champs requis");
             this.tbPrénom.Click += new System.EventHandler(this.tbPrénom_Click);
@@ -159,7 +159,7 @@
             this.nudAge.Location = new System.Drawing.Point(670, 156);
             this.nudAge.Name = "nudAge";
             this.nudAge.Size = new System.Drawing.Size(54, 29);
-            this.nudAge.TabIndex = 6;
+            this.nudAge.TabIndex = 4;
             this.toolTip3.SetToolTip(this.nudAge, "Age requis");
             // 
             // rbM
@@ -170,7 +170,7 @@
             this.rbM.Location = new System.Drawing.Point(894, 155);
             this.rbM.Name = "rbM";
             this.rbM.Size = new System.Drawing.Size(44, 26);
-            this.rbM.TabIndex = 7;
+            this.rbM.TabIndex = 6;
             this.rbM.TabStop = true;
             this.rbM.Text = "M";
             this.rbM.UseVisualStyleBackColor = false;
@@ -184,7 +184,7 @@
             this.rbF.Location = new System.Drawing.Point(840, 155);
             this.rbF.Name = "rbF";
             this.rbF.Size = new System.Drawing.Size(37, 26);
-            this.rbF.TabIndex = 8;
+            this.rbF.TabIndex = 5;
             this.rbF.TabStop = true;
             this.rbF.Text = "F";
             this.toolTip4.SetToolTip(this.rbF, "Sexe requis");
@@ -251,7 +251,7 @@
             this.tbMail.Location = new System.Drawing.Point(354, 155);
             this.tbMail.Name = "tbMail";
             this.tbMail.Size = new System.Drawing.Size(223, 29);
-            this.tbMail.TabIndex = 13;
+            this.tbMail.TabIndex = 3;
             this.tbMail.Text = "Adresse Mail";
             this.toolTip6.SetToolTip(this.tbMail, "Champs requis");
             this.tbMail.Click += new System.EventHandler(this.tbMail_Click);

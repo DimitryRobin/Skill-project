@@ -377,5 +377,95 @@ namespace Skill_Project
 
             return (LangueElement);
         }
+        
+        public static DialogResult InputBoxLogin(string title, string promptText, ref string value, ref bool check) // MessageBox nom joueur
+        {
+            Form form = new Form();
+            Label label = new Label();
+            TextBox textBox = new TextBox();
+            CheckBox cb1 = new CheckBox();
+            Button buttonOk = new Button();
+            Button buttonCancel = new Button();
+
+            form.Text = title;
+            label.Text = promptText;
+            textBox.Text = value;
+            cb1.Checked = check;
+
+            cb1.Text = "Se connecter en tant qu'invité";
+            buttonOk.Text = "Jouer";
+            buttonCancel.Text = "Annuler";
+            buttonOk.DialogResult = DialogResult.OK;
+            buttonCancel.DialogResult = DialogResult.Cancel;
+
+            label.SetBounds(9, 20, 372, 13);
+            textBox.SetBounds(12, 36, 372, 20);
+            cb1.SetBounds(12, 56, 372, 20);
+            buttonOk.SetBounds(228, 86, 75, 23);
+            buttonCancel.SetBounds(309, 86, 75, 23);
+
+            label.AutoSize = true;
+            textBox.Anchor = textBox.Anchor | AnchorStyles.Right;
+            cb1.Anchor = cb1.Anchor | AnchorStyles.Right;
+            buttonOk.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonCancel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+
+            form.ClientSize = new Size(396, 117);
+            form.Controls.AddRange(new Control[] { label, textBox, cb1, buttonOk, buttonCancel });
+            form.ClientSize = new Size(Math.Max(300, label.Right + 10), form.ClientSize.Height);
+            form.FormBorderStyle = FormBorderStyle.FixedDialog;
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.MinimizeBox = false;
+            form.MaximizeBox = false;
+            form.AcceptButton = buttonOk;
+            form.CancelButton = buttonCancel;
+
+            DialogResult dialogResult = form.ShowDialog();
+            value = textBox.Text;
+            check = cb1.Checked;
+            return dialogResult;
+        }
+
+        public static void ecrireFichierProjetJeu(string destination, string joueur, string victoireOudefaite)
+        {
+            string fileName3 = @"..\..\FormsCompetence\" + destination;
+
+            // On récupère tout
+            StreamReader reader = File.OpenText(fileName3);
+            string ligne;
+
+            List<string> listeElement = new List<string>();
+            while (!reader.EndOfStream)
+            {
+                ligne = reader.ReadLine();
+                listeElement.Add(ligne);
+            }
+            reader.Close();
+
+            //// Debut MAJ \\\\
+
+            listeElement.Add(joueur);
+
+            //// Fin MAJ \\\\
+
+            // on renvoie tout
+
+            StreamWriter writer = new StreamWriter(fileName3);
+
+            foreach (var item in listeElement)
+            {
+                writer.WriteLine(item);
+            }
+            writer.Close();
+        }
+
+        public static string[] lireCodeProjet(string destination) // Lit le code du projet et le renvoie
+        {
+            string fileName3 = @"..\..\FormsCompetence\" + destination;
+
+            string[] lines = System.IO.File.ReadAllLines(fileName3);
+
+            return lines;
+        }
     }
 }
