@@ -52,3 +52,4 @@ C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\af\Skill Proje
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\en\Skill Project.resources.dll
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill Project.exe
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill Project.pdb
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill Project.csprojResolveAssemblyReference.cache

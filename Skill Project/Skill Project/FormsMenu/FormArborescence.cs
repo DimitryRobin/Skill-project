@@ -474,6 +474,20 @@ namespace Skill_Project
 
             panel1.AutoScrollMinSize = new Size(0, y + 40);
             panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
+
+            if (e.Node.Text == LangueElement[141])
+            {
+                panel1.Controls.Add(pbClassement);
+                panel1.Controls.Add(label2);
+
+                pbClassement.Visible = true;
+                label2.Visible = true;
+            }
+            else
+            {
+                pbClassement.Visible = false;
+                label2.Visible = false;
+            }
         }
 
         private void treeView1_AfterCollapse(object sender, TreeViewEventArgs e)
@@ -484,6 +498,20 @@ namespace Skill_Project
             rbZA.Enabled = true;
 
             Chargement();
+
+            if (e.Node.Text == LangueElement[141])
+            {
+                panel1.Controls.Add(pbClassement);
+                panel1.Controls.Add(label2);
+
+                pbClassement.Visible = true;
+                label2.Visible = true;
+            }
+            else
+            {
+                pbClassement.Visible = false;
+                label2.Visible = false;
+            }
         }
 
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
@@ -600,6 +628,20 @@ namespace Skill_Project
 
                 panel1.AutoScrollMinSize = new Size(0, y + 40);
                 panel1.BackgroundImage = Skill_Project.Properties.Resources.yuyukyuk;
+            }
+
+            if (e.Node.Text == LangueElement[141])
+            {
+                panel1.Controls.Add(pbClassement);
+                panel1.Controls.Add(label2);
+
+                pbClassement.Visible = true;
+                label2.Visible = true;
+            }
+            else
+            {
+                pbClassement.Visible = false;
+                label2.Visible = false;
             }
         }
 

@@ -12,20 +12,13 @@ namespace Skill_Project.FormsCompetence
         private Mot motAlea;
         private int compteur = 10; // Nombre de coup avant d'être pendu
         private string lol;
-        private String op;
-        private String pl;
-        private String tr;
-        private String fi;
-        private Joueur nouvJoueur;
         private string arrivage;
 
         private List<Joueur> lesJoueurs = new List<Joueur>();
-        private int nbJ;
 
         int gagne = 0;
         int perdu = 0;
         int indice = 0;
-        double pourcent;
 
         public FormProjetPendu(string nom, Joueur J, List<Joueur> lesJ, string provenance)
         {

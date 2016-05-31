@@ -41,10 +41,14 @@
             this.recent1 = new System.Windows.Forms.Label();
             this.lblDate1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pbClassement = new System.Windows.Forms.PictureBox();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.gbTri.SuspendLayout();
             this.gbRecent.SuspendLayout();
             this.panelRecent.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClassement)).BeginInit();
             this.SuspendLayout();
             // 
             // gbTri
@@ -215,12 +219,40 @@
             this.panel1.AutoScrollMinSize = new System.Drawing.Size(0, 730);
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.pbClassement);
             this.panel1.Location = new System.Drawing.Point(0, 85);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(998, 476);
             this.panel1.TabIndex = 8;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
+            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label2.Location = new System.Drawing.Point(864, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 26);
+            this.label2.TabIndex = 105;
+            this.label2.Text = "Classement";
+            this.label2.Visible = false;
+            // 
+            // pbClassement
+            // 
+            this.pbClassement.BackColor = System.Drawing.Color.Transparent;
+            this.pbClassement.BackgroundImage = global::Skill_Project.Properties.Resources.classement;
+            this.pbClassement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbClassement.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pbClassement.Location = new System.Drawing.Point(866, 3);
+            this.pbClassement.Name = "pbClassement";
+            this.pbClassement.Size = new System.Drawing.Size(100, 50);
+            this.pbClassement.TabIndex = 104;
+            this.pbClassement.TabStop = false;
+            this.pbClassement.Visible = false;
             // 
             // treeView1
             // 
@@ -260,6 +292,9 @@
             this.gbRecent.ResumeLayout(false);
             this.panelRecent.ResumeLayout(false);
             this.panelRecent.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClassement)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -279,5 +314,7 @@
         private System.Windows.Forms.RadioButton rbDateAjout;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pbClassement;
     }
 }

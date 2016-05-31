@@ -4,7 +4,10 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,6 +16,10 @@ namespace Skill_Project
 {
     class Fonction
     {
+        //  Call this function to remove the key from memory after use for security
+        [System.Runtime.InteropServices.DllImport("KERNEL32.DLL", EntryPoint = "RtlZeroMemory")]
+        public static extern bool ZeroMemory(IntPtr Destination, int Length);
+
         public static string fileName2 = @"C:\SkillProject\Preferences_SkillProject.txt";
         public static string family = "Palatino Linotype";
         public static string FichierLangue = "";
@@ -36,7 +43,7 @@ namespace Skill_Project
             // Gestion recents
             if (provenance != "")
             {
-                if(provenance != listeElement[6])
+                if (provenance != listeElement[6])
                 {
                     listeElement[11] = listeElement[9];
                     listeElement[10] = listeElement[8];
@@ -97,9 +104,9 @@ namespace Skill_Project
             writer.Close();
 
         }
-        
+
         public static List<string> Preference() // Retourne toutes les préférences sous form List
-        {            
+        {
             StreamReader reader = File.OpenText(fileName2);
             string ligne;
 
@@ -133,7 +140,7 @@ namespace Skill_Project
             string name = "Projet" + Langue[4];
 
             // string fileName = @"Langage\Projet\"+ name; // Une fois publié
-            string fileName = @"..\..\Langage\Projet\"+ name;
+            string fileName = @"..\..\Langage\Projet\" + name;
 
             StreamReader reader = File.OpenText(fileName);
             string ligne;
@@ -184,7 +191,7 @@ namespace Skill_Project
                 Console.WriteLine(e.Message);
             }
 
-            string[] lines = { "1", "True", "Palatino Linotype", "False", "Francais", "True" , "Aucun", "jj/mm/aaaa", "Aucun", "jj/mm/aaaa", "Aucun", "jj/mm/aaaa" };
+            string[] lines = { "1", "True", "Palatino Linotype", "False", "Francais", "True", "Aucun", "jj/mm/aaaa", "Aucun", "jj/mm/aaaa", "Aucun", "jj/mm/aaaa" };
             System.IO.File.WriteAllLines(@"C:\SkillProject\Preferences_SkillProject.txt", lines);
         }
 
@@ -362,7 +369,7 @@ namespace Skill_Project
             List<string> LangueElement = new List<string>();
 
             // string fileName = @"Langage\"+ listeElement[4]; // Une fois publié
-            string fileName3 = @"..\..\Langage\"+ listeElement[4];
+            string fileName3 = @"..\..\Langage\" + listeElement[4];
 
 
             StreamReader reader = File.OpenText(fileName3);
@@ -377,7 +384,7 @@ namespace Skill_Project
 
             return (LangueElement);
         }
-        
+
         public static DialogResult InputBoxLogin(string title, string promptText, ref string value, ref bool check) // MessageBox nom joueur
         {
             Form form = new Form();
@@ -426,37 +433,233 @@ namespace Skill_Project
             return dialogResult;
         }
 
-        public static void ecrireFichierProjetJeu(string destination, string joueur, string victoireOudefaite)
+        public static void ecrireFichierProjetJeu(string destination, string joueur, string victoireOudefaite) // Enregistrement stat par joueur
         {
-            string fileName3 = @"..\..\FormsCompetence\" + destination;
+            string filename3 = @"..\..\FormsCompetence\" + destination;
+
 
             // On récupère tout
-            StreamReader reader = File.OpenText(fileName3);
+            StreamReader reader = File.OpenText(filename3);
             string ligne;
 
             List<string> listeElement = new List<string>();
             while (!reader.EndOfStream)
             {
                 ligne = reader.ReadLine();
-                listeElement.Add(ligne);
+                //// DEBUT DECRYPTAGE  \\\\
+
+                string decrypted1 = Decrypt(ligne, "p@ssw0rd");
+
+                //// FIN DECRYPTAGE  \\\\
+
+                // MessageBox.Show(decrypted1);
+
+                listeElement.Add(decrypted1);
             }
             reader.Close();
 
+
+
+
+
             //// Debut MAJ \\\\
 
-            listeElement.Add(joueur);
+            int i = 0;
+            int duplicate = 0;
+            int victoire = 0;
+            int defaite = 0;
+            Decimal ratio = 0;
+
+            string JExiste = "NON";
+
+            foreach (var item in listeElement)
+            {
+                string[] result = Regex.Split(item, @"\|");
+
+                if (result[0] == joueur)
+                {
+                    JExiste = result[0];
+
+                    /*
+                    MessageBox.Show("Joueur : " + result[0]);
+                    MessageBox.Show("Victoire : " + result[1]);
+                    MessageBox.Show("Défaite : " + result[2]);
+                    MessageBox.Show("Ratio : " + result[3]);
+                    */
+
+                    victoire = Convert.ToInt32(result[1]);
+                    defaite = Convert.ToInt32(result[2]);
+
+                    if (victoireOudefaite == "Defaite")
+                    {
+                        defaite++;
+                    }
+
+                    if (victoireOudefaite == "Victoire")
+                    {
+                        victoire++;
+                    }
+
+                    victoire = victoire * 100;
+
+                    if (defaite == 0)
+                    {
+                        ratio = victoire;
+                    }
+                    else
+                    {
+                        ratio = victoire / defaite;
+                    }
+
+                    ratio = ratio / 100;
+                    victoire = victoire / 100;
+                    duplicate = i;
+                }
+
+                i++;
+            }
+
+            if (JExiste == "NON")
+            {
+                if (victoireOudefaite == "Defaite")
+                {
+                    defaite++;
+                }
+
+                if (victoireOudefaite == "Victoire")
+                {
+                    victoire++;
+                }
+
+                victoire = victoire * 100;
+
+                if (defaite == 0)
+                {
+                    ratio = victoire;
+                }
+                else
+                {
+                    ratio = victoire / defaite;
+                }
+
+                ratio = ratio / 100;
+                victoire = victoire / 100;
+
+                listeElement.Add(joueur + "|" + victoire + "|" + defaite + "|" + ratio);
+            }
+            else
+            {
+                listeElement[duplicate] = joueur + "|" + victoire + "|" + defaite + "|" + ratio;
+            }
 
             //// Fin MAJ \\\\
 
-            // on renvoie tout
 
-            StreamWriter writer = new StreamWriter(fileName3);
+
+
+            
+
+
+            //// DEBUT CRYPTAGE  \\\\
+
+            List<string> listeElement2 = new List<string>();
 
             foreach (var item in listeElement)
+            {
+                string encrypted = Encrypt(item, "p@ssw0rd");
+                listeElement2.Add(encrypted);
+            }
+
+            //// FIN CRYPTAGE  \\\\
+
+
+
+
+
+
+            // on renvoie tout
+
+            StreamWriter writer = new StreamWriter(filename3);
+
+            foreach (var item in listeElement2)
             {
                 writer.WriteLine(item);
             }
             writer.Close();
+        }
+
+        /// <summary>
+        /// Crypte une chaine en utilisant un chiffreur symétrique
+        /// </summary>
+        /// <param name="plainText">Chaine à crypter</param>
+        /// <param name="pass">Mot de passe utilisé pour dériver la clé</param>
+        /// <returns>Chaine cryptée</returns>
+        private static string Encrypt(string plainText, string pass)
+        {
+            string result = string.Empty;
+
+            System.Security.Cryptography.TripleDESCryptoServiceProvider des =
+                    new System.Security.Cryptography.TripleDESCryptoServiceProvider();
+            des.IV = new byte[8];
+
+            System.Security.Cryptography.PasswordDeriveBytes pdb =
+                    new System.Security.Cryptography.PasswordDeriveBytes(pass, new byte[0]);
+
+            des.Key = pdb.CryptDeriveKey("RC2", "SHA1", 128, new byte[8]);
+
+            using (MemoryStream ms = new MemoryStream(plainText.Length * 2))
+            {
+                using (System.Security.Cryptography.CryptoStream encStream = new
+                    System.Security.Cryptography.CryptoStream(ms, des.CreateEncryptor(),
+                    System.Security.Cryptography.CryptoStreamMode.Write))
+                {
+                    byte[] plainBytes = Encoding.UTF8.GetBytes(plainText);
+                    encStream.Write(plainBytes, 0, plainBytes.Length);
+                    encStream.FlushFinalBlock();
+                    byte[] encryptedBytes = new byte[ms.Length];
+                    ms.Position = 0;
+                    ms.Read(encryptedBytes, 0, (int)ms.Length);
+                    encStream.Close();
+                    ms.Close();
+                    result = Convert.ToBase64String(encryptedBytes);
+                }
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// Décrypte une chaine cryptée à partir d'un chiffreur symétrique
+        /// </summary>
+        /// <param name="base64String">chaine cryptée</param>
+        /// <param name="pass">Mot de passe utilisé pour dériver la clé</param>
+        /// <returns>Chaine décryptée</returns>
+        private static string Decrypt(string base64String, string pass)
+        {
+            string result = string.Empty;
+
+            System.Security.Cryptography.TripleDESCryptoServiceProvider des =
+                new System.Security.Cryptography.TripleDESCryptoServiceProvider();
+            des.IV = new byte[8];
+            System.Security.Cryptography.PasswordDeriveBytes pdb =
+                new System.Security.Cryptography.PasswordDeriveBytes(pass, new byte[0]);
+            des.Key = pdb.CryptDeriveKey("RC2", "SHA1", 128, new byte[8]);
+            byte[] encryptedBytes = Convert.FromBase64String(base64String);
+
+            using (MemoryStream ms = new MemoryStream(base64String.Length))
+            {
+                using (System.Security.Cryptography.CryptoStream decStream =
+                    new System.Security.Cryptography.CryptoStream(ms, des.CreateDecryptor(),
+                        System.Security.Cryptography.CryptoStreamMode.Write))
+                {
+                    decStream.Write(encryptedBytes, 0, encryptedBytes.Length);
+                    decStream.FlushFinalBlock();
+                    byte[] plainBytes = new byte[ms.Length];
+                    ms.Position = 0;
+                    ms.Read(plainBytes, 0, (int)ms.Length);
+                    result = Encoding.UTF8.GetString(plainBytes);
+                }
+            }
+            return result;
         }
 
         public static string[] lireCodeProjet(string destination) // Lit le code du projet et le renvoie
@@ -467,5 +670,7 @@ namespace Skill_Project
 
             return lines;
         }
+
+
     }
 }
