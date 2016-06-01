@@ -118,6 +118,12 @@
     <Compile Include="FormsCompetence\FormProjetSnake.Designer.cs">
       <DependentUpon>FormProjetSnake.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsCompetence\Pendu\FormStatsPendu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\Pendu\FormStatsPendu.Designer.cs">
+      <DependentUpon>FormStatsPendu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsCompetence\Pendu\Joueur.cs" />
     <Compile Include="FormsCompetence\Pendu\LesMots5Lettres.cs" />
     <Compile Include="FormsCompetence\Pendu\Mot.cs" />
@@ -235,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsCompetence\FormProjetPendu.resx">
       <DependentUpon>FormProjetPendu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsCompetence\Pendu\FormStatsPendu.resx">
+      <DependentUpon>FormStatsPendu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsCompetence\Planning\FormPlanning.resx">
       <DependentUpon>FormPlanning.cs</DependentUpon>

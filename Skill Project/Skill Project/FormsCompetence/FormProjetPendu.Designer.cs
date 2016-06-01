@@ -573,12 +573,14 @@
             resources.ApplyResources(this.pbClassement, "pbClassement");
             this.pbClassement.Name = "pbClassement";
             this.pbClassement.TabStop = false;
+            this.pbClassement.Click += new System.EventHandler(this.pbClassement_Click);
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Name = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pbRetourForm
             // 
@@ -648,6 +650,7 @@
             this.Name = "FormProjetPendu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormProjetPendu_Load);
+            this.Enter += new System.EventHandler(this.FormProjetPendu_Enter);
             this.Leave += new System.EventHandler(this.FormProjetPendu_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.pendu8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendu6)).EndInit();

@@ -45,7 +45,7 @@ namespace Skill_Project.FormsCompetence
 
         private void FormProjetPendu_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void bouton_Click(object sender, EventArgs e, Button nomBouton)
@@ -626,7 +626,28 @@ namespace Skill_Project.FormsCompetence
 
         private void FormProjetPendu_Leave(object sender, EventArgs e)
         {
-            this.Close();
+            // this.Close();
+            this.Hide();
+        }
+
+        private void pbClassement_Click(object sender, EventArgs e)
+        {
+            FormIndex FI = (FormIndex)this.MdiParent;
+
+            FormStatsPendu FP = new FormStatsPendu(this);
+            FP.MdiParent = FI;
+            
+            FP.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            pbClassement_Click(sender, e);
+        }
+
+        private void FormProjetPendu_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -433,13 +433,10 @@ namespace Skill_Project
             return dialogResult;
         }
 
-        public static void ecrireFichierProjetJeu(string destination, string joueur, string victoireOudefaite) // Enregistrement stat par joueur
+        public static List<string> LireStatsProjetJeu(string destination) // Renvoie les stats du projet
         {
-            string filename3 = @"..\..\FormsCompetence\" + destination;
-
-
             // On récupère tout
-            StreamReader reader = File.OpenText(filename3);
+            StreamReader reader = File.OpenText(destination);
             string ligne;
 
             List<string> listeElement = new List<string>();
@@ -458,8 +455,16 @@ namespace Skill_Project
             }
             reader.Close();
 
+            return listeElement;
+        }
 
+        public static void ecrireFichierProjetJeu(string destination, string joueur, string victoireOudefaite) // Enregistrement stats par joueur
+        {
+            string filename3 = @"..\..\FormsCompetence\" + destination;
 
+            List<string> listeElement = new List<string>();
+            listeElement = LireStatsProjetJeu(filename3);
+            
 
 
             //// Debut MAJ \\\\
