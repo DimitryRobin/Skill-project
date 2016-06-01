@@ -141,4 +141,35 @@ Accessoires
 Compétences
 Jeux
 
+// Pendu : 145-157
 
+Pendu
+Joueur
+Indice
+Classement
+Le mot était
+Rejouer
+Sélectionner une lettre parmi l'alphabet
+Cette lettre EST BIEN présente dans le mot !
+Cette lettre n'EST PAS présente dans le mot !
+Vous avez perdu.
+ESSAIE ENCORE !
+Vous avez gagné.
+FELICITATION !
+
+// Stats Pendu : 161-162
+
+Statistiques
+V : Nombre de victoire | D : Nombre de défaite | R : Ratio victoire/défaite
+
+// Inputbox login joueur : 166-168
+
+Se connecter en tant qu'invité
+Jouer
+Annuler
+
+// Form index : 172-174
+
+Entrez un nom de joueur :
+Erreur
+Entrez un pseudonyme svp.

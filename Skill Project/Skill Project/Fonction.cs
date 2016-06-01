@@ -16,6 +16,8 @@ namespace Skill_Project
 {
     class Fonction
     {
+        static List<string> LangueElement = new List<string>();
+
         //  Call this function to remove the key from memory after use for security
         [System.Runtime.InteropServices.DllImport("KERNEL32.DLL", EntryPoint = "RtlZeroMemory")]
         public static extern bool ZeroMemory(IntPtr Destination, int Length);
@@ -387,6 +389,8 @@ namespace Skill_Project
 
         public static DialogResult InputBoxLogin(string title, string promptText, ref string value, ref bool check) // MessageBox nom joueur
         {
+            LangueElement = LangageAppli();
+
             Form form = new Form();
             Label label = new Label();
             TextBox textBox = new TextBox();
@@ -399,9 +403,9 @@ namespace Skill_Project
             textBox.Text = value;
             cb1.Checked = check;
 
-            cb1.Text = "Se connecter en tant qu'invité";
-            buttonOk.Text = "Jouer";
-            buttonCancel.Text = "Annuler";
+            cb1.Text = LangueElement[166];
+            buttonOk.Text = LangueElement[167];
+            buttonCancel.Text = LangueElement[168];
             buttonOk.DialogResult = DialogResult.OK;
             buttonCancel.DialogResult = DialogResult.Cancel;
 

@@ -82,6 +82,18 @@ namespace Skill_Project
             lblACNom3.Parent = pictureBox1;
             lblACNom3.Location = pos8;
             lblACNom3.BackColor = Color.Transparent;
+
+            var pos9 = this.PointToScreen(lblDate.Location);
+            pos9 = pictureBox1.PointToClient(pos9);
+            lblDate.Parent = pictureBox1;
+            lblDate.Location = pos9;
+            lblDate.BackColor = Color.Transparent;
+
+            var pos10 = this.PointToScreen(lblHeure.Location);
+            pos10 = pictureBox1.PointToClient(pos10);
+            lblHeure.Parent = pictureBox1;
+            lblHeure.Location = pos10;
+            lblHeure.BackColor = Color.Transparent;
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -506,6 +518,8 @@ namespace Skill_Project
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            timerHHmm.Start();
+
             string curFile = @"C:\SkillProject\Preferences_SkillProject.txt";
 
             if (File.Exists(curFile))
@@ -551,6 +565,7 @@ namespace Skill_Project
 
         private void FormIndex_FormClosed(object sender, FormClosedEventArgs e)
         {
+            timerHHmm.Stop();
             Application.Exit();
         }
 
@@ -601,7 +616,9 @@ namespace Skill_Project
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
+            lblHeure.Text = DateTime.Now.ToString("HH:mm:ss");
+            lblDate.Text = DateTime.Now.ToString("dddd dd MMMM yyyy");
+            lblDate.Text = lblDate.Text[0].ToString().ToUpper() + lblDate.Text.Substring(1).ToLower();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -727,7 +744,7 @@ namespace Skill_Project
                 string value = "Pseudonyme";
                 bool check = false;
 
-                if (Fonction.InputBoxLogin("Pendu", "Entrez un nom de joueur :", ref value, ref check) == DialogResult.OK)
+                if (Fonction.InputBoxLogin("Pendu", LangueElement[172], ref value, ref check) == DialogResult.OK)
                 {
                     if(check == false)
                     {
@@ -747,7 +764,7 @@ namespace Skill_Project
                         }
                         else
                         {
-                            MessageBox.Show("Entrez un pseudonyme svp.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(LangueElement[174], LangueElement[173], MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                             goto recommence;
                         }
@@ -784,6 +801,11 @@ namespace Skill_Project
         private void lblACNom1_MouseHover(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.Hand;
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

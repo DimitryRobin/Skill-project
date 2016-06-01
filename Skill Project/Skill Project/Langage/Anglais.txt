@@ -141,4 +141,35 @@ Accessories
 Skills
 Games
 
+// Pendu : 145-157
 
+Hanged
+Player
+Clue
+Ranking
+The word was
+Replay
+Select a letter from the alphabet
+This letter is WELL present in the word!
+This letter IS NOT present in the word!
+You lost.
+TRY AGAIN !
+You have won.
+CONGRATULATIONS !
+
+// Stats Pendu : 161-162
+
+Statistics
+V: Number of victory | D: Number of defeat | R: Ratio victory / defeat
+
+// Inputbox login joueur : 166-168
+
+Log on as a guest
+Play
+Cancel
+
+// Form index : 172-174
+
+Enter a player name :
+Error
+Please enter a nickname.

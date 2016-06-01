@@ -708,7 +708,7 @@ namespace Skill_Project
                 string value = "Pseudonyme";
                 bool check = false;
 
-                if (Fonction.InputBoxLogin("Pendu", "Entrez un nom de joueur :", ref value, ref check) == DialogResult.OK)
+                if (Fonction.InputBoxLogin("Pendu", LangueElement[172], ref value, ref check) == DialogResult.OK)
                 {
                     if (check == false)
                     {
@@ -727,7 +727,7 @@ namespace Skill_Project
                         }
                         else
                         {
-                            MessageBox.Show("Entrez un pseudonyme svp.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(LangueElement[174], LangueElement[173], MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                             goto recommence;
                         }

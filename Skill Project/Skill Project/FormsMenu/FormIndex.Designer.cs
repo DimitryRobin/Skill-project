@@ -46,7 +46,7 @@ namespace Skill_Project
             this.listeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miniaturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arborescenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timerHHmm = new System.Windows.Forms.Timer(this.components);
             this.lblAccesRapide = new System.Windows.Forms.Label();
             this.lblACDate1 = new System.Windows.Forms.Label();
             this.lblACDate3 = new System.Windows.Forms.Label();
@@ -54,6 +54,8 @@ namespace Skill_Project
             this.lblACNom1 = new System.Windows.Forms.Label();
             this.lblACNom3 = new System.Windows.Forms.Label();
             this.lblACNom2 = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblHeure = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -179,10 +181,10 @@ namespace Skill_Project
             resources.ApplyResources(this.arborescenceToolStripMenuItem, "arborescenceToolStripMenuItem");
             this.arborescenceToolStripMenuItem.Click += new System.EventHandler(this.arborescenceToolStripMenuItem_Click);
             // 
-            // timer1
+            // timerHHmm
             // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timerHHmm.Interval = 1000;
+            this.timerHHmm.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // lblAccesRapide
             // 
@@ -233,11 +235,25 @@ namespace Skill_Project
             this.lblACNom2.Click += new System.EventHandler(this.lblACNom1_Click);
             this.lblACNom2.MouseHover += new System.EventHandler(this.lblACNom1_MouseHover);
             // 
+            // lblDate
+            // 
+            resources.ApplyResources(this.lblDate, "lblDate");
+            this.lblDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblDate.Name = "lblDate";
+            // 
+            // lblHeure
+            // 
+            resources.ApplyResources(this.lblHeure, "lblHeure");
+            this.lblHeure.BackColor = System.Drawing.Color.Transparent;
+            this.lblHeure.Name = "lblHeure";
+            // 
             // FormIndex
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.lblHeure);
+            this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblACNom2);
             this.Controls.Add(this.lblACNom3);
             this.Controls.Add(this.lblACNom1);
@@ -279,7 +295,7 @@ namespace Skill_Project
         private System.Windows.Forms.ToolStripMenuItem miniaturesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paramètreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem arborescenceToolStripMenuItem;
-        private Timer timer1;
+        private Timer timerHHmm;
         private Label lblAccesRapide;
         private Label lblACDate1;
         private Label lblACDate3;
@@ -287,6 +303,8 @@ namespace Skill_Project
         private Label lblACNom1;
         private Label lblACNom3;
         private Label lblACNom2;
+        private Label lblDate;
+        private Label lblHeure;
 
         public ToolStripMenuItem ArborescenceToolStripMenuItem
         {

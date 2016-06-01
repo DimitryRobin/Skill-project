@@ -15,6 +15,8 @@ namespace Skill_Project.FormsCompetence.Pendu
     {
         Form f;
 
+        List<string> LangueElement = new List<string>();
+
         public FormStatsPendu(Form fm)
         {
             InitializeComponent();
@@ -34,6 +36,11 @@ namespace Skill_Project.FormsCompetence.Pendu
 
         private void FormStatsPendu_Load(object sender, EventArgs e)
         {
+            LangueElement = Fonction.LangageAppli();
+            this.Text = LangueElement[161];
+            lblStats.Text = LangueElement[161];
+            lblInfoVDR.Text = LangueElement[162];
+
             var pos = this.PointToScreen(pbClassement.Location);
             pos = this.PointToClient(pos);
             pbClassement.Parent = this;
@@ -72,7 +79,9 @@ namespace Skill_Project.FormsCompetence.Pendu
 
                     if(item == result[3])
                     {
-                        ListeTrieFini.Add(result[0] + "|" + result[1] + "|" + result[2] + "|" + result[3] + "|");
+                        ListeTrieFini.Add(result[0] + "|" + result[1] + "|" + result[2] + "|" + result[3]);
+                        ListeStats.Remove(result[0] + "|" + result[1] + "|" + result[2] + "|" + result[3]);
+                        break;
                     }
                 }
             }
@@ -302,7 +311,7 @@ namespace Skill_Project.FormsCompetence.Pendu
                 label4.Visible = false;
             }
 
-
+            Fonction.policeTexte(this); // Gestion police
         }
     }
 }

@@ -14,6 +14,8 @@ namespace Skill_Project.FormsCompetence
         private string lol;
         private string arrivage;
 
+        List<string> LangueElement = new List<string>();
+
         private List<Joueur> lesJoueurs = new List<Joueur>();
 
         int gagne = 0;
@@ -36,16 +38,20 @@ namespace Skill_Project.FormsCompetence
             lblPendu.Text = Convert.ToString(compteur);
             
             lblprenom.Text = lol;
-
-            // Pour test
-
-            reponse.Visible = true;
-            reponse.Text = Convert.ToString(motAlea.affiche());
         }
 
         private void FormProjetPendu_Load(object sender, EventArgs e)
         {
+            LangueElement = Fonction.LangageAppli();
+            this.Text = LangueElement[145];
+            label1.Text = LangueElement[146];
+            aide.Text = LangueElement[147];
+            label2.Text = LangueElement[148];
+            texteresultat.Text = LangueElement[149];
+            btnRejouer.Text = LangueElement[150];
+            gbAlphabet.Text = LangueElement[151];
 
+            Fonction.policeTexte(this); // Gestion police
         }
 
         private void bouton_Click(object sender, EventArgs e, Button nomBouton)
@@ -61,7 +67,7 @@ namespace Skill_Project.FormsCompetence
             {
                 lblInfoUtilisateur.Visible = true;
                 lblInfoUtilisateur.ForeColor = Color.ForestGreen;
-                lblInfoUtilisateur.Text = "Cette lettre EST BIEN présente dans le mot !";
+                lblInfoUtilisateur.Text = LangueElement[152];
 
                 lesIndices = motAlea.IndicesLettre(l); //retourne LES indices de la lettre dans le mot
 
@@ -116,7 +122,7 @@ namespace Skill_Project.FormsCompetence
                     lblPendu.Text = Convert.ToString(compteur);
                     lblInfoUtilisateur.Visible = true;
                     lblInfoUtilisateur.ForeColor = Color.Purple;
-                    lblInfoUtilisateur.Text = "Cette lettre n'EST PAS présente dans le mot !";
+                    lblInfoUtilisateur.Text = LangueElement[153];
 
                     if (compteur == 9)
                     {
@@ -238,11 +244,11 @@ namespace Skill_Project.FormsCompetence
             {
 
                 lblInfoUtilisateur.ForeColor = Color.Red;
-                lblInfoUtilisateur.Text = "Vous avez perdu.";
+                lblInfoUtilisateur.Text = LangueElement[154];
                 lblPendu.Visible = false;
                 lblinfo.ForeColor = Color.Red;
                 lblinfo.Visible = true;
-                lblinfo.Text = "ESSAIE ENCORE !";
+                lblinfo.Text = LangueElement[155];
                 gbAlphabet.Enabled = false;
                 btnRejouer.Visible = true;
                 texteresultat.Visible = true;
@@ -280,11 +286,11 @@ namespace Skill_Project.FormsCompetence
                             if (lblettre5.Text != "_")
                             {
                                 lblInfoUtilisateur.ForeColor = Color.Purple;
-                                lblInfoUtilisateur.Text = "Vous avez gagné.";
+                                lblInfoUtilisateur.Text = LangueElement[156];
                                 lblPendu.Visible = false;
                                 lblinfo.ForeColor = Color.Green;
                                 lblinfo.Visible = true;
-                                lblinfo.Text = "FELICITATION !";
+                                lblinfo.Text = LangueElement[157];
                                 imagegagne.Visible = true;
                                 gbAlphabet.Enabled = false;
                                 btnRejouer.Visible = true;
@@ -377,7 +383,7 @@ namespace Skill_Project.FormsCompetence
             gbAlphabet.Enabled = true;
             btnRejouer.Visible = false;
             texteresultat.Visible = false;
-            // reponse.Visible = false;
+            reponse.Visible = false;
             aide.Enabled = true;
 
             imagegagne.Visible = false;
@@ -506,11 +512,11 @@ namespace Skill_Project.FormsCompetence
                             if (lblettre5.Text != "_")
                             {
                                 lblInfoUtilisateur.ForeColor = Color.Purple;
-                                lblInfoUtilisateur.Text = "Vous avez gagné.";
+                                lblInfoUtilisateur.Text = LangueElement[156];
                                 lblPendu.Visible = false;
                                 lblinfo.ForeColor = Color.Green;
                                 lblinfo.Visible = true;
-                                lblinfo.Text = "FELICITATION !";
+                                lblinfo.Text = LangueElement[157];
                                 imagegagne.Visible = true;
                                 gbAlphabet.Enabled = false;
                                 btnRejouer.Visible = true;
