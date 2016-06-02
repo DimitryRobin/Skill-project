@@ -182,3 +182,12 @@ Information
 Source code of website
 Source code :
 The source code is displayed here ..
+
+// Form Bouton Animé : 187-191
+
+Animated button
+Mouse over a button ..
+Click at length on a button ..
+The principle remains the same for each button.
+Button
+

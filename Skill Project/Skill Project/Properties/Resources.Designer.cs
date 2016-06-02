@@ -283,6 +283,26 @@ namespace Skill_Project.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BGbutton1 {
+            get {
+                object obj = ResourceManager.GetObject("BGbutton1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BGbutton2 {
+            get {
+                object obj = ResourceManager.GetObject("BGbutton2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bouton_anime {
             get {
                 object obj = ResourceManager.GetObject("bouton_anime", resourceCulture);
@@ -296,6 +316,36 @@ namespace Skill_Project.Properties {
         internal static System.Drawing.Bitmap bouton_anime1 {
             get {
                 object obj = ResourceManager.GetObject("bouton_anime1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ButtonMouseDown {
+            get {
+                object obj = ResourceManager.GetObject("ButtonMouseDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ButtonMouseOver {
+            get {
+                object obj = ResourceManager.GetObject("ButtonMouseOver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ButtonMouseOver2 {
+            get {
+                object obj = ResourceManager.GetObject("ButtonMouseOver2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -406,6 +456,46 @@ namespace Skill_Project.Properties {
         internal static System.Drawing.Bitmap dark_spots_background_abstract_73380_3840x2160 {
             get {
                 object obj = ResourceManager.GetObject("dark_spots_background_abstract_73380_3840x2160", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap degrade1 {
+            get {
+                object obj = ResourceManager.GetObject("degrade1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap degrade1bis {
+            get {
+                object obj = ResourceManager.GetObject("degrade1bis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap degrade2 {
+            get {
+                object obj = ResourceManager.GetObject("degrade2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap degrade2bis {
+            get {
+                object obj = ResourceManager.GetObject("degrade2bis", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

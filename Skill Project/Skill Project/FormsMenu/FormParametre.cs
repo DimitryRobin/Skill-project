@@ -70,7 +70,7 @@ namespace Skill_Project
 
 
             Fonction.ecrireFichier(opa.ToString(), BM.ToString(), lblPolice.Text, ID.ToString(), langueApres, Tuto.ToString(), "", "");
-            
+                                      
             if (lines[0].ToString() != opa.ToString() || lines[1].ToString() != BM.ToString() || lines[2].ToString() != lblPolice.Text || lines[3].ToString() != ID.ToString()
                  || lines[4].ToString() != langueApres || lines[5].ToString() != Tuto.ToString())
             {
@@ -78,6 +78,44 @@ namespace Skill_Project
 
                 if (DR == DialogResult.Yes)
                 {
+                    if (lines[4].ToString() != langueApres)
+                    {
+                        // Changement de langue --> On réinitialise les vues récemments
+
+                        // On récupère tout
+                        StreamReader reader = File.OpenText(@"C:\SkillProject\Preferences_SkillProject.txt");
+                        string ligne;
+
+                        List<string> listeElement = new List<string>();
+                        while (!reader.EndOfStream)
+                        {
+                            ligne = reader.ReadLine();
+                            listeElement.Add(ligne);
+                        }
+                        reader.Close();
+
+                        //// Debut MAJ \\\\
+
+                        listeElement[6] = "Aucun";
+                        listeElement[7] = "jj/mm/aaaa";
+                        listeElement[8] = "Aucun";
+                        listeElement[9] = "jj/mm/aaaa";
+                        listeElement[10] = "Aucun";
+                        listeElement[11] = "jj/mm/aaaa";
+
+                        //// Fin MAJ \\\\
+
+                        // on renvoie tout
+
+                        StreamWriter writer = new StreamWriter(@"C:\SkillProject\Preferences_SkillProject.txt");
+
+                        foreach (var item in listeElement)
+                        {
+                            writer.WriteLine(item);
+                        }
+                        writer.Close();
+                    }
+
                     Application.Restart();
                 }
             }            

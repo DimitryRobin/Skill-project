@@ -25,12 +25,13 @@ namespace Skill_Project.FormsCompetence
         private void FormProjetBoutonAnime_Load(object sender, EventArgs e)
         {
             LangueElement = Fonction.LangageAppli();
-            /*
-            this.Text = LangueElement[181];
-            lblTitreCSSW.Text = LangueElement[181];
-            btnCSSW.Text = LangueElement[182];
-            rtbCSSW.Text = LangueElement[183];
-            */
+            this.Text = LangueElement[187];
+            lblTitre.Text = LangueElement[187];
+            lblTexte.Text = LangueElement[188] + "\n" + LangueElement[189] + "\n" + LangueElement[190];
+            animated_Button1.Text = LangueElement[191];
+            animated_Button21.Text = LangueElement[191] + " 2";
+            animated_Button31.Text = LangueElement[191] + " 3";
+
             Fonction.policeTexte(this); // Gestion police
         }
 

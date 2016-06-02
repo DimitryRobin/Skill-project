@@ -316,4 +316,31 @@
   <data name="retour" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\retour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ButtonMouseDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonMouseDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonMouseOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonMouseOver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BGbutton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BGbutton1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BGbutton2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BGbutton2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonMouseOver2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonMouseOver2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="degrade1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\degrade1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="degrade1bis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\degrade1bis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="degrade2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\degrade2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="degrade2bis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\degrade2bis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

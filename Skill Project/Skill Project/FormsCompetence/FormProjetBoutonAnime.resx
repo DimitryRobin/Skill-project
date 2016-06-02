@@ -154,7 +154,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblTitre.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>10</value>
   </data>
   <data name="pbRetour.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -181,7 +181,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pbRetour.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>9</value>
   </data>
   <data name="pbRetourForm.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -211,7 +211,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pbRetourForm.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>8</value>
   </data>
   <data name="pbCode.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -238,7 +238,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pbCode.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>7</value>
   </data>
   <data name="tbCode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -274,7 +274,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbCode.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
   </data>
   <data name="lblCreateur.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -307,7 +307,190 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblCreateur.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblTexte.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTexte.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 14.25pt</value>
+  </data>
+  <data name="lblTexte.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTexte.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 91</value>
+  </data>
+  <data name="lblTexte.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 78</value>
+  </data>
+  <data name="lblTexte.TabIndex" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="lblTexte.Text" xml:space="preserve">
+    <value>Passez la souris sur un bouton..
+Cliquez longuement sur un bouton..
+Le principe reste le même pour chaque boutons.
+</value>
+  </data>
+  <data name="&gt;&gt;lblTexte.Name" xml:space="preserve">
+    <value>lblTexte</value>
+  </data>
+  <data name="&gt;&gt;lblTexte.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTexte.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblTexte.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="animated_Button31.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12.25pt</value>
+  </data>
+  <data name="animated_Button31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>424, 373</value>
+  </data>
+  <data name="animated_Button31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 28</value>
+  </data>
+  <data name="animated_Button31.TabIndex" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="animated_Button31.Text" xml:space="preserve">
+    <value>Bouton 3</value>
+  </data>
+  <data name="&gt;&gt;animated_Button31.Name" xml:space="preserve">
+    <value>animated_Button31</value>
+  </data>
+  <data name="&gt;&gt;animated_Button31.Type" xml:space="preserve">
+    <value>Skill_Project.FormsCompetence.BoutonAnime.Animated_Button3, Skill Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;animated_Button31.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;animated_Button31.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="animated_Button3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12.25pt</value>
+  </data>
+  <data name="animated_Button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="animated_Button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 372</value>
+  </data>
+  <data name="animated_Button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 30</value>
+  </data>
+  <data name="animated_Button3.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="animated_Button3.Text" xml:space="preserve">
+    <value>Bouton</value>
+  </data>
+  <data name="&gt;&gt;animated_Button3.Name" xml:space="preserve">
+    <value>animated_Button3</value>
+  </data>
+  <data name="&gt;&gt;animated_Button3.Type" xml:space="preserve">
+    <value>Skill_Project.FormsCompetence.BoutonAnime.Animated_Button, Skill Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;animated_Button3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;animated_Button3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="animated_Button21.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="animated_Button21.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12.25pt</value>
+  </data>
+  <data name="animated_Button21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 292</value>
+  </data>
+  <data name="animated_Button21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 28</value>
+  </data>
+  <data name="animated_Button21.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="animated_Button21.Text" xml:space="preserve">
+    <value>Bouton 2</value>
+  </data>
+  <data name="&gt;&gt;animated_Button21.Name" xml:space="preserve">
+    <value>animated_Button21</value>
+  </data>
+  <data name="&gt;&gt;animated_Button21.Type" xml:space="preserve">
+    <value>Skill_Project.FormsCompetence.BoutonAnime.Animated_Button2, Skill Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;animated_Button21.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;animated_Button21.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="animated_Button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12.25pt</value>
+  </data>
+  <data name="animated_Button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="animated_Button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 291</value>
+  </data>
+  <data name="animated_Button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 30</value>
+  </data>
+  <data name="animated_Button2.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="animated_Button2.Text" xml:space="preserve">
+    <value>Bouton</value>
+  </data>
+  <data name="&gt;&gt;animated_Button2.Name" xml:space="preserve">
+    <value>animated_Button2</value>
+  </data>
+  <data name="&gt;&gt;animated_Button2.Type" xml:space="preserve">
+    <value>Skill_Project.FormsCompetence.BoutonAnime.Animated_Button, Skill Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;animated_Button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;animated_Button2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="animated_Button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 12.25pt</value>
+  </data>
+  <data name="animated_Button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="animated_Button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 212</value>
+  </data>
+  <data name="animated_Button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 30</value>
+  </data>
+  <data name="animated_Button1.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="animated_Button1.Text" xml:space="preserve">
+    <value>Bouton</value>
+  </data>
+  <data name="&gt;&gt;animated_Button1.Name" xml:space="preserve">
+    <value>animated_Button1</value>
+  </data>
+  <data name="&gt;&gt;animated_Button1.Type" xml:space="preserve">
+    <value>Skill_Project.FormsCompetence.BoutonAnime.Animated_Button, Skill Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;animated_Button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;animated_Button1.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publier\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,6 +67,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fonction.cs" />
+    <Compile Include="FormsCompetence\BoutonAnime\Animated Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\BoutonAnime\Animated Button.designer.cs">
+      <DependentUpon>Animated Button.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\BoutonAnime\Animated Button2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\BoutonAnime\Animated Button2.Designer.cs">
+      <DependentUpon>Animated Button2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\BoutonAnime\Animated Button3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\BoutonAnime\Animated Button3.Designer.cs">
+      <DependentUpon>Animated Button3.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsCompetence\FormProjetBarreProgCirculaire.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +257,12 @@
     <Compile Include="FormsMenu\FormSuggestion.Designer.cs">
       <DependentUpon>FormSuggestion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormsCompetence\BoutonAnime\Animated Button2.resx">
+      <DependentUpon>Animated Button2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsCompetence\BoutonAnime\Animated Button3.resx">
+      <DependentUpon>Animated Button3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsCompetence\FormProjetBarreProgCirculaire.resx">
       <DependentUpon>FormProjetBarreProgCirculaire.cs</DependentUpon>
     </EmbeddedResource>
@@ -361,7 +400,18 @@
   <ItemGroup>
     <None Include="Resources\github3.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="FormsCompetence\BoutonAnime\CodeBA.txt" />
     <Content Include="FormsCompetence\CSSW\CodeCSSW.txt" />
@@ -372,6 +422,15 @@
     <Content Include="Langage\Francais.txt" />
     <Content Include="Langage\Projet\ProjetAnglais.txt" />
     <Content Include="Langage\Projet\ProjetFrancais.txt" />
+    <None Include="Resources\degrade2bis.png" />
+    <None Include="Resources\degrade2.png" />
+    <None Include="Resources\degrade1bis.png" />
+    <None Include="Resources\degrade1.png" />
+    <None Include="Resources\ButtonMouseOver2.png" />
+    <None Include="Resources\BGbutton2.png" />
+    <None Include="Resources\BGbutton1.png" />
+    <None Include="Resources\ButtonMouseOver.png" />
+    <None Include="Resources\ButtonMouseDown.png" />
     <None Include="Resources\retour.png" />
     <None Include="Resources\coin_replie_retour.png" />
     <None Include="Resources\classement.png" />
