@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSuggestion));
             this.lblTitreSuggestion = new System.Windows.Forms.Label();
             this.rtbSuggestion = new System.Windows.Forms.RichTextBox();
             this.btnRetourSuggestion = new System.Windows.Forms.Button();
@@ -91,7 +90,7 @@
             // btnRetourSuggestion
             // 
             this.btnRetourSuggestion.BackColor = System.Drawing.Color.Transparent;
-            this.btnRetourSuggestion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRetourSuggestion.BackgroundImage")));
+            this.btnRetourSuggestion.BackgroundImage = global::Skill_Project.Properties.Resources.yuyukyuk;
             this.btnRetourSuggestion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnRetourSuggestion.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRetourSuggestion.Location = new System.Drawing.Point(12, 479);
@@ -105,7 +104,7 @@
             // btnEnvoyerSuggestion
             // 
             this.btnEnvoyerSuggestion.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnEnvoyerSuggestion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEnvoyerSuggestion.BackgroundImage")));
+            this.btnEnvoyerSuggestion.BackgroundImage = global::Skill_Project.Properties.Resources.yuyukyuk;
             this.btnEnvoyerSuggestion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnEnvoyerSuggestion.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold);
             this.btnEnvoyerSuggestion.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -340,7 +339,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Skill_Project.Properties.Resources.yuyukyuk;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.ControlBox = false;

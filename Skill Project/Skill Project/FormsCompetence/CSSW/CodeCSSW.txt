@@ -1,0 +1,23 @@
+﻿
+
+        private void btnCSSW_Click(object sender, EventArgs e)
+        {
+            rtbCSSW.Clear();
+
+            rtbCSSW.Clear(); 
+            rtbCSSW.Cursor = Cursors.IBeam;
+            rtbCSSW.ForeColor = Color.Black;
+            
+            string url = tbURL.Text;
+
+            if (url != "URL")
+            {
+                HttpWebRequest requete = (HttpWebRequest)WebRequest.Create(url);
+                HttpWebResponse reponse = (HttpWebResponse)requete.GetResponse();
+                StreamReader sr = new StreamReader(reponse.GetResponseStream());
+                rtbCSSW.Text = sr.ReadToEnd();
+                sr.Close();
+            }
+        }
+
+

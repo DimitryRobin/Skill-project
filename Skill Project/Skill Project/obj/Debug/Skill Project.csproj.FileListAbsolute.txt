@@ -54,3 +54,4 @@ C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill Project.
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill Project.pdb
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill Project.csprojResolveAssemblyReference.cache
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.Pendu.FormStatsPendu.resources
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.FormProjetCodeSourceSiteWeb.resources

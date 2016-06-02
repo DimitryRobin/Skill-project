@@ -635,7 +635,7 @@ namespace Skill_Project
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
                 FormIndex form = (FormIndex)this.MdiParent;
-                FormsCompetence.FormProjetBoutonAnime FPC = new FormsCompetence.FormProjetBoutonAnime();
+                FormsCompetence.FormProjetBoutonAnime FPC = new FormsCompetence.FormProjetBoutonAnime("liste");
                 FPC.MdiParent = form;
                 FPC.Show();
             }
@@ -645,7 +645,7 @@ namespace Skill_Project
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
                 FormIndex form = (FormIndex)this.MdiParent;
-                FormsCompetence.FormProjetCodeSourceSiteWeb FPC = new FormsCompetence.FormProjetCodeSourceSiteWeb();
+                FormsCompetence.FormProjetCodeSourceSiteWeb FPC = new FormsCompetence.FormProjetCodeSourceSiteWeb("liste");
                 FPC.MdiParent = form;
                 FPC.Show();
             }
@@ -683,10 +683,14 @@ namespace Skill_Project
             {
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
-                FormIndex form = (FormIndex)this.MdiParent;
-                FormsCompetence.FormProjetAddFindPlayer FPC = new FormsCompetence.FormProjetAddFindPlayer();
-                FPC.MdiParent = form;
-                FPC.Show();
+                DialogResult DR = MessageBox.Show(LangueElement[175] + "\n" + LangueElement[176], LangueElement[177], MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (DR == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process p = new System.Diagnostics.Process();
+                    p.StartInfo.FileName = "http://dimitryrobin.fr/Portfolio/AddFindPlayer.php";
+                    p.Start();
+                }
             }
 
             if (lbl.Text == Destination[8].ToString())

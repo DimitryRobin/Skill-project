@@ -658,12 +658,17 @@ namespace Skill_Project
 
             if (lbl.Text == Item2[7])
             {
-                pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
-                
-                FormsCompetence.FormProjetAddFindPlayer FPC = new FormsCompetence.FormProjetAddFindPlayer();
-                FPC.MdiParent = this;
-                FPC.Show();
+
+                DialogResult DR = MessageBox.Show(LangueElement[175] + "\n" + LangueElement[176], LangueElement[177], MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (DR == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process p = new System.Diagnostics.Process();
+                    p.StartInfo.FileName = "http://dimitryrobin.fr/Portfolio/AddFindPlayer.php";
+                    p.Start();
+                }
+
             }
 
             if (lbl.Text == Item2[1])
@@ -681,7 +686,7 @@ namespace Skill_Project
                 pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
                 
-                FormsCompetence.FormProjetBoutonAnime FPC = new FormsCompetence.FormProjetBoutonAnime();
+                FormsCompetence.FormProjetBoutonAnime FPC = new FormsCompetence.FormProjetBoutonAnime("index");
                 FPC.MdiParent = this;
                 FPC.Show();
             }
@@ -690,7 +695,7 @@ namespace Skill_Project
                 pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
                 
-                FormsCompetence.FormProjetCodeSourceSiteWeb FPC = new FormsCompetence.FormProjetCodeSourceSiteWeb();
+                FormsCompetence.FormProjetCodeSourceSiteWeb FPC = new FormsCompetence.FormProjetCodeSourceSiteWeb("index");
                 FPC.MdiParent = this;
                 FPC.Show();
             }

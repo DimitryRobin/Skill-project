@@ -52,12 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fonction.cs" />
-    <Compile Include="FormsCompetence\FormProjetAddFindPlayer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormsCompetence\FormProjetAddFindPlayer.Designer.cs">
-      <DependentUpon>FormProjetAddFindPlayer.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormsCompetence\FormProjetBarreProgCirculaire.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +233,9 @@
     <EmbeddedResource Include="FormsCompetence\FormProjetCalculatrice.resx">
       <DependentUpon>FormProjetCalculatrice.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsCompetence\FormProjetCodeSourceSiteWeb.resx">
+      <DependentUpon>FormProjetCodeSourceSiteWeb.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsCompetence\FormProjetPendu.resx">
       <DependentUpon>FormProjetPendu.cs</DependentUpon>
     </EmbeddedResource>
@@ -366,6 +363,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="FormsCompetence\BoutonAnime\CodeBA.txt" />
+    <Content Include="FormsCompetence\CSSW\CodeCSSW.txt" />
     <Content Include="FormsCompetence\Pendu\CodePendu.txt" />
     <Content Include="FormsCompetence\Pendu\ListeMots5LettresSansAccents.txt" />
     <Content Include="FormsCompetence\Pendu\StatsPendu.txt" />

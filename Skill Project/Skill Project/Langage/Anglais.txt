@@ -168,8 +168,17 @@ Log on as a guest
 Play
 Cancel
 
-// Form index : 172-174
+// Form index : 172-177
 
 Enter a player name :
 Error
 Please enter a nickname.
+You will be redirected to the web page corresponding to the project.
+Do you want to continue ?
+Information
+
+// Form Code Source Site Web : 181-183
+
+Source code of website
+Source code :
+The source code is displayed here ..

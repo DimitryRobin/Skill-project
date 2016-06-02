@@ -168,8 +168,17 @@ Se connecter en tant qu'invité
 Jouer
 Annuler
 
-// Form index : 172-174
+// Form index : 172-177
 
 Entrez un nom de joueur :
 Erreur
 Entrez un pseudonyme svp.
+Vous allez être redirigé vers la page web correspond au projet.
+Voulez-vous continuer ?
+Information
+
+// Form Code Source Site Web : 181-183
+
+Code source site web
+Code source :
+Le code source s'affichera ici..

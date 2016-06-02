@@ -130,7 +130,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblTitre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 9</value>
+    <value>365, 9</value>
   </data>
   <data name="lblTitre.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 39</value>
@@ -154,6 +154,159 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblTitre.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pbRetour.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbRetour.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbRetour.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 447</value>
+  </data>
+  <data name="pbRetour.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 80</value>
+  </data>
+  <data name="pbRetour.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="&gt;&gt;pbRetour.Name" xml:space="preserve">
+    <value>pbRetour</value>
+  </data>
+  <data name="&gt;&gt;pbRetour.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbRetour.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbRetour.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pbRetourForm.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbRetourForm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbRetourForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>814, -2</value>
+  </data>
+  <data name="pbRetourForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 150</value>
+  </data>
+  <data name="pbRetourForm.TabIndex" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="pbRetourForm.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pbRetourForm.Name" xml:space="preserve">
+    <value>pbRetourForm</value>
+  </data>
+  <data name="&gt;&gt;pbRetourForm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbRetourForm.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbRetourForm.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pbCode.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbCode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>814, -2</value>
+  </data>
+  <data name="pbCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 150</value>
+  </data>
+  <data name="pbCode.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="&gt;&gt;pbCode.Name" xml:space="preserve">
+    <value>pbCode</value>
+  </data>
+  <data name="&gt;&gt;pbCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbCode.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbCode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tbCode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tbCode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.25pt</value>
+  </data>
+  <data name="tbCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tbCode.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbCode.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="tbCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>984, 561</value>
+  </data>
+  <data name="tbCode.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="tbCode.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;tbCode.Name" xml:space="preserve">
+    <value>tbCode</value>
+  </data>
+  <data name="&gt;&gt;tbCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbCode.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbCode.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblCreateur.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCreateur.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Palatino Linotype, 9.75pt, style=Bold, Italic</value>
+  </data>
+  <data name="lblCreateur.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCreateur.Location" type="System.Drawing.Point, System.Drawing">
+    <value>859, 504</value>
+  </data>
+  <data name="lblCreateur.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 18</value>
+  </data>
+  <data name="lblCreateur.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="lblCreateur.Text" xml:space="preserve">
+    <value>© Dimitry ROBIN</value>
+  </data>
+  <data name="&gt;&gt;lblCreateur.Name" xml:space="preserve">
+    <value>lblCreateur</value>
+  </data>
+  <data name="&gt;&gt;lblCreateur.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCreateur.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCreateur.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
