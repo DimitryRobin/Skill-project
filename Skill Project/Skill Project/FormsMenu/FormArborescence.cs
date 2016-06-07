@@ -739,8 +739,8 @@ namespace Skill_Project
             {
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
+                FormsCompetence.FormProjetMorpion FPC = new FormsCompetence.FormProjetMorpion("arborescence");
                 FormIndex form = (FormIndex)this.MdiParent;
-                FormsCompetence.FormProjetMorpion FPC = new FormsCompetence.FormProjetMorpion();
                 FPC.MdiParent = form;
                 FPC.Show();
             }

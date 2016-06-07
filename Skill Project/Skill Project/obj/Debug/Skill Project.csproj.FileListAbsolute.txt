@@ -24,15 +24,17 @@ C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\bin\Debug\System
 C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill Project.csprojResolveAssemblyReference.cache
 C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.MonthView.resources
 C:\Users\Dimy\Desktop\Skill project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormParametre.resources
-C:\wamp64\www\Skill-project\Skill Project\Skill Project\bin\Debug\Skill Project.exe.config
-C:\wamp64\www\Skill-project\Skill Project\Skill Project\bin\Debug\Skill Project.exe
-C:\wamp64\www\Skill-project\Skill Project\Skill Project\bin\Debug\Skill Project.pdb
-C:\wamp64\www\Skill-project\Skill Project\Skill Project\bin\Debug\af\Skill Project.resources.dll
-C:\wamp64\www\Skill-project\Skill Project\Skill Project\bin\Debug\en\Skill Project.resources.dll
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.BoutonAnime.Animated_Button2.resources
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.BoutonAnime.Animated_Button3.resources
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.FormProjetBarreProgCirculaire.resources
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.FormProjetBoutonAnime.resources
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.FormProjetCalculatrice.resources
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.FormProjetCodeSourceSiteWeb.resources
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.FormProjetInfoBulle.resources
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.FormProjetMorpion.resources
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.FormProjetPendu.resources
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.Morpion.FormJoueur.resources
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.Pendu.FormStatsPendu.resources
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.FormPlanning.resources
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormAPropos.resources
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormArborescence.resources
@@ -48,12 +50,14 @@ C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormIndex.af.resources
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormIndex.en.resources
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill Project.csproj.GenerateResource.Cache
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\bin\Debug\Skill Project.exe.config
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\bin\Debug\Skill Project.exe
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\bin\Debug\Skill Project.pdb
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\bin\Debug\af\Skill Project.resources.dll
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\bin\Debug\en\Skill Project.resources.dll
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\af\Skill Project.resources.dll
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\en\Skill Project.resources.dll
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill Project.exe
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill Project.pdb
 C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill Project.csprojResolveAssemblyReference.cache
-C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.Pendu.FormStatsPendu.resources
-C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.FormProjetCodeSourceSiteWeb.resources
-C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.BoutonAnime.Animated_Button2.resources
-C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.BoutonAnime.Animated_Button3.resources
+C:\wamp64\www\Skill-project\Skill Project\Skill Project\obj\Debug\Skill_Project.FormsCompetence.Morpion.FormStatsMorpion.resources

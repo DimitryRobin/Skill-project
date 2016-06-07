@@ -191,6 +191,28 @@ Cliquez longuement sur un bouton..
 Le principe reste le même pour chaque boutons.
 Bouton
 
+// Pre-Form : 195-204
 
+Vs ordinateur
+2 joueurs
+Joueur :
+Joueur 1 :
+Joueur 2 :
+Jouer
+Vous devez choisir un pseudonyme !
+Erreur
+Remplissez tous les champs s'il vous plaît !
+Les pseudonymes doivent être différents.
 
+// Form Morpion : 208-217
 
+Classement
+Il se peut qu'il y ait quelques dysfonctionnements certaines fois.
+Joueur 1
+Joueur 2
+Rejouer
+IA
+ gagne !
+Résultat
+Egalité !
+IA = Ordinateur

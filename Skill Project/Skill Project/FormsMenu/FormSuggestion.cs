@@ -122,7 +122,7 @@ namespace Skill_Project
 
         private void FormSuggestion_Leave(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void tbPrénom_TextChanged(object sender, EventArgs e)
@@ -640,7 +640,8 @@ namespace Skill_Project
 
         private void FormSuggestion_Enter(object sender, EventArgs e)
         {
-
+            FormIndex form = (FormIndex)this.MdiParent;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void FormSuggestion_Activated(object sender, EventArgs e)

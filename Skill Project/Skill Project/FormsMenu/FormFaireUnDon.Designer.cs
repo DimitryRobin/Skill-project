@@ -172,6 +172,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormFaireUnDon_Load);
             this.Enter += new System.EventHandler(this.FormFaireUnDon_Enter);
+            this.Leave += new System.EventHandler(this.FormFaireUnDon_Leave);
             this.MouseEnter += new System.EventHandler(this.FormFaireUnDon_MouseEnter);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

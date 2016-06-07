@@ -140,12 +140,18 @@ namespace Skill_Project
 
         private void FormFaireUnDon_Enter(object sender, EventArgs e)
         {
-
+            FormIndex form = (FormIndex)this.MdiParent;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void FormFaireUnDon_MouseEnter(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormFaireUnDon_Leave(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

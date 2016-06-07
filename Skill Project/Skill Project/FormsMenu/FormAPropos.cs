@@ -98,5 +98,16 @@ namespace Skill_Project
                 LangueElement[90] + "\n" + LangueElement[91] + "\n" + LangueElement[92] + "\n" + LangueElement[93];
 
         }
+
+        private void FormAPropos_Enter(object sender, EventArgs e)
+        {
+            FormIndex form = (FormIndex)this.MdiParent;
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void FormAPropos_Leave(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

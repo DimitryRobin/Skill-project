@@ -191,3 +191,28 @@ Click at length on a button ..
 The principle remains the same for each button.
 Button
 
+// Pre-Form : 195-204
+
+Vs computer
+2 players
+Player :
+Player 1 :
+Player 2 :
+Play
+You must choose a pseudonym!
+Error
+Fill in all fields please!
+Nicknames must be different.
+
+// Form Morpion : 208-217
+
+Ranking
+It may be that there is some malfunctions some time.
+Player 1
+Player 2
+Replay
+IA
+  Win!
+Result
+Equality!
+IA = Computer

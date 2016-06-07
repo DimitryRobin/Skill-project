@@ -649,7 +649,7 @@ namespace Skill_Project
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
 
                 FormIndex form = (FormIndex)this.MdiParent;
-                FormsCompetence.FormProjetMorpion FPC = new FormsCompetence.FormProjetMorpion();
+                FormsCompetence.FormProjetMorpion FPC = new FormsCompetence.FormProjetMorpion("miniature");
                 FPC.MdiParent = form;
                 FPC.Show();
             }

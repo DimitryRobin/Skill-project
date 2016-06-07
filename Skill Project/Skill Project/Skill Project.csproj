@@ -145,6 +145,18 @@
     <Compile Include="FormsCompetence\FormProjetSnake.Designer.cs">
       <DependentUpon>FormProjetSnake.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsCompetence\Morpion\FormJoueur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\Morpion\FormJoueur.Designer.cs">
+      <DependentUpon>FormJoueur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsCompetence\Morpion\FormStatsMorpion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsCompetence\Morpion\FormStatsMorpion.Designer.cs">
+      <DependentUpon>FormStatsMorpion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsCompetence\Pendu\FormStatsPendu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,8 +287,20 @@
     <EmbeddedResource Include="FormsCompetence\FormProjetCodeSourceSiteWeb.resx">
       <DependentUpon>FormProjetCodeSourceSiteWeb.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsCompetence\FormProjetInfoBulle.resx">
+      <DependentUpon>FormProjetInfoBulle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsCompetence\FormProjetMorpion.resx">
+      <DependentUpon>FormProjetMorpion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsCompetence\FormProjetPendu.resx">
       <DependentUpon>FormProjetPendu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsCompetence\Morpion\FormJoueur.resx">
+      <DependentUpon>FormJoueur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsCompetence\Morpion\FormStatsMorpion.resx">
+      <DependentUpon>FormStatsMorpion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsCompetence\Pendu\FormStatsPendu.resx">
       <DependentUpon>FormStatsPendu.cs</DependentUpon>
@@ -415,6 +439,8 @@
   <ItemGroup>
     <Content Include="FormsCompetence\BoutonAnime\CodeBA.txt" />
     <Content Include="FormsCompetence\CSSW\CodeCSSW.txt" />
+    <Content Include="FormsCompetence\Morpion\CodeMorpion.txt" />
+    <Content Include="FormsCompetence\Morpion\StatsMorpion.txt" />
     <Content Include="FormsCompetence\Pendu\CodePendu.txt" />
     <Content Include="FormsCompetence\Pendu\ListeMots5LettresSansAccents.txt" />
     <Content Include="FormsCompetence\Pendu\StatsPendu.txt" />

@@ -259,5 +259,16 @@ namespace Skill_Project
 
             label2.Select();
         }
+
+        private void FormQuiSuisJe_Enter(object sender, EventArgs e)
+        {
+            FormIndex form = (FormIndex)this.MdiParent;
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void FormQuiSuisJe_Leave(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

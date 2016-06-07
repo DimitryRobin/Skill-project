@@ -664,6 +664,8 @@
             this.Text = "Qui suis-je ?";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormQuiSuisJe_Load);
+            this.Enter += new System.EventHandler(this.FormQuiSuisJe_Enter);
+            this.Leave += new System.EventHandler(this.FormQuiSuisJe_Leave);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();

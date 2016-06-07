@@ -1,4 +1,5 @@
-﻿using Skill_Project.FormsCompetence.Pendu;
+﻿using Skill_Project.FormsCompetence.Morpion;
+using Skill_Project.FormsCompetence.Pendu;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -735,7 +736,7 @@ namespace Skill_Project
                 pictureBox1.Visible = false;
                 Fonction.ecrireFichier("", "", "", "", "", "", lbl.Text, dt);
                 
-                FormsCompetence.FormProjetMorpion FPC = new FormsCompetence.FormProjetMorpion();
+                FormsCompetence.FormProjetMorpion FPC = new FormsCompetence.FormProjetMorpion("index");
                 FPC.MdiParent = this;
                 FPC.Show();
             }
